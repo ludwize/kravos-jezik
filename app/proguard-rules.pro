@@ -1,0 +1,11 @@
+-keep class net.kravos.jezik.widget.** { *; }
+-keep class net.kravos.jezik.work.** { *; }
+-keepattributes JavascriptInterface
+-dontwarn org.checkerframework.**
+-dontwarn com.google.errorprone.annotations.**
+-dontwarn javax.annotation.**
+-dontwarn com.google.j2objc.annotations.**
+-dontwarn okhttp3.internal.platform.**
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**

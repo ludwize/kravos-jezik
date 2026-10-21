@@ -1,0 +1,814 @@
+# Kravos Jezik — kurs slovenačkog za govornike srpskog.
+# Format:
+#   = UNIT | Naslov | kratak opis
+#   guide: pasus vodiča za jedinicu (može više redova)
+#   ## L slug | Naslov lekcije        (lekcija)
+#   ## S slug | Naslov priče          (priča)
+#   tip: savet na početku lekcije
+#   w: slovenački = srpski|alternativa # beleška
+#   s: Slovenačka rečenica|alternativa = Srpska rečenica|alternativa
+#   g: Rečenica sa ___ = srpski prevod :: tačno :: pogrešno1, pogrešno2, pogrešno3
+#   l: Govornik: slovenački = srpski        (red priče)
+#   q: Pitanje na srpskom :: tačan odgovor :: pogrešan1, pogrešan2   (pitanje u priči)
+
+= UNIT | Prvi koraci | Pozdravi, predstavljanje, glagol biti i pitanja
+guide: Slovenački je južnoslovenski jezik, ali se od srpskog razlikuje više nego što se čini: ima dvojinu (poseban oblik kad su u pitanju dve osobe ili stvari), nema vokativ i aorist, a mnogo reči su "lažni prijatelji" — zvuče poznato, a znače nešto drugo.
+guide: Nema slova ć i đ. Umesto ć piše se č (noč = noć), a umesto đ najčešće j (meja = međa).
+guide: Izgovor: "l" na kraju reči ili ispred suglasnika često se čita kao "u" (bil → "biu"), a "v" ispred suglasnika i na kraju reči takođe kao "u" (vsak → "usak").
+guide: "Kako ste?" je formalno, "Kako si?" neformalno — isto kao kod nas.
+
+## L pozdravi | Pozdravi
+tip: Neformalno se pozdravlja sa "Živjo", formalno sa "Dober dan". Na rastanku se kaže "Adijo" (neformalno) ili "Nasvidenje".
+w: živjo = zdravo|ćao
+w: dober dan = dobar dan
+w: dobro jutro = dobro jutro
+w: dober večer = dobro veče
+w: lahko noč = laku noć
+w: nasvidenje = doviđenja
+w: adijo = ćao|zbogom # neformalan pozdrav na rastanku
+w: hvala = hvala
+w: prosim = molim|izvolite
+w: ja = da
+w: ne = ne
+s: Živjo, kako si? = Zdravo, kako si?|Ćao, kako si?
+s: Dober dan, kako ste? = Dobar dan, kako ste?
+s: Dobro, hvala. = Dobro, hvala.
+s: Hvala lepa. = Hvala lepo.|Hvala puno.
+s: Lahko noč! = Laku noć!
+s: Nasvidenje, gospa! = Doviđenja, gospođo!
+
+## L predstavljanje | Predstavljanje
+tip: "Jaz sem Goran" = Ja sam Goran. Zamenica "jaz" se, kao i kod nas, često izostavlja: "Sem Goran." Formalno pitanje je "Kako vam je ime?".
+w: jaz = ja
+w: ti = ti
+w: on = on
+w: ona = ona
+w: ime = ime
+w: priimek = prezime
+w: od kod = odakle
+w: Srbija = Srbija
+w: Slovenija = Slovenija
+w: veseli me = drago mi je
+s: Jaz sem Goran. = Ja sam Goran.
+s: Ime mi je Ana. = Zovem se Ana.|Ime mi je Ana.
+s: Kako ti je ime? = Kako se zoveš?|Kako ti je ime?
+s: Kako vam je ime? = Kako se zovete?|Kako vam je ime?
+s: Od kod si? = Odakle si?
+s: Sem iz Srbije. = Ja sam iz Srbije.|Iz Srbije sam.
+s: Živim v Beogradu. = Živim u Beogradu.
+s: Veseli me. = Drago mi je.
+
+## L biti | Glagol biti
+tip: biti: sem, si, je, smo, ste, so. Odrično: nisem, nisi, ni, nismo, niste, niso — pazi, "ni" znači "nije". Za dve osobe postoji dvojina: midva sva (nas dvoje smo), vidva sta, onadva sta.
+w: sem = sam
+w: si = si
+w: je = je
+w: smo = smo
+w: ste = ste
+w: so = su
+w: nisem = nisam
+w: ni = nije # "ni" je odrični oblik od "je"
+w: tukaj = ovde
+w: doma = kod kuće
+w: utrujen = umoran
+s: Nisem utrujen. = Nisam umoran.
+s: Ona je doma. = Ona je kod kuće.
+s: Smo tukaj. = Ovde smo.|Mi smo ovde.
+s: Ali si doma? = Da li si kod kuće?|Jesi li kod kuće?
+s: On ni tukaj. = On nije ovde.|Nije ovde.
+s: Ste iz Slovenije? = Da li ste iz Slovenije?|Jeste li iz Slovenije?
+g: Jaz ___ iz Beograda. = Ja sam iz Beograda. :: sem :: si, je, so
+g: Oni ___ doma. = Oni su kod kuće. :: so :: sta, smo, ste
+g: Midva ___ utrujena. = Nas dvojica smo umorni. :: sva :: smo, sta, ste
+g: Marko ___ tukaj. = Marko nije ovde. :: ni :: ne, nisem, nisi
+
+## L vprasanja | Pitanja
+tip: Upitne reči: kaj (šta), kdo (ko), kje (gde), kam (kuda), kdaj (kada), zakaj (zašto). "Ali" na početku rečenice je upitna rečca kao naše "da li", a u sredini znači "ili". Naše "ali" (međutim) je "ampak" ili "toda".
+w: kaj = šta
+w: kdo = ko
+w: kje = gde
+w: kam = kuda|gde # pravac: kam greš?
+w: kdaj = kada
+w: zakaj = zašto
+w: kako = kako
+w: koliko = koliko
+w: ali = da li|ili # upitna rečca; u sredini rečenice "ili"
+w: ampak = ali|međutim # naše "ali"
+s: Kaj je to? = Šta je to?
+s: Kdo je to? = Ko je to?
+s: Kje si? = Gde si?
+s: Kam greš? = Gde ideš?|Kuda ideš?
+s: Kdaj prideš? = Kada dolaziš?
+s: Zakaj ne? = Zašto ne?
+s: Ali govoriš angleško? = Da li govoriš engleski?|Govoriš li engleski?
+
+## S kava | Na kafi
+l: Maja: Živjo! Ali si ti Goran? = Zdravo! Jesi li ti Goran?
+l: Goran: Ja, jaz sem Goran. Ti si Maja? = Da, ja sam Goran. Ti si Maja?
+l: Maja: Ja. Veseli me! = Da. Drago mi je!
+l: Goran: Tudi mene veseli. = I meni je drago.
+l: Maja: Od kod si? = Odakle si?
+l: Goran: Iz Srbije sem, iz Beograda. = Iz Srbije sam, iz Beograda.
+q: Odakle je Goran? :: Iz Beograda :: Iz Ljubljane, Iz Maribora
+l: Natakar: Dober dan. Kaj boste? = Dobar dan. Šta ćete?
+l: Maja: Eno kavo, prosim. = Jednu kafu, molim.
+l: Goran: Tudi zame kavo, prosim. = I za mene kafu, molim.
+l: Natakar: Z mlekom? = Sa mlekom?
+l: Goran: Ne, hvala. Brez mleka. = Ne, hvala. Bez mleka.
+q: Kakvu kafu pije Goran? :: Bez mleka :: Sa mlekom, Sa šećerom
+l: Maja: Zakaj si v Ljubljani? = Zašto si u Ljubljani?
+l: Goran: Imam sestanek. Pa tudi Ljubljana je zelo lepa! = Imam sastanak. A i Ljubljana je veoma lepa!
+l: Maja: Ja, res je. = Da, istina je.
+q: Zašto je Goran u Ljubljani? :: Ima sastanak :: Živi tamo, Na odmoru je
+
+= UNIT | Brojevi i vreme | Brojevi, sat, dani i "lažni" čas
+guide: Brojevi su slični našim, ali pazi na složene: 21 je "enaindvajset" (jedan-i-dvadeset), 35 je "petintrideset" — kao u nemačkom.
+guide: Najveća zamka: "ura" je sat (i časovnik i 60 minuta), "čas" je vreme koje teče, a "vreme" je vremenska prognoza. "Nimam časa" = nemam vremena.
+guide: "Jutri" znači sutra, a "jutro" je jutro. "Teden" je sedmica, a "nedelja" je samo dan u nedelji.
+guide: Slovenački nema vokativ: kaže se "Živjo, Goran!", a ne "Gorane".
+
+## L stevila | Brojevi 1–10
+w: ena = jedan
+w: dva = dva
+w: tri = tri
+w: štiri = četiri
+w: pet = pet
+w: šest = šest
+w: sedem = sedam
+w: osem = osam
+w: devet = devet
+w: deset = deset
+s: Imam dva brata. = Imam dva brata.
+s: To je pet evrov. = To je pet evra.
+s: Tri kave, prosim. = Tri kafe, molim.
+s: Sedem dni. = Sedam dana.
+g: Ena, dva, ___, štiri. = Jedan, dva, tri, četiri. :: tri :: šest, osem, deset
+g: Pet in pet je ___. = Pet i pet je deset. :: deset :: devet, osem, sedem
+
+## L stevila2 | Brojevi do hiljadu
+tip: 11–19: enajst, dvanajst, trinajst… Desetice: dvajset, trideset, štirideset, petdeset… Složeni brojevi idu obrnuto: 25 = petindvajset (pet-i-dvadeset).
+w: enajst = jedanaest
+w: dvanajst = dvanaest
+w: petnajst = petnaest
+w: dvajset = dvadeset
+w: enaindvajset = dvadeset jedan
+w: trideset = trideset
+w: petdeset = pedeset
+w: sto = sto
+w: tisoč = hiljada
+w: stane = košta
+s: Koliko stane? = Koliko košta?
+s: Petindvajset evrov. = Dvadeset pet evra.
+s: Imam petdeset let. = Imam pedeset godina.
+s: Stanovanje stane sto tisoč evrov. = Stan košta sto hiljada evra.
+g: Število 21: ___. = Broj 21: dvadeset jedan. :: enaindvajset :: dvajsetena, enajst, dvanajst
+g: Število 15: ___. = Broj 15: petnaest. :: petnajst :: petdeset, petindvajset, pet
+
+## L cas | Koliko je sati?
+tip: "Koliko je ura?" = Koliko je sati? "Ob treh" = u tri. "Pol štirih" = pola četiri (3:30), isto kao kod nas.
+w: ura = sat # i časovnik i 60 minuta
+w: čas = vreme # vreme koje teče — "nimam časa"
+w: minuta = minut|minuta
+w: zdaj = sada
+w: zjutraj = ujutru
+w: popoldne = popodne
+w: zvečer = uveče
+w: danes = danas
+w: jutri = sutra # lažni prijatelj — jutro je "jutro"
+w: včeraj = juče
+s: Koliko je ura? = Koliko je sati?
+s: Ura je deset. = Deset je sati.|Sad je deset sati.
+s: Nimam časa. = Nemam vremena.
+s: Jutri zjutraj. = Sutra ujutru.
+s: Danes zvečer. = Danas uveče.
+g: Nimam ___. = Nemam vremena. :: časa :: vremena, ure, minute
+g: ___ grem v Ljubljano. = Sutra idem u Ljubljanu. :: Jutri :: Jutro, Včeraj, Zjutraj
+
+## L dnevi | Dani i meseci
+w: ponedeljek = ponedeljak
+w: torek = utorak
+w: sreda = sreda
+w: četrtek = četvrtak
+w: petek = petak
+w: sobota = subota
+w: nedelja = nedelja # samo dan, ne sedmica
+w: teden = nedelja|sedmica # sedam dana
+w: mesec = mesec
+w: leto = godina|leto # i godina i godišnje doba
+s: Danes je petek. = Danas je petak.
+s: V ponedeljek delam. = U ponedeljak radim.
+s: Ob sobotah sem doma. = Subotom sam kod kuće.
+s: Naslednji teden. = Sledeće nedelje.|Sledeće sedmice.|Naredne nedelje.
+s: Vsak dan. = Svaki dan.|Svakog dana.
+
+## S sestanek | Dogovor
+l: Petra: Živjo, Goran! Kdaj imaš čas? = Ćao, Gorane! Kada imaš vremena?
+l: Goran: Danes nimam časa. Jutri? = Danas nemam vremena. Sutra?
+l: Petra: Jutri je sobota. Ob kateri uri? = Sutra je subota. U koliko sati?
+l: Goran: Ob desetih zjutraj? = U deset ujutru?
+l: Petra: Ne, prezgodaj je. Ob dveh popoldne? = Ne, prerano je. U dva popodne?
+q: Zašto Petri ne odgovara deset ujutru? :: Prerano je :: Prekasno je, Radi tada
+l: Goran: V redu. Kje? = U redu. Gde?
+l: Petra: Na Prešernovem trgu. = Na Prešernovom trgu.
+l: Goran: Odlično. Se vidiva! = Odlično. Vidimo se!
+q: Kada se vide? :: U subotu u dva popodne :: U petak u deset, Danas uveče
+q: Šta znači "Se vidiva"? :: Vidimo se (nas dvoje) :: Ne vidim te, Vidim te sutra
+
+= UNIT | Hrana i piće | Kafana, restoran i "rad bi"
+guide: "Rad bi" (muškarac) / "Rada bi" (žena) = voleo bih / volela bih. To je najprirodniji način da nešto naručiš: "Rad bi kavo."
+guide: "Rad imam" = volim. "Dober tek!" = Prijatno! "Na zdravje!" = Živeli!
+guide: Lažni prijatelji za stolom: "miza" je sto, a "stol" je stolica. Čaša je "kozarec", a šoljica "skodelica".
+
+## L pijace | Piće
+w: kava = kafa
+w: čaj = čaj
+w: voda = voda
+w: pivo = pivo
+w: vino = vino
+w: mleko = mleko
+w: sok = sok
+w: kozarec = čaša
+w: skodelica = šoljica|šolja
+w: sladkor = šećer
+s: Rad bi kavo. = Voleo bih kafu.|Hteo bih kafu.
+s: Rada bi čaj. = Volela bih čaj.|Htela bih čaj.
+s: Kozarec vode, prosim. = Čašu vode, molim.
+s: Eno pivo, prosim. = Jedno pivo, molim.
+s: Kava z mlekom in brez sladkorja. = Kafa sa mlekom i bez šećera.
+s: Na zdravje! = Živeli!|U zdravlje!
+g: Goran: "___ bi pivo." = Voleo bih pivo. :: Rad :: Rada, Radi, Rado
+g: Maja: "___ bi kavo." = Volela bih kafu. :: Rada :: Rad, Radi, Rado
+
+## L hrana | Hrana
+w: kruh = hleb
+w: meso = meso
+w: riba = riba
+w: juha = supa|čorba
+w: solata = salata
+w: krompir = krompir
+w: sir = sir
+w: jajce = jaje
+w: piščanec = piletina|pile
+w: zelenjava = povrće
+w: sadje = voće
+w: jabolko = jabuka
+s: Ne jem mesa. = Ne jedem meso.
+s: Rad imam ribo. = Volim ribu.
+s: Juha je vroča. = Supa je vruća.
+s: Imate zelenjavo? = Imate li povrće?|Da li imate povrće?
+s: Kruh in sir, prosim. = Hleb i sir, molim.
+
+## L restavracija | U restoranu
+w: natakar = konobar
+w: jedilni list = jelovnik
+w: račun = račun
+w: zajtrk = doručak
+w: kosilo = ručak
+w: večerja = večera
+w: miza = sto # lažni prijatelj — "stol" je stolica
+w: stol = stolica # lažni prijatelj
+w: dober tek = prijatno
+w: plačati = platiti
+s: Mizo za dva, prosim. = Sto za dvoje, molim.
+s: Jedilni list, prosim. = Jelovnik, molim.
+s: Račun, prosim. = Račun, molim.
+s: Lahko plačam s kartico? = Mogu li da platim karticom?|Da li mogu da platim karticom?
+s: Dober tek! = Prijatno!
+s: Kaj priporočate? = Šta preporučujete?
+g: Lahko ___ s kartico? = Mogu li da platim karticom? :: plačam :: plačaš, plača, plačamo
+
+## S restavracija | U restoranu
+l: Natakar: Dober večer. Mizo za dva? = Dobro veče. Sto za dvoje?
+l: Maja: Ja, prosim. Pri oknu, če je mogoče. = Da, molim. Pored prozora, ako je moguće.
+l: Natakar: Seveda. Izvolite jedilni list. = Naravno. Izvolite jelovnik.
+l: Goran: Kaj priporočate? = Šta preporučujete?
+l: Natakar: Danes imamo svežo ribo in domačo juho. = Danas imamo svežu ribu i domaću supu.
+q: Šta restoran danas preporučuje? :: Svežu ribu i domaću supu :: Piletinu i salatu, Samo picu
+l: Goran: Rad bi ribo s krompirjem. = Voleo bih ribu sa krompirom.
+l: Maja: Jaz pa juho in solato. = A ja supu i salatu.
+l: Natakar: Kaj boste pili? = Šta ćete piti?
+l: Goran: Kozarec belega vina in vodo. = Čašu belog vina i vodu.
+q: Šta Maja naručuje? :: Supu i salatu :: Ribu sa krompirom, Belo vino
+l: Natakar: Dober tek! = Prijatno!
+l: Goran: Račun, prosim. Lahko plačam s kartico? = Račun, molim. Mogu li da platim karticom?
+l: Natakar: Seveda, ni problema. = Naravno, nema problema.
+q: Kako Goran plaća? :: Karticom :: Gotovinom, Ne plaća on
+
+= UNIT | Kupovina | Prodavnica, pijaca, apoteka i odeća
+guide: "Koliko stane?" = Koliko košta? Novac je "denar", "drago" je skupo, a "poceni" jeftino.
+guide: Prodavnica je "trgovina", a apoteka "lekarna" — lekar je "zdravnik". Pijaca je "tržnica".
+guide: Pantalone su "hlače" — uvek u množini, kao i kod nas.
+
+## L trgovina | U prodavnici
+w: trgovina = prodavnica
+w: denar = novac
+w: drago = skupo
+w: poceni = jeftino
+w: blagajna = kasa
+w: vrečka = kesa
+w: odprto = otvoreno
+w: zaprto = zatvoreno
+w: kupiti = kupiti
+w: vse = sve
+s: To je predrago. = To je preskupo.
+s: Imate vrečko? = Imate li kesu?
+s: Trgovina je zaprta. = Prodavnica je zatvorena.
+s: Ob nedeljah je zaprto. = Nedeljom je zatvoreno.
+s: To je vse. = To je sve.
+s: Rad bi kupil kruh. = Hteo bih da kupim hleb.|Voleo bih da kupim hleb.
+
+## L trgovine | Radnje i usluge
+w: lekarna = apoteka # lažni prijatelj — lekar je "zdravnik"
+w: zdravnik = lekar
+w: pekarna = pekara
+w: banka = banka
+w: pošta = pošta
+w: tržnica = pijaca
+w: kartica = kartica
+w: gotovina = gotovina
+w: potrebujem = treba mi|potreban mi je
+s: Kje je lekarna? = Gde je apoteka?
+s: Grem na tržnico. = Idem na pijacu.
+s: Plačam z gotovino. = Plaćam gotovinom.
+s: Kdaj je odprta pošta? = Kada radi pošta?|Kada je otvorena pošta?
+s: Potrebujem zdravnika. = Treba mi lekar.|Potreban mi je lekar.
+
+## L obleka | Odeća
+w: obleka = odeća|haljina # i odeća uopšte i haljina
+w: hlače = pantalone
+w: srajca = košulja
+w: majica = majica
+w: čevlji = cipele
+w: plašč = kaput
+w: velikost = veličina
+w: majhen = mali
+w: velik = veliki
+s: Imate to v večji velikosti? = Imate li ovo u većoj veličini?
+s: Hlače so prevelike. = Pantalone su prevelike.
+s: Lahko poskusim? = Mogu li da probam?
+s: Ti čevlji so lepi. = Ove cipele su lepe.
+g: Hlače ___ predrage. = Pantalone su preskupe. :: so :: je, sta, smo
+
+## S trznica | Na pijaci
+l: Prodajalka: Dober dan! Kaj bo? = Dobar dan! Šta ćete?
+l: Goran: Dober dan. Koliko stanejo jabolka? = Dobar dan. Koliko koštaju jabuke?
+l: Prodajalka: Dva evra kilogram. = Dva evra kilogram.
+l: Goran: Dva kilograma, prosim. In še pol kilograma hrušk. = Dva kilograma, molim. I još pola kilograma krušaka.
+l: Prodajalka: Še kaj? = Još nešto?
+q: Šta znači "Še kaj?" :: Još nešto? :: Šta je to?, Koliko košta?
+l: Goran: Ne, to je vse. Koliko bo? = Ne, to je sve. Koliko je ukupno?
+l: Prodajalka: Pet evrov. Imate vrečko? = Pet evra. Imate li kesu?
+l: Goran: Ja, imam. Izvolite deset evrov. = Da, imam. Izvolite deset evra.
+l: Prodajalka: Hvala, pet evrov nazaj. Lep dan! = Hvala, pet evra kusur. Prijatan dan!
+q: Koliko koštaju jabuke? :: Dva evra kilogram :: Pet evra kilogram, Deset evra
+q: Koliko je Goran dobio nazad? :: Pet evra :: Deset evra, Ništa
+
+= UNIT | Grad i prevoz | Pravci, voz, autobus i glagol iti
+guide: Pravci: levo, desno, naravnost (pravo). "Daleč" je daleko, "blizu" je blizu.
+guide: Voz je "vlak", stanica je "postaja", aerodrom je "letališče", a karta za prevoz "vozovnica".
+guide: Glagol iti (ići) je nepravilan: grem, greš, gre, gremo, greste, gredo; dvojina: greva, gresta. "Domov" je kuda (kući), a "doma" je gde (kod kuće).
+
+## L smer | Gde je…?
+w: levo = levo
+w: desno = desno
+w: naravnost = pravo
+w: blizu = blizu
+w: daleč = daleko
+w: ulica = ulica
+w: trg = trg
+w: center = centar
+w: tam = tamo
+w: oprostite = izvinite
+s: Oprostite, kje je center? = Izvinite, gde je centar?
+s: Pojdite naravnost in nato levo. = Idite pravo, pa onda levo.|Idite pravo i onda levo.
+s: Je daleč? = Da li je daleko?|Je li daleko?
+s: Ni daleč, pet minut. = Nije daleko, pet minuta.
+s: Hotel je na desni. = Hotel je sa desne strane.|Hotel je desno.
+s: Ne vem, nisem od tukaj. = Ne znam, nisam odavde.
+
+## L prevoz | Prevoz
+w: avtobus = autobus
+w: vlak = voz
+w: postaja = stanica
+w: avtobusna postaja = autobuska stanica
+w: železniška postaja = železnička stanica
+w: letališče = aerodrom
+w: letalo = avion
+w: avto = auto|kola
+w: vozovnica = karta # karta za prevoz
+w: zamuda = kašnjenje
+s: Kdaj odpelje vlak za Maribor? = Kada polazi voz za Maribor?
+s: Eno vozovnico do Ljubljane, prosim. = Jednu kartu do Ljubljane, molim.
+s: Avtobus ima zamudo. = Autobus kasni.
+s: Kje je avtobusna postaja? = Gde je autobuska stanica?
+s: Grem z avtom. = Idem kolima.|Idem autom.
+
+## L iti | Glagol iti
+tip: iti: grem, greš, gre, gremo, greste, gredo. Dvojina: greva (nas dvoje idemo), gresta. "Pojdi!" = Idi! "Gremo!" = Idemo! "Priti" = doći: pridem, prideš, pride…
+w: grem = idem
+w: greš = ideš
+w: gre = ide
+w: gremo = idemo
+w: gredo = idu
+w: greva = idemo # nas dvoje
+w: priti = doći
+w: pridem = dolazim|doći ću
+w: domov = kući # kuda — "doma" je gde
+w: kino = bioskop
+s: Grem domov. = Idem kući.
+s: Kam gremo? = Gde idemo?|Kuda idemo?
+s: Greva na kavo? = Idemo na kafu?|Hoćemo li na kafu?
+s: Pridem jutri. = Dolazim sutra.|Doći ću sutra.
+s: Gremo! = Idemo!
+g: Midva ___ v kino. = Nas dvoje idemo u bioskop. :: greva :: gremo, gresta, grem
+g: Oni ___ domov. = Oni idu kući. :: gredo :: gre, gremo, greste
+g: Grem ___. = Idem kući. :: domov :: doma, hiša, domu
+
+## S postaja | Na železničkoj stanici
+l: Goran: Dober dan. Eno vozovnico za Maribor, prosim. = Dobar dan. Jednu kartu za Maribor, molim.
+l: Uslužbenka: Samo v eno smer ali povratno? = Samo u jednom pravcu ili povratnu?
+l: Goran: Povratno, prosim. Kdaj odpelje naslednji vlak? = Povratnu, molim. Kada polazi sledeći voz?
+l: Uslužbenka: Ob štirinajstih dvajset, s tretjega tira. = U četrnaest i dvadeset, sa trećeg koloseka.
+q: Kakvu kartu Goran kupuje? :: Povratnu :: U jednom pravcu, Mesečnu
+l: Goran: Koliko časa traja vožnja? = Koliko traje vožnja?
+l: Uslužbenka: Približno dve uri in pol. = Otprilike dva i po sata.
+l: Goran: In koliko stane? = A koliko košta?
+l: Uslužbenka: Dvajset evrov. = Dvadeset evra.
+q: Koliko traje vožnja? :: Oko dva i po sata :: Pola sata, Pet sati
+l: Uslužbenka: Pozor, danes ima vlak malo zamude. = Pažnja, danas voz malo kasni.
+l: Goran: Kakšna smola! = Baš peh!
+q: Šta je problem danas? :: Voz kasni :: Nema karata, Voz je pun
+
+= UNIT | Porodica i ljudi | Porodica, komšije i glagol imeti
+guide: "Imam" / "nimam": posle "nimam" ide genitiv, kao kod nas: Nimam brata.
+guide: "Žena" je supruga, a žensko lice je "ženska". "Mož" je muž, a muškarac je "moški". Dete je "otrok", deca "otroci".
+guide: "Rad imam" = volim (doslovno: rado imam). Ženski oblik je "rada imam".
+
+## L druzina | Porodica
+w: družina = porodica
+w: mama = mama
+w: oče = otac
+w: brat = brat
+w: sestra = sestra
+w: sin = sin
+w: hči = ćerka
+w: žena = supruga|žena
+w: mož = muž
+w: otrok = dete
+w: otroci = deca
+w: starši = roditelji
+s: Imam sina in hčer. = Imam sina i ćerku.
+s: Moja sestra živi v Kanadi. = Moja sestra živi u Kanadi.
+s: Nimam otrok. = Nemam dece.
+s: Moji starši živijo v Beogradu. = Moji roditelji žive u Beogradu.
+s: Imaš brata? = Imaš li brata?|Da li imaš brata?
+g: Nimam ___. = Nemam brata. :: brata :: brat, bratu, bratom
+
+## L ljudje | Ljudi
+w: človek = čovek
+w: ljudje = ljudi
+w: moški = muškarac
+w: ženska = žena # žensko lice
+w: fant = momak|dečko
+w: dekle = devojka
+w: prijatelj = prijatelj
+w: sosed = komšija|sused
+w: sodelavec = kolega # kolega s posla
+w: prijazen = ljubazan
+w: zelo = veoma|jako|vrlo
+s: To je moj prijatelj. = To je moj prijatelj.
+s: Moj sosed je zelo prijazen. = Moj komšija je veoma ljubazan.|Moj komšija je jako ljubazan.
+s: Ona je moja sodelavka. = Ona je moja koleginica.
+s: Koliko ljudi? = Koliko ljudi?
+s: Ta fant je visok. = Taj momak je visok.
+
+## L imeti | Glagol imeti
+tip: imeti: imam, imaš, ima, imamo, imate, imajo. Odrično: nimam, nimaš, nima… "Koliko si star?" = Koliko imaš godina?
+w: imam = imam
+w: imaš = imaš
+w: ima = ima
+w: imamo = imamo
+w: imajo = imaju
+w: nimam = nemam
+w: rad imam = volim
+w: star = star
+w: mlad = mlad
+s: Koliko si star? = Koliko imaš godina?
+s: Star sem petdeset let. = Imam pedeset godina.
+s: Imajo dva otroka. = Imaju dvoje dece.
+s: Rad imam svojo družino. = Volim svoju porodicu.
+s: Nima časa. = Nema vremena.
+g: Oni ___ hišo. = Oni imaju kuću. :: imajo :: imamo, ima, imate
+g: Jaz ___ avta. = Ja nemam auto. :: nimam :: nimaš, imam, nima
+
+## S sosed | Novi komšija
+l: Sosed: Dober dan! Vi ste novi sosed? = Dobar dan! Vi ste novi komšija?
+l: Goran: Ja, pred enim tednom sem se preselil. = Da, preselio sam se pre nedelju dana.
+l: Sosed: Dobrodošli! Jaz sem Janez, živim v drugem nadstropju. = Dobro došli! Ja sam Janez, živim na drugom spratu.
+l: Goran: Veseli me. Jaz sem Goran. = Drago mi je. Ja sam Goran.
+q: Gde živi Janez? :: Na drugom spratu :: U Beogradu, U prizemlju
+l: Janez: Ali imate družino? = Da li imate porodicu?
+l: Goran: Imam sestro, ampak živi v Beogradu. = Imam sestru, ali ona živi u Beogradu.
+l: Janez: Moja žena Mojca peče odlično potico. Pridite na kavo! = Moja žena Mojca pravi odličnu poticu. Dođite na kafu!
+l: Goran: Z veseljem! Hvala lepa. = Sa zadovoljstvom! Hvala lepo.
+q: Na šta Janez poziva Gorana? :: Na kafu :: Na ručak, Na pivo
+q: Kada se Goran preselio? :: Pre nedelju dana :: Juče, Pre godinu dana
+
+= UNIT | Stan i kuća | Stan, kirija i stvari u kući
+guide: Stan je "stanovanje", kuća "hiša", kirija "najemnina", a sprat "nadstropje".
+guide: Prozor je "okno", sto "miza", krevet "postelja". Posle "v" i "na" ide lokativ: v kuhinji, na mizi.
+guide: "Ne dela" znači "ne radi" — i za ljude i za mašine.
+
+## L stanovanje | Stan
+w: stanovanje = stan
+w: hiša = kuća
+w: soba = soba
+w: kuhinja = kuhinja
+w: kopalnica = kupatilo
+w: spalnica = spavaća soba
+w: okno = prozor
+w: vrata = vrata
+w: balkon = terasa|balkon
+w: nadstropje = sprat
+w: vrt = bašta|vrt
+s: Stanovanje ima tri sobe. = Stan ima tri sobe.
+s: Kuhinja je majhna. = Kuhinja je mala.
+s: Odpri okno, prosim. = Otvori prozor, molim te.
+s: Živim v drugem nadstropju. = Živim na drugom spratu.
+s: Hiša ima vrt. = Kuća ima baštu.
+
+## L najem | Iznajmljivanje
+w: najemnina = kirija
+w: najemodajalec = stanodavac
+w: pogodba = ugovor
+w: varščina = depozit
+w: ključ = ključ
+w: stroški = troškovi|režije
+w: elektrika = struja
+w: ogrevanje = grejanje
+w: opremljeno = namešteno
+w: prosto = slobodno
+s: Koliko je najemnina? = Kolika je kirija?
+s: Ali so stroški vključeni? = Da li su troškovi uključeni?|Jesu li režije uključene?
+s: Stanovanje je opremljeno. = Stan je namešten.
+s: Kdaj je prosto? = Kada je slobodno?
+s: Podpisati moramo pogodbo. = Moramo da potpišemo ugovor.
+
+## L stvari | Stvari u kući
+w: postelja = krevet
+w: omara = orman
+w: hladilnik = frižider
+w: pečica = rerna
+w: luč = svetlo|lampa
+w: blazina = jastuk
+w: ogledalo = ogledalo
+w: pralni stroj = veš mašina
+w: prazen = prazan
+s: Ključi so na mizi. = Ključevi su na stolu.
+s: Prižgi luč. = Upali svetlo.
+s: Hladilnik je prazen. = Frižider je prazan.
+s: Pralni stroj ne dela. = Veš mašina ne radi.
+g: Ključi so na ___. = Ključevi su na stolu. :: mizi :: miza, mizo, stolu
+g: Sedi na ___. = Sedi na stolicu. :: stol :: mizo, miza, postelja
+
+## S ogled | Razgledanje stana
+l: Agentka: Dober dan, gospod. To je stanovanje. = Dobar dan, gospodine. Ovo je stan.
+l: Goran: Lepo je. Koliko kvadratnih metrov ima? = Lep je. Koliko ima kvadrata?
+l: Agentka: Šestdeset. Dve sobi, kuhinja, kopalnica in balkon. = Šezdeset. Dve sobe, kuhinja, kupatilo i terasa.
+q: Koliko je stan velik? :: Šezdeset kvadrata :: Pedeset kvadrata, Devedeset kvadrata
+l: Goran: Je balkon na sever ali na jug? = Da li je terasa na sever ili na jug?
+l: Agentka: Na jug, zato je zelo svetlo. = Na jug, zato je veoma svetlo.
+q: Na koju stranu gleda terasa? :: Na jug :: Na sever, Na zapad
+l: Goran: Koliko je najemnina? = Kolika je kirija?
+l: Agentka: Osemsto evrov na mesec, stroški niso vključeni. = Osamsto evra mesečno, troškovi nisu uključeni.
+l: Goran: In varščina? = A depozit?
+l: Agentka: Dve najemnini. = Dve kirije.
+q: Da li su troškovi uključeni u kiriju? :: Nisu :: Jesu, Samo struja
+
+= UNIT | Svakodnevica | Posao, razumevanje i modalni glagoli
+guide: Sadašnje vreme ima tri glavna obrasca: -am (delam), -im (govorim), -em (razumem). Treće lice množine: delajo, govorijo, razumejo.
+guide: "Delati" znači raditi, a posao je "služba". Penzija je "pokojnina", a penzioner "upokojenec".
+guide: Velika zamka: "ne morem" znači "ne mogu" (od glagola moči), a "moram" znači "moram". Posle modalnih glagola ide infinitiv: "Moram iti" = Moram da idem.
+guide: Najkorisnije rečenice za početak: "Ne razumem", "Govorite počasi, prosim" i "Lahko ponovite?"
+
+## L sluzba | Posao
+w: delati = raditi
+w: delam = radim
+w: služba = posao
+w: podjetje = firma|preduzeće
+w: pisarna = kancelarija
+w: sestanek = sastanak
+w: plača = plata
+w: dopust = godišnji odmor|odmor
+w: pokojnina = penzija
+w: upokojenec = penzioner
+s: Kje delaš? = Gde radiš?
+s: Delam v velikem podjetju. = Radim u velikoj firmi.
+s: Imam sestanek ob devetih. = Imam sastanak u devet.
+s: Jutri sem na dopustu. = Sutra sam na odmoru.|Sutra sam na godišnjem odmoru.
+s: Čez nekaj let grem v pokoj. = Za nekoliko godina idem u penziju.
+
+## L govoriti | Razgovor
+w: govoriti = govoriti|pričati
+w: razumeti = razumeti
+w: razumem = razumem
+w: vedeti = znati # znati informaciju: vem, veš, ve
+w: vem = znam
+w: počasi = polako
+w: ponoviti = ponoviti
+w: beseda = reč # lažni prijatelj
+w: slovensko = slovenački
+w: pomeni = znači
+s: Ne razumem. = Ne razumem.
+s: Govorite počasi, prosim. = Govorite polako, molim vas.
+s: Lahko ponovite? = Možete li da ponovite?
+s: Malo govorim slovensko. = Malo govorim slovenački.|Govorim malo slovenački.
+s: Ne vem. = Ne znam.
+s: Kaj pomeni ta beseda? = Šta znači ova reč?
+g: Ne ___ slovensko. = Ne razumem slovenački. :: razumem :: razumeš, razume, razumejo
+g: Oni ___ srbsko. = Oni govore srpski. :: govorijo :: govorim, govori, govorimo
+
+## L moci | Moći, hteti, morati
+tip: "Lahko" = mogu/može: "Lahko pridem?" = Mogu li da dođem? Hoteti: hočem, hočeš, hoče; odrično nočem (neću). Morati: moram. Moči: morem — "ne morem" = ne mogu!
+w: lahko = mogu|može # Lahko + glagol
+w: hočem = hoću
+w: nočem = neću
+w: moram = moram
+w: ne morem = ne mogu # lažni prijatelj
+w: ne smem = ne smem
+w: spati = spavati
+w: jesti = jesti
+w: piti = piti
+w: počakati = sačekati|čekati
+s: Moram iti. = Moram da idem.|Moram ići.
+s: Nočem spati. = Neću da spavam.|Neću spavati.
+s: Lahko počakate trenutek? = Možete li da sačekate trenutak?
+s: Hočem jesti. = Hoću da jedem.
+s: Ne morem priti. = Ne mogu da dođem.
+s: Tukaj ne smeš kaditi. = Ovde ne smeš da pušiš.
+g: Moram ___ v trgovino. = Moram da idem u prodavnicu. :: iti :: grem, gre, greš
+g: Jutri ne ___ priti. = Sutra ne mogu da dođem. :: morem :: moram, hočem, lahko
+
+## S upravna | Na šalteru
+l: Uradnica: Dober dan. Kako vam lahko pomagam? = Dobar dan. Kako mogu da vam pomognem?
+l: Goran: Dober dan. Rad bi oddal vlogo za dovoljenje za prebivanje. = Dobar dan. Hteo bih da predam zahtev za dozvolu boravka.
+l: Uradnica: Imate potni list? = Imate li pasoš?
+l: Goran: Ja, izvolite. = Da, izvolite.
+l: Uradnica: Potrebujem še dokazilo o zdravstvenem zavarovanju in o sredstvih. = Treba mi još dokaz o zdravstvenom osiguranju i o sredstvima.
+q: Šta je službenici još potrebno? :: Dokaz o osiguranju i o sredstvima :: Fotografija, Ugovor o radu
+l: Goran: Oprostite, ne razumem. Lahko ponovite počasi? = Izvinite, ne razumem. Možete li polako da ponovite?
+l: Uradnica: Seveda. Zavarovanje in dokaz, da imate dovolj denarja. = Naravno. Osiguranje i dokaz da imate dovoljno novca.
+l: Goran: Aha, razumem. Vse imam tukaj. = Aha, razumem. Sve imam ovde.
+l: Uradnica: Odlično. Odločba bo v nekaj tednih. = Odlično. Rešenje će biti za nekoliko nedelja.
+q: Kada stiže rešenje? :: Za nekoliko nedelja :: Sutra, Za godinu dana
+q: Šta Goran kaže kad ne razume? :: Lahko ponovite počasi? :: Na zdravje!, Dober tek!
+
+= UNIT | Juče i sutra | Prošlo i buduće vreme, vremenska prognoza
+guide: Prošlo vreme se gradi kao kod nas: sem bil (bio sam), sem bila (bila sam), smo bili. Ali kratki oblik ne može na početak: "Bil sem doma" ili "Včeraj sem bil doma".
+guide: Buduće vreme: bom, boš, bo, bomo, boste, bodo + particip: "Jutri bom delal" = Sutra ću raditi. Samo "bom" znači "biću": "Jutri bom doma".
+guide: "Vreme" na slovenačkom je vremenska prognoza. "Kakšno je vreme?" = Kakvo je vreme napolju?
+
+## L preteklik | Prošlo vreme
+w: bil sem = bio sam
+w: bila sem = bila sam
+w: je bil = bio je
+w: smo bili = bili smo
+w: delal = radio
+w: videl = video
+w: rekel = rekao
+w: šel = išao|otišao
+w: prišel = došao
+w: lani = prošle godine
+s: Včeraj sem bil v Ljubljani. = Juče sam bio u Ljubljani.
+s: Kaj si rekel? = Šta si rekao?
+s: Videl sem film. = Gledao sam film.|Video sam film.
+s: Lani smo bili na morju. = Prošle godine smo bili na moru.
+s: Prišel je prepozno. = Došao je prekasno.
+g: Včeraj ___ bil doma. = Juče sam bio kod kuće. :: sem :: bom, je, sta
+g: Ana je ___ v službi. = Ana je bila na poslu. :: bila :: bil, bilo, bili
+
+## L prihodnjik | Buduće vreme
+w: bom = biću|ću
+w: boš = bićeš|ćeš
+w: bo = biće|će
+w: bomo = bićemo|ćemo
+w: bodo = biće|će # oni
+w: kmalu = uskoro # lažni prijatelj
+w: pozneje = kasnije
+w: naslednje leto = sledeće godine
+s: Jutri bom doma. = Sutra ću biti kod kuće.
+s: Kmalu bomo tam. = Uskoro ćemo biti tamo.
+s: Kaj boš delal jutri? = Šta ćeš raditi sutra?
+s: Naslednje leto bom živel v Sloveniji. = Sledeće godine ću živeti u Sloveniji.
+s: Bo deževalo? = Da li će padati kiša?|Hoće li padati kiša?
+g: Jutri ___ delal. = Sutra ću raditi. :: bom :: sem, bo, bodo
+g: Oni ___ prišli pozneje. = Oni će doći kasnije. :: bodo :: so, bo, bomo
+
+## L vreme | Vremenska prognoza
+tip: "Vreme" = vremenske prilike. Vreme koje teče je "čas". "Napoved" je prognoza.
+w: vreme = vremenske prilike|vreme # weather — ne "čas"
+w: sonce = sunce
+w: dež = kiša
+w: sneg = sneg
+w: veter = vetar
+w: oblačno = oblačno
+w: sončno = sunčano
+w: toplo = toplo
+w: mrzlo = hladno
+w: stopinj = stepeni
+w: zunaj = napolju
+s: Kakšno je vreme? = Kakvo je vreme?
+s: Danes je sončno in toplo. = Danas je sunčano i toplo.
+s: Jutri bo deževalo. = Sutra će padati kiša.
+s: Zunaj je mrzlo. = Napolju je hladno.
+s: Dvajset stopinj. = Dvadeset stepeni.
+
+## S vikend | Vikend
+l: Maja: Kaj si delal ta vikend? = Šta si radio ovog vikenda?
+l: Goran: V soboto sem bil na Bledu. = U subotu sam bio na Bledu.
+l: Maja: Super! Kakšno je bilo vreme? = Super! Kakvo je bilo vreme?
+l: Goran: Zjutraj je bilo oblačno, popoldne pa sončno. = Ujutru je bilo oblačno, a popodne sunčano.
+q: Gde je Goran bio u subotu? :: Na Bledu :: U Mariboru, Kod kuće
+l: Goran: Jedel sem kremšnito, seveda! = Jeo sam kremšnitu, naravno!
+l: Maja: In kaj boš delal naslednji vikend? = A šta ćeš raditi sledećeg vikenda?
+l: Goran: Ne vem še. Mogoče bom šel v Piran. = Ne znam još. Možda ću ići u Piran.
+l: Maja: Če bo lepo vreme, grem s tabo! = Ako bude lepo vreme, idem s tobom!
+q: Kakvo je bilo vreme popodne? :: Sunčano :: Kišovito, Oblačno
+q: Šta Goran planira sledećeg vikenda? :: Možda Piran :: Opet Bled, Ostaje kod kuće
+
+= UNIT | Filmovi i vesti | Razgovorni jezik, vesti i lažni prijatelji
+guide: U filmovima i na ulici čućeš razgovorni slovenački: "ful" (mnogo, jako), "itak" (naravno), "fajn" (fino), "lej" (gledaj), "a" na početku pitanja ("A greš?" = Ideš li?).
+guide: Jezik vesti je formalan i ponavlja iste obrasce: "vlada je sprejela" (vlada je usvojila), "po podatkih policije" (prema podacima policije), "napoved vremena" (vremenska prognoza).
+guide: "Poročila" su vesti, a "poroka" je venčanje!
+
+## L film | Fraze iz filmova
+w: seveda = naravno
+w: mogoče = možda
+w: res = stvarno|zaista
+w: pazi = pazi
+w: počakaj = čekaj|sačekaj
+w: pridi sem = dođi ovamo
+w: ful = mnogo|jako # razgovorno
+w: itak = naravno # razgovorno
+w: fajn = fino|dobro # razgovorno
+w: nimam pojma = nemam pojma
+s: Kaj se dogaja? = Šta se dešava?
+s: Kaj se je zgodilo? = Šta se desilo?|Šta se dogodilo?
+s: Pusti me pri miru! = Pusti me na miru!|Ostavi me na miru!
+s: Prav imaš. = U pravu si.
+s: Brez skrbi. = Bez brige.
+s: Saj ni res! = Ma nije valjda!|Ne može biti!
+s: To je ful dobro. = To je baš dobro.|To je jako dobro.
+s: Pojdiva! = Idemo!
+s: Zmenjeno. = Dogovoreno.
+
+## L novice | Vesti
+w: poročila = vesti # lažni prijatelj — "poroka" je venčanje
+w: novica = vest
+w: vlada = vlada
+w: volitve = izbori
+w: minister = ministar
+w: stavka = štrajk
+w: nesreča = nesreća
+w: policija = policija
+w: cena = cena
+w: zakon = zakon
+w: poroka = venčanje
+s: Vlada je sprejela nov zakon. = Vlada je usvojila novi zakon.
+s: Cene so se zvišale. = Cene su porasle.
+s: Volitve bodo jeseni. = Izbori će biti na jesen.|Izbori će biti u jesen.
+s: Delavci so napovedali stavko. = Radnici su najavili štrajk.
+s: V prometni nesreči ni bilo poškodovanih. = U saobraćajnoj nesreći nije bilo povređenih.
+
+## L lazni | Lažni prijatelji
+tip: Reči koje zvuče poznato, a znače nešto drugo. Najopasnije: jutri (sutra), stol (stolica), miza (sto), lekarna (apoteka), čas (vreme), vreme (prognoza), kmalu (uskoro), beseda (reč), dišati (mirisati), ne morem (ne mogu), hitro (brzo).
+w: dišati = mirisati # disati je "dihati"
+w: dihati = disati
+w: zrak = vazduh
+w: hitro = brzo # ne "hitno"
+w: nujno = hitno
+w: neumen = glup
+w: zabava = žurka|zabava
+w: pozor = pažnja
+w: pozabiti = zaboraviti
+w: iskati = tražiti
+s: Kava lepo diši. = Kafa lepo miriše.
+s: Svež zrak. = Svež vazduh.
+s: Pridi hitro, nujno je! = Dođi brzo, hitno je!
+s: Pozabil sem ključe. = Zaboravio sam ključeve.
+s: Stol je pri mizi. = Stolica je pored stola.
+s: Iščem lekarno. = Tražim apoteku.
+g: Kava lepo ___. = Kafa lepo miriše. :: diši :: diha, vonja, dihne
+
+## S porocila | Večernje vesti
+l: Napovedovalka: Dober večer, to so večerna poročila. = Dobro veče, ovo su večernje vesti.
+l: Napovedovalka: Vlada je danes sprejela nov zakon o pokojninah. = Vlada je danas usvojila novi zakon o penzijama.
+l: Napovedovalka: Pokojnine se bodo prihodnje leto zvišale za štiri odstotke. = Penzije će sledeće godine porasti za četiri odsto.
+q: O čemu je novi zakon? :: O penzijama :: O porezima, O školama
+q: Za koliko će porasti penzije? :: Četiri odsto :: Deset odsto, Dva odsto
+l: Napovedovalka: Na avtocesti med Ljubljano in Mariborom je bila prometna nesreča. = Na autoputu između Ljubljane i Maribora dogodila se saobraćajna nesreća.
+l: Napovedovalka: Po podatkih policije ni bilo poškodovanih. = Prema podacima policije, nije bilo povređenih.
+q: Da li je bilo povređenih? :: Nije bilo :: Jedna osoba, Mnogo
+l: Napovedovalka: In še vreme: jutri bo oblačno, popoldne bo deževalo. = I još vreme: sutra će biti oblačno, popodne će padati kiša.
+l: Napovedovalka: Temperature bodo med deset in petnajst stopinj. = Temperature će biti između deset i petnaest stepeni.
+q: Kakvo će vreme biti sutra? :: Oblačno, popodne kiša :: Sunčano i toplo, Sneg
