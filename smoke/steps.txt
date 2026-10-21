@@ -1,0 +1,216 @@
+shot path
+tapped Pozdravi 160 325
+shot sheet
+tapped POČNI +15 XP 160 582
+shot lesson-ex1
+tapped DALJE 160 596
+shot lesson-ex2
+tapped PROVERI 160 596
+shot lesson-fb2
+tapped DALJE 160 594
+shot lesson-ex3
+tapped DALJE 160 596
+shot lesson-ex4
+tapped PROVERI 160 596
+shot lesson-fb4
+tapped DALJE 160 594
+shot lesson-ex5
+tapped DALJE 160 596
+shot lesson-ex6
+tapped PROVERI 160 596
+shot lesson-fb6
+tapped DALJE 160 594
+shot lesson-ex7
+tapped DALJE 160 596
+shot lesson-ex8
+tapped PROVERI 160 596
+shot lesson-fb8
+tapped DALJE 160 594
+shot lesson-ex9
+tapped DALJE 160 596
+shot lesson-ex10
+tapped PROVERI 160 596
+shot lesson-fb10
+tapped DALJE 160 594
+shot lesson-ex11
+tapped DALJE 160 596
+shot lesson-ex12
+tapped PROVERI 160 596
+shot lesson-fb12
+tapped DALJE 160 594
+shot lesson-ex13
+tapped PROVERI 160 596
+shot lesson-fb13
+tapped DALJE 160 594
+shot lesson-ex14
+tapped DALJE 160 596
+shot lesson-ex15
+tapped PROVERI 160 596
+shot lesson-fb15
+tapped DALJE 160 594
+shot lesson-ex16
+tapped DALJE 160 596
+shot lesson-ex17
+tapped PROVERI 160 596
+shot lesson-fb17
+tapped DALJE 160 594
+shot lesson-ex18
+tapped DALJE 160 596
+shot lesson-ex19
+tapped PROVERI 160 596
+shot lesson-fb19
+tapped DALJE 160 594
+shot lesson-ex20
+tapped DALJE 160 596
+shot lesson-ex21
+tapped PROVERI 160 596
+shot lesson-fb21
+tapped DALJE 160 594
+shot lesson-ex22
+tapped DALJE 160 596
+shot lesson-ex23
+tapped PROVERI 160 596
+shot lesson-fb23
+tapped DALJE 160 594
+shot lesson-ex24
+tapped PROVERI 160 596
+shot lesson-fb24
+tapped DALJE 160 594
+shot lesson-ex25
+tapped PROVERI 160 596
+shot lesson-fb25
+tapped DALJE 160 594
+shot lesson-ex26
+tapped PROVERI 160 596
+shot lesson-fb26
+tapped DALJE 160 594
+shot lesson-ex27
+tapped PROVERI 160 596
+shot lesson-fb27
+tapped DALJE 160 594
+shot lesson-ex28
+tapped PROVERI 160 596
+shot lesson-fb28
+tapped DALJE 160 594
+shot lesson-ex29
+tapped PROVERI 160 596
+shot lesson-fb29
+tapped DALJE 160 594
+shot lesson-ex30
+tapped PROVERI 160 596
+shot lesson-fb30
+tapped DALJE 160 594
+shot lesson-ex31
+tapped PROVERI 160 596
+shot lesson-fb31
+tapped DALJE 160 594
+shot lesson-ex32
+tapped PROVERI 160 596
+shot lesson-fb32
+tapped DALJE 160 594
+shot lesson-done
+tapped NASTAVI 160 586
+shot path-after
+tapped Na kafi 88 394
+shot story-sheet
+tapped IPAK POČNI 160 582
+shot story-1
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+shot story-5
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+shot story-9
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+shot story-13
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+tapped DALJE 160 592
+shot story-end
+tapped ZAVRŠI PRIČU 160 592
+shot story-done
+tapped NASTAVI 160 586
+tapped VODIČ 254 148
+shot guide
+shot guide-scroll
+tapped Ponavljanje 118 616
+shot review
+tapped VEŽBAJ SLABE REČI 160 334
+shot review-ex1
+tapped PROVERI 160 596
+shot review-fb1
+tapped DALJE 160 594
+shot review-ex2
+tapped PROVERI 160 596
+shot review-fb2
+tapped DALJE 160 594
+shot review-ex3
+tapped PROVERI 160 596
+shot review-fb3
+tapped DALJE 160 594
+shot review-ex4
+tapped PROVERI 160 596
+shot review-fb4
+tapped DALJE 160 594
+shot review-ex5
+tapped PROVERI 160 596
+shot review-fb5
+tapped DALJE 160 594
+shot review-ex6
+tapped PROVERI 160 596
+shot review-fb6
+tapped DALJE 160 594
+shot review-ex7
+tapped PROVERI 160 596
+shot review-fb7
+tapped DALJE 160 594
+shot review-ex8
+tapped PROVERI 160 596
+shot review-fb8
+tapped DALJE 160 594
+shot review-ex9
+tapped PROVERI 160 596
+shot review-fb9
+tapped DALJE 160 594
+shot review-ex10
+tapped PROVERI 160 596
+shot review-fb10
+tapped DALJE 160 594
+shot review-ex11
+tapped PROVERI 160 596
+shot review-fb11
+tapped DALJE 160 594
+shot review-ex12
+tapped PROVERI 160 596
+shot review-fb12
+tapped DALJE 160 594
+shot review-ex13
+tapped PROVERI 160 596
+shot review-fb13
+tapped DALJE 160 594
+shot review-ex14
+tapped PROVERI 160 596
+shot review-fb14
+tapped DALJE 160 594
+shot review-done
+tapped NASTAVI 160 586
+tapped Lažni prijatelji 131 465
+shot false-friends
+tapped Rečnik 201 616
+shot words
+tapped Naučene (11) 179 238
+shot words-learned
+tapped Profil 282 616
+shot profile
+shot profile-scroll
+not found: ⚙️  PODEŠAVANJA
+shot settings
+shot settings-scroll
