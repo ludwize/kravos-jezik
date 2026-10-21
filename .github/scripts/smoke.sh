@@ -113,7 +113,7 @@ tap_text "Naučene (0)|Naučene (10)|Naučene (11)" ; sleep 1; shot words-learne
 
 tap_text "Profil"; sleep 2; shot profile
 scroll; shot profile-scroll
-tap_text "⚙️  PODEŠAVANJA"; sleep 2; shot settings
+tap_text "PODEŠAVANJA"; sleep 2; shot settings
 scroll; shot settings-scroll
 
 PID=$(adb shell pidof $PKG | tr -d '\r')

@@ -90,9 +90,7 @@ fun SessionScreen(lessonId: String?) {
         val acc = if (graded == 0) 100 else ((graded - mistakes).coerceAtLeast(0) * 100 / graded)
         val xp = if (lesson != null) 10 + (if (!app.progress.isDone(lesson.id)) 5 else 0) + (if (mistakes == 0) 5 else 0)
         else 5 + results.size / 2
-        val seen = results.toMutableMap()
-        lesson?.words?.forEach { if (!seen.containsKey(it.key)) seen[it.key] = true }
-        app.progress.finish(lesson?.id, xp, seen)
+        app.progress.finish(lesson?.id, xp, results)
         WordWidget.refreshAsync(ctx)
         summary = Summary(xp, acc, (System.currentTimeMillis() - start) / 1000, app.progress.streak(), app.progress.todayXp(), app.progress.dailyGoal, lesson != null)
     }

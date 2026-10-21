@@ -93,7 +93,7 @@ w: zakaj = zašto
 w: kako = kako
 w: koliko = koliko
 w: ali = da li|ili # upitna rečca; u sredini rečenice "ili"
-w: ampak = ali|međutim # naše "ali"
+w: ampak = ali|međutim # lažni prijatelj — slovenačko "ali" znači "da li/ili"
 s: Kaj je to? = Šta je to?
 s: Kdo je to? = Ko je to?
 s: Kje si? = Gde si?
@@ -166,8 +166,8 @@ g: Število 15: ___. = Broj 15: petnaest. :: petnajst :: petdeset, petindvajset,
 
 ## L cas | Koliko je sati?
 tip: "Koliko je ura?" = Koliko je sati? "Ob treh" = u tri. "Pol štirih" = pola četiri (3:30), isto kao kod nas.
-w: ura = sat # i časovnik i 60 minuta
-w: čas = vreme # vreme koje teče — "nimam časa"
+w: ura = sat # lažni prijatelj — i časovnik i 60 minuta, a "čas" je vreme
+w: čas = vreme # lažni prijatelj — vreme koje teče: "nimam časa"
 w: minuta = minut|minuta
 w: zdaj = sada
 w: zjutraj = ujutru
@@ -192,7 +192,7 @@ w: četrtek = četvrtak
 w: petek = petak
 w: sobota = subota
 w: nedelja = nedelja # samo dan, ne sedmica
-w: teden = nedelja|sedmica # sedam dana
+w: teden = nedelja|sedmica # lažni prijatelj — "nedelja" je samo dan
 w: mesec = mesec
 w: leto = godina|leto # i godina i godišnje doba
 s: Danes je petek. = Danas je petak.
@@ -706,7 +706,7 @@ g: Oni ___ prišli pozneje. = Oni će doći kasnije. :: bodo :: so, bo, bomo
 
 ## L vreme | Vremenska prognoza
 tip: "Vreme" = vremenske prilike. Vreme koje teče je "čas". "Napoved" je prognoza.
-w: vreme = vremenske prilike|vreme # weather — ne "čas"
+w: vreme = vremenske prilike|vreme # lažni prijatelj — prognoza, a ne "čas"
 w: sonce = sunce
 w: dež = kiša
 w: sneg = sneg
@@ -782,10 +782,10 @@ s: V prometni nesreči ni bilo poškodovanih. = U saobraćajnoj nesreći nije bi
 
 ## L lazni | Lažni prijatelji
 tip: Reči koje zvuče poznato, a znače nešto drugo. Najopasnije: jutri (sutra), stol (stolica), miza (sto), lekarna (apoteka), čas (vreme), vreme (prognoza), kmalu (uskoro), beseda (reč), dišati (mirisati), ne morem (ne mogu), hitro (brzo).
-w: dišati = mirisati # disati je "dihati"
+w: dišati = mirisati # lažni prijatelj — disati je "dihati"
 w: dihati = disati
 w: zrak = vazduh
-w: hitro = brzo # ne "hitno"
+w: hitro = brzo # lažni prijatelj — hitno je "nujno"
 w: nujno = hitno
 w: neumen = glup
 w: zabava = žurka|zabava

@@ -69,7 +69,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             val theme by app.progress.theme.collectAsState()
             JezikTheme(theme) {
-                CompositionLocalProvider(LocalNav provides nav, LocalApp provides app) { Root(app) }
+                CompositionLocalProvider(LocalNav provides nav, LocalApp provides app) {
+                    androidx.compose.material3.Surface(color = MaterialTheme.colorScheme.background) { Root(app) }
+                }
             }
         }
     }

@@ -104,7 +104,7 @@ class SessionBuilder(
         val out = mutableListOf<Ex>()
 
         // 1) words: intro (first time) followed by a quick check, alternating direction
-        ws.take(6).forEachIndexed { i, w ->
+        ws.take(7).forEachIndexed { i, w ->
             if (first && !progress.isLearned(w.key)) out += Ex.Intro(id(), w)
             out += when {
                 i % 3 == 2 && canListen -> listenPick(w, pool)
@@ -112,16 +112,14 @@ class SessionBuilder(
                 else -> pickSrSl(w, pool)
             }
         }
-        if (ws.size >= 4) out += match(ws.take(5))
-        ws.drop(6).forEach { w ->
-            if (first && !progress.isLearned(w.key)) out += Ex.Intro(id(), w)
-            out += if (canListen && rng.nextBoolean()) listenPick(w, pool) else pickSrSl(w, pool)
-        }
+        // pairs like "dobro jutro = dobro jutro" make a pointless match
+        val matchable = ws.take(7).filter { it.sl.lowercase() != it.sr.first().lowercase() }
+        if (matchable.size >= 4) out += match(matchable.take(5))
 
         // 2) sentences and grammar, mixed
         val mix = mutableListOf<Ex>()
         val others = course.sentencesUpTo(l.order + 2)
-        ss.forEachIndexed { i, s ->
+        ss.take(5).forEachIndexed { i, s ->
             mix += when (i % 5) {
                 0 -> arrangeSl(s, others)
                 1 -> arrangeSr(s, others)
@@ -130,9 +128,9 @@ class SessionBuilder(
                 else -> if (canSpeak) Ex.Speak(id(), s.text, s.meaning) else arrangeSl(s, others)
             }
         }
-        l.grammar.forEach { mix += fill(it) }
-        ws.shuffled(rng).take(2).forEach { mix += typeWord(it) }
-        if (canListen) ws.shuffled(rng).firstOrNull()?.let { mix += dictation(it) }
+        l.grammar.shuffled(rng).take(2).forEach { mix += fill(it) }
+        ws.take(7).shuffled(rng).take(1).forEach { mix += typeWord(it) }
+        if (canListen) ws.take(7).shuffled(rng).firstOrNull()?.let { mix += dictation(it) }
         out += mix.shuffled(rng)
         return out
     }

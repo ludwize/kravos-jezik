@@ -148,7 +148,7 @@ private fun ToolRow(icon: String, title: String, sub: String, onClick: () -> Uni
 @Composable
 fun FalseFriendsScreen(pad: PaddingValues, onBack: () -> Unit) {
     val app = LocalApp.current
-    val ff = remember { app.course.words.filter { it.note.contains("lažni", ignoreCase = true) || it.note.contains("\"") } }
+    val ff = remember { app.course.words.filter { it.note.contains("lažni", ignoreCase = true) } }
     LazyColumn(Modifier.fillMaxSize().statusBarsPadding(), contentPadding = PaddingValues(bottom = pad.calculateBottomPadding() + 24.dp)) {
         item { TopTitle("Lažni prijatelji", onBack) }
         item {
@@ -302,7 +302,7 @@ fun ProfileScreen(pad: PaddingValues, release: Release?, onCheckUpdate: () -> Un
         }
         item {
             Chunky(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 10.dp), color = MaterialTheme.colorScheme.background, shadow = pal.border, border = pal.border, onClick = { nav.go(Route.Settings) }) {
-                Text("⚙️  PODEŠAVANJA", fontWeight = FontWeight.ExtraBold, letterSpacing = 0.8.sp, color = K.Blue, modifier = Modifier.padding(vertical = 14.dp))
+                Text("PODEŠAVANJA", fontWeight = FontWeight.ExtraBold, letterSpacing = 0.8.sp, color = K.Blue, modifier = Modifier.padding(vertical = 14.dp))
             }
         }
     }
