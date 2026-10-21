@@ -2,6 +2,6 @@ Starting: Intent { cmp=net.kravos.jezik/.ui.MainActivity (has extras) }
 Status: ok
 LaunchState: COLD
 Activity: net.kravos.jezik/.ui.MainActivity
-TotalTime: 3278
-WaitTime: 3282
+TotalTime: 2489
+WaitTime: 2555
 Complete
