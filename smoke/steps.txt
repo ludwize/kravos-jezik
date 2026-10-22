@@ -79,7 +79,91 @@ tapped DALJE 160 594
 shot lesson-done
 tapped NASTAVI 160 586
 shot path-after
-tapped Na kafi 88 390
+tapped Slovenački 100 49
+shot lang-sheet
+tapped Španski 123 535
+shot es-path
+tapped Pozdravi 160 325
+shot es-sheet
+tapped POČNI +15 XP 160 582
+shot es-ex1
+tapped DALJE 160 596
+shot es-ex2
+tapped PROVERI 160 596
+shot es-fb2
+tapped DALJE 160 594
+shot es-ex3
+tapped DALJE 160 596
+shot es-ex4
+tapped PROVERI 160 596
+shot es-fb4
+tapped DALJE 160 594
+shot es-ex5
+tapped DALJE 160 596
+shot es-ex6
+tapped PROVERI 160 596
+shot es-fb6
+tapped DALJE 160 594
+shot es-ex7
+tapped DALJE 160 596
+shot es-ex8
+tapped PROVERI 160 596
+shot es-fb8
+tapped DALJE 160 594
+shot es-ex9
+tapped DALJE 160 596
+shot es-ex10
+tapped PROVERI 160 596
+shot es-fb10
+tapped DALJE 160 594
+shot es-ex11
+tapped DALJE 160 596
+shot es-ex12
+tapped PROVERI 160 596
+shot es-fb12
+tapped DALJE 160 594
+shot es-ex13
+tapped DALJE 160 596
+shot es-ex14
+tapped PROVERI 160 596
+shot es-fb14
+tapped DALJE 160 594
+shot es-ex15
+tapped PROVERI 160 596
+shot es-fb15
+tapped DALJE 160 594
+shot es-ex16
+tapped PROVERI 160 596
+shot es-fb16
+tapped DALJE 160 594
+shot es-ex17
+tapped PROVERI 160 596
+shot es-fb17
+tapped DALJE 160 594
+shot es-ex18
+tapped PROVERI 160 596
+shot es-fb18
+tapped DALJE 160 594
+shot es-ex19
+tapped PROVERI 160 596
+shot es-fb19
+tapped DALJE 160 594
+shot es-ex20
+tapped PROVERI 160 596
+shot es-fb20
+tapped DALJE 160 594
+shot es-ex21
+tapped PROVERI 160 596
+shot es-fb21
+tapped DALJE 160 594
+shot es-ex22
+tapped PROVERI 160 596
+shot es-fb22
+tapped DALJE 160 594
+shot es-done
+tapped NASTAVI 160 586
+shot es-path-after
+tapped U kafiću 88 390
 shot story-sheet
 tapped IPAK POČNI 160 582
 shot story-1
@@ -98,9 +182,6 @@ tapped DALJE 160 592
 tapped DALJE 160 592
 tapped DALJE 160 592
 shot story-13
-tapped DALJE 160 592
-tapped DALJE 160 592
-tapped DALJE 160 592
 tapped DALJE 160 592
 shot story-end
 tapped ZAVRŠI PRIČU 160 592
@@ -163,6 +244,8 @@ shot words-learned
 tapped Profil 282 616
 shot profile
 shot profile-scroll
-not found: PODEŠAVANJA
+tapped PODEŠAVANJA 160 496
 shot settings
 shot settings-scroll
+tapped Slovenački 149 178
+shot sl-back
