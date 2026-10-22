@@ -196,7 +196,7 @@ private fun evaluate(ex: Ex, pending: String?): Verdict = when (ex) {
     }
     is Ex.Type -> when (Text.check(pending.orEmpty(), ex.accepted)) {
         Text.Match.EXACT -> Verdict(true, praise.random(), meaning = if (ex.listen) ex.meaning else null)
-        Text.Match.ACCENT -> Verdict(true, "Tačno, ali pazi na kvačice:", ex.accepted.first(), ex.meaning)
+        Text.Match.ACCENT -> Verdict(true, "Tačno, ali pazi na znakove:", ex.accepted.first(), ex.meaning)
         Text.Match.TYPO -> Verdict(true, "Mala greška u kucanju:", ex.accepted.first(), ex.meaning)
         Text.Match.WRONG -> Verdict(false, "Tačan odgovor:", ex.accepted.first(), ex.meaning)
     }

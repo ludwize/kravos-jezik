@@ -183,7 +183,7 @@ fun WordsScreen(pad: PaddingValues) {
         item {
             OutlinedTextField(
                 q, { q = it }, Modifier.fillMaxWidth().padding(horizontal = 16.dp),
-                placeholder = { Text("Traži na slovenačkom ili srpskom", color = pal.dim) },
+                placeholder = { Text("Traži na ${app.course.loc} ili srpskom", color = pal.dim) },
                 leadingIcon = { Icon(Icons.Filled.Search, null) }, singleLine = true, shape = RoundedCornerShape(16.dp),
                 colors = OutlinedTextFieldDefaults.colors(unfocusedBorderColor = pal.border, focusedBorderColor = K.Blue),
             )
@@ -349,6 +349,12 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onBack: () -> Unit, on
         item { TopTitle("Podešavanja", onBack) }
         item {
             Card {
+                Text("Jezik koji učiš", fontWeight = FontWeight.Bold, fontSize = 16.sp, modifier = Modifier.padding(bottom = 10.dp))
+                LanguageList {}
+            }
+        }
+        item {
+            Card {
                 Text("Vežbe", fontWeight = FontWeight.Bold, fontSize = 16.sp)
                 Toggle("Zvuk", "Izgovor reči i rečenica", p.soundOn) { p.soundOn = it }
                 Toggle("Vežbe slušanja", "Prepoznaj i napiši ono što čuješ", p.listenOn) { p.listenOn = it }
@@ -363,7 +369,7 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onBack: () -> Unit, on
                 Text(
                     buildString {
                         append(if (clips > 0) "Ugrađeni snimci: $clips" else "Nema ugrađenih snimaka")
-                        append("\nSistemski glas za slovenački: ")
+                        append("\nSistemski glas za ${app.course.acc}: ")
                         append(when (ttsLang) { null -> "proveravam…"; true -> "da"; false -> "ne" })
                     },
                     color = pal.dim, fontSize = 14.sp, modifier = Modifier.padding(top = 6.dp),
@@ -424,11 +430,11 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onBack: () -> Unit, on
             Card {
                 Text("O kursu", fontWeight = FontWeight.Bold, fontSize = 16.sp)
                 Text(
-                    "Kurs slovenačkog za govornike srpskog: ${app.course.units.size} jedinica, ${app.course.lessons.size} lekcija i priča, ${app.course.words.size} reči. " +
-                        "Snimci su generisani Piper glasom (sl_SI · artur). Samo za ličnu upotrebu.",
+                    "${app.course.flag} ${app.course.name} za govornike srpskog: ${app.course.units.size} jedinica, ${app.course.lessons.size} lekcija i priča, ${app.course.words.size} reči. " +
+                        "Snimci: ${app.course.voice}. Samo za ličnu upotrebu.",
                     color = pal.dim, fontSize = 13.sp, modifier = Modifier.padding(top = 6.dp),
                 )
-                TextButton(onClick = { confirmReset = true }) { Text("Resetuj napredak", color = K.Red) }
+                TextButton(onClick = { confirmReset = true }) { Text("Resetuj napredak (${app.course.name.lowercase()})", color = K.Red) }
             }
         }
     }
@@ -436,8 +442,8 @@ fun SettingsScreen(pad: PaddingValues, release: Release?, onBack: () -> Unit, on
     if (confirmReset) {
         AlertDialog(
             onDismissRequest = { confirmReset = false },
-            title = { Text("Resetuj ceo napredak?") },
-            text = { Text("Brišu se završene lekcije, XP, niz dana i ponavljanje reči. Ovo ne može da se vrati.") },
+            title = { Text("Resetuj napredak za ${app.course.name.lowercase()}?") },
+            text = { Text("Brišu se završene lekcije, XP, niz dana i ponavljanje reči za ovaj jezik. Ovo ne može da se vrati.") },
             confirmButton = { TextButton(onClick = { confirmReset = false }) { Text("Odustani") } },
             dismissButton = { TextButton(onClick = { p.reset(); confirmReset = false }) { Text("Resetuj", color = K.Red) } },
         )

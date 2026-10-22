@@ -1,0 +1,881 @@
+# Kravos Jezik — kurs španskog (Španija) za govornike srpskog.
+# Format je isti kao u sl.txt.
+
+= UNIT | Prvi koraci | Pozdravi, predstavljanje, ser i pitanja
+guide: Španski je romanski jezik, ali je za govornike srpskog iznenađujuće lak za izgovor: piše se gotovo kako se čita, a samoglasnici su isti kao naši — a, e, i, o, u.
+guide: Izgovor u Španiji: "j" i "g" ispred e/i čitaju se kao naše grleno "h" (jamón → "hamon"), "h" se ne čita (hola → "ola"), "ñ" je "nj" (España → "Espanja"), "ll" je otprilike "j" (calle → "kaje"), a "c" ispred e/i i "z" izgovaraju se kao englesko "th" (gracias → "grathijas").
+guide: Pitanja i uzvici počinju obrnutim znakom: ¿Cómo estás? ¡Hola! Akcenat (á, é, í, ó, ú) pokazuje naglašeni slog.
+guide: "Tú" je neformalno (ti), "usted" formalno (Vi). U Španiji se ljudi brzo prebacuju na "tú".
+
+## L saludos | Pozdravi
+tip: "Hola" je zdravo u svakoj prilici. "Buenos días" se kaže do ručka (oko 14h), posle toga "buenas tardes", a uveče "buenas noches" — i kao pozdrav i kao laku noć.
+w: hola = zdravo|ćao
+w: buenos días = dobro jutro|dobar dan # do ručka
+w: buenas tardes = dobar dan|dobro popodne # posle ručka
+w: buenas noches = dobro veče|laku noć
+w: adiós = doviđenja|zbogom
+w: hasta luego = vidimo se|ćao # najčešći pozdrav na rastanku
+w: gracias = hvala
+w: por favor = molim
+w: de nada = nema na čemu
+w: sí = da
+w: no = ne
+s: Hola, ¿qué tal? = Zdravo, kako si?|Ćao, kako ide?|Zdravo, šta ima?
+s: Buenos días, ¿cómo está usted? = Dobar dan, kako ste?|Dobro jutro, kako ste?
+s: Bien, gracias. = Dobro, hvala.
+s: Muchas gracias. = Hvala puno.|Hvala lepo.|Mnogo hvala.
+s: De nada. = Nema na čemu.
+s: Hasta mañana. = Vidimo se sutra.|Do sutra.
+
+## L presentarse | Predstavljanje
+tip: "Me llamo Goran" = Zovem se Goran. Može i "Soy Goran" = Ja sam Goran. Zamenica "yo" se obično izostavlja, jer se iz glagola vidi ko govori.
+w: yo = ja
+w: tú = ti
+w: él = on
+w: ella = ona
+w: usted = Vi # formalno
+w: nombre = ime
+w: me llamo = zovem se
+w: de dónde = odakle
+w: Serbia = Srbija
+w: España = Španija
+w: encantado = drago mi je # žena kaže "encantada"
+s: Me llamo Goran. = Zovem se Goran.
+s: ¿Cómo te llamas? = Kako se zoveš?
+s: ¿Cómo se llama usted? = Kako se zovete?
+s: ¿De dónde eres? = Odakle si?
+s: Soy de Serbia. = Ja sam iz Srbije.|Iz Srbije sam.
+s: Vivo en Belgrado. = Živim u Beogradu.
+s: Encantado. = Drago mi je.
+
+## L ser | Glagol ser
+tip: "Biti" na španskom ima dva glagola. "Ser" je za ono što nešto jeste (ime, poreklo, zanimanje): soy, eres, es, somos, sois, son. "Estar" (sledeća jedinica) je za stanje i mesto. Odrično se samo doda "no": No soy de aquí.
+w: soy = ja sam
+w: eres = ti si
+w: es = on je|ona je|je
+w: somos = mi smo
+w: sois = vi ste # "vosotros" — koristi se samo u Španiji
+w: son = oni su
+w: aquí = ovde
+w: amigo = prijatelj
+w: profesor = profesor|nastavnik
+w: ingeniero = inženjer
+s: No soy de aquí. = Nisam odavde.
+s: Ella es mi amiga. = Ona je moja prijateljica.
+s: Somos de Belgrado. = Mi smo iz Beograda.|Iz Beograda smo.
+s: ¿Eres español? = Da li si Španac?|Jesi li Španac?
+s: Soy ingeniero. = Ja sam inženjer.|Inženjer sam.
+s: ¿Sois amigos? = Da li ste prijatelji?|Jeste li prijatelji?
+g: Yo ___ de Serbia. = Ja sam iz Srbije. :: soy :: eres, es, son
+g: Ellos ___ de Madrid. = Oni su iz Madrida. :: son :: somos, es, sois
+g: Tú ___ mi amigo. = Ti si moj prijatelj. :: eres :: soy, es, sois
+g: Nosotros ___ ingenieros. = Mi smo inženjeri. :: somos :: son, sois, soy
+
+## L preguntas | Pitanja
+tip: Upitne reči uvek imaju akcenat: qué (šta), quién (ko), dónde (gde), cuándo (kada), por qué (zašto), cómo (kako), cuánto (koliko). Odgovor "zato što" je "porque" — spojeno i bez akcenta.
+w: qué = šta
+w: quién = ko
+w: dónde = gde
+w: cuándo = kada
+w: por qué = zašto
+w: porque = zato što|jer
+w: cómo = kako
+w: cuánto = koliko
+w: hablar = govoriti|pričati
+w: inglés = engleski
+s: ¿Qué es esto? = Šta je ovo?
+s: ¿Quién es? = Ko je to?|Ko je?
+s: ¿Dónde estás? = Gde si?
+s: ¿Cuándo vienes? = Kada dolaziš?
+s: ¿Por qué no? = Zašto ne?
+s: ¿Hablas inglés? = Da li govoriš engleski?|Govoriš li engleski?
+s: ¿Cuánto cuesta? = Koliko košta?
+
+## S cafe | U kafiću
+l: Lucía: ¡Hola! ¿Eres Goran? = Zdravo! Jesi li ti Goran?
+l: Goran: Sí, soy yo. ¿Y tú eres Lucía? = Da, to sam ja. A ti si Lucía?
+l: Lucía: Sí. ¡Encantada! = Da. Drago mi je!
+l: Goran: Encantado. = Drago mi je.
+l: Lucía: ¿De dónde eres? = Odakle si?
+l: Goran: Soy de Serbia, de Belgrado. = Iz Srbije sam, iz Beograda.
+q: Odakle je Goran? :: Iz Beograda :: Iz Madrida, Iz Valensije
+l: Camarero: Buenas tardes. ¿Qué os pongo? = Dobar dan. Šta da vam donesem?
+l: Lucía: Un café con leche, por favor. = Jednu kafu sa mlekom, molim.
+l: Goran: Para mí, un café solo. = Za mene, jedan espreso.
+q: Kakvu kafu pije Goran? :: Espreso, bez mleka :: Sa mlekom, Sa šećerom
+l: Lucía: ¿Por qué estás en Madrid? = Zašto si u Madridu?
+l: Goran: Tengo una reunión. ¡Y Madrid es muy bonito! = Imam sastanak. A i Madrid je veoma lep!
+q: Zašto je Goran u Madridu? :: Ima sastanak :: Živi tamo, Na odmoru je
+
+= UNIT | Brojevi i vreme | Brojevi, sat, dani i glagol estar
+guide: Brojevi 16–29 pišu se spojeno: dieciséis (deset-i-šest), veintiuno, veintidós… Od 31 odvojeno: treinta y uno, cuarenta y cinco.
+guide: "Hora" je sat (koliko je sati), a "tiempo" je i vreme koje teče i vremenska prognoza.
+guide: Estar: estoy, estás, está, estamos, estáis, están. Koristi se za mesto (Estoy en casa) i stanje (Estoy cansado). Ser je ono što nešto jeste, estar kako je i gde je.
+guide: Dani se pišu malim slovom: lunes, martes… "El lunes" znači u ponedeljak, a "los lunes" — ponedeljkom.
+
+## L numeros | Brojevi 1–10
+w: uno = jedan
+w: dos = dva
+w: tres = tri
+w: cuatro = četiri
+w: cinco = pet
+w: seis = šest
+w: siete = sedam
+w: ocho = osam
+w: nueve = devet
+w: diez = deset
+s: Tengo dos hermanos. = Imam dva brata.
+s: Son cinco euros. = To je pet evra.|Pet evra.
+s: Tres cafés, por favor. = Tri kafe, molim.
+s: Siete días. = Sedam dana.
+g: Uno, dos, ___, cuatro. = Jedan, dva, tri, četiri. :: tres :: seis, ocho, diez
+g: Cinco y cinco son ___. = Pet i pet je deset. :: diez :: nueve, ocho, siete
+
+## L numeros2 | Brojevi do hiljadu
+tip: 11–15: once, doce, trece, catorce, quince. Desetice: veinte, treinta, cuarenta, cincuenta… Sto je "cien", a 101 "ciento uno". Hiljada je "mil".
+w: once = jedanaest
+w: doce = dvanaest
+w: quince = petnaest
+w: veinte = dvadeset
+w: veintiuno = dvadeset jedan
+w: treinta = trideset
+w: cincuenta = pedeset
+w: cien = sto
+w: mil = hiljada
+w: cuesta = košta
+s: Veinticinco euros. = Dvadeset pet evra.
+s: Tengo cincuenta años. = Imam pedeset godina.
+s: El piso cuesta cien mil euros. = Stan košta sto hiljada evra.
+s: Treinta y cinco. = Trideset pet.
+g: Número 21: ___. = Broj 21: dvadeset jedan. :: veintiuno :: veinteuno, once, doce
+g: Número 15: ___. = Broj 15: petnaest. :: quince :: cincuenta, cinco, catorce
+
+## L hora | Koliko je sati?
+tip: "¿Qué hora es?" = Koliko je sati? "Es la una" (1h), ali "son las dos, son las tres…". "A las tres" = u tri. "Y media" = i po: son las tres y media (3:30).
+w: hora = sat|čas # i "koliko je sati" i 60 minuta
+w: tiempo = vreme # i vreme koje teče i prognoza
+w: ahora = sada
+w: por la mañana = ujutru|pre podne
+w: por la tarde = popodne
+w: por la noche = uveče|noću
+w: hoy = danas
+w: mañana = sutra # "la mañana" je jutro
+w: ayer = juče
+w: tarde = kasno # "la tarde" je popodne
+s: ¿Qué hora es? = Koliko je sati?
+s: Son las diez. = Deset je sati.|Sad je deset sati.
+s: No tengo tiempo. = Nemam vremena.
+s: Mañana por la mañana. = Sutra ujutru.
+s: Hoy por la noche. = Danas uveče.|Večeras.
+g: No tengo ___. = Nemam vremena. :: tiempo :: hora, mañana, tarde
+g: ___ voy a Madrid. = Sutra idem u Madrid. :: Mañana :: Ayer, Ahora, Hora
+
+## L estar | Estar i dani
+tip: "Estoy en casa" = kod kuće sam (mesto), "estoy cansado" = umoran sam (stanje). Ali "soy de Serbia" — poreklo je "ser".
+w: estoy = ja sam # estar — za stanje i mesto
+w: lunes = ponedeljak
+w: martes = utorak
+w: miércoles = sreda
+w: jueves = četvrtak
+w: viernes = petak
+w: sábado = subota
+w: domingo = nedelja
+w: semana = nedelja|sedmica
+w: en casa = kod kuće
+w: cansado = umoran
+s: Hoy es viernes. = Danas je petak.
+s: Estoy cansado. = Umoran sam.|Ja sam umoran.
+s: Estamos en casa. = Kod kuće smo.|Mi smo kod kuće.
+s: El lunes trabajo. = U ponedeljak radim.
+s: Los domingos estoy en casa. = Nedeljom sam kod kuće.
+s: La semana que viene. = Sledeće nedelje.|Sledeće sedmice.|Naredne nedelje.
+g: Hoy ___ cansada. = Danas sam umorna. :: estoy :: soy, es, están
+g: Madrid ___ en España. = Madrid je u Španiji. :: está :: es, son, estoy
+g: Mis padres ___ en casa. = Moji roditelji su kod kuće. :: están :: son, está, estamos
+
+## S quedamos | Dogovor
+l: Carmen: ¡Hola, Goran! ¿Cuándo tienes tiempo? = Zdravo, Gorane! Kada imaš vremena?
+l: Goran: Hoy no tengo tiempo. ¿Mañana? = Danas nemam vremena. Sutra?
+l: Carmen: Mañana es sábado. ¿A qué hora? = Sutra je subota. U koliko sati?
+l: Goran: ¿A las diez de la mañana? = U deset ujutru?
+l: Carmen: No, es muy temprano. ¿A las dos? = Ne, to je prerano. U dva?
+q: Zašto Carmen ne odgovara deset ujutru? :: Prerano je :: Prekasno je, Radi tada
+l: Goran: Vale. ¿Dónde? = Važi. Gde?
+l: Carmen: En la Puerta del Sol. = Na Puerta del Sol.
+l: Goran: Perfecto. ¡Hasta mañana! = Odlično. Vidimo se sutra!
+q: Kada se vide? :: U subotu u dva :: U petak u deset, Danas uveče
+q: Šta znači "Vale"? :: Važi, može :: Hvala, Doviđenja
+
+= UNIT | Hrana i piće | Kafić, tapas i restoran
+guide: Najprirodniji način da nešto naručiš: "Quería un café" (hteo bih kafu) ili "¿Me pone un café?" (doslovno: stavite mi kafu?). "Quiero" (hoću) zvuči previše direktno.
+guide: Imenice imaju rod: el (muški), la (ženski), los/las (množina). Un/una = jedan, neki.
+guide: Ručak (la comida) je u Španiji oko 14–15h, a večera (la cena) često tek posle 21h. "¡Que aproveche!" = Prijatno! "¡Salud!" = Živeli!
+guide: Lažni prijatelji za stolom: "la carta" je jelovnik (i pismo), "la cena" je večera, "el vaso" je čaša, a "la taza" šolja.
+
+## L bebidas | Piće
+w: café = kafa
+w: té = čaj
+w: agua = voda
+w: cerveza = pivo
+w: vino = vino
+w: leche = mleko
+w: zumo = sok # u Latinskoj Americi "jugo"
+w: vaso = čaša # lažni prijatelj — vaza je "jarrón"
+w: taza = šolja|šoljica
+w: azúcar = šećer
+s: Quería un café. = Hteo bih kafu.|Želeo bih kafu.|Htela bih kafu.
+s: ¿Me pone una cerveza? = Može jedno pivo?|Dajte mi jedno pivo.
+s: Un vaso de agua, por favor. = Čašu vode, molim.
+s: Un café con leche y sin azúcar. = Kafa sa mlekom i bez šećera.|Jedna kafa sa mlekom i bez šećera.
+s: ¡Salud! = Živeli!|U zdravlje!
+s: Una copa de vino tinto. = Čaša crnog vina.|Jedna čaša crnog vina.
+g: ___ café, por favor. = Jednu kafu, molim. :: Un :: Una, Unos, La
+g: ___ cerveza, por favor. = Jedno pivo, molim. :: Una :: Un, Unos, El
+
+## L comida | Hrana
+tip: "Me gusta" = sviđa mi se, volim (doslovno: meni se sviđa). Ako je stvar u množini: "Me gustan las patatas".
+w: pan = hleb
+w: carne = meso
+w: pescado = riba # živa riba je "pez"
+w: sopa = supa
+w: ensalada = salata
+w: patatas = krompir # u Latinskoj Americi "papas"
+w: queso = sir
+w: huevo = jaje
+w: pollo = piletina|pile
+w: verdura = povrće
+w: fruta = voće
+w: jamón = pršut|šunka
+s: No como carne. = Ne jedem meso.
+s: Me gusta el pescado. = Volim ribu.|Sviđa mi se riba.
+s: La sopa está caliente. = Supa je vruća.
+s: ¿Tiene verdura? = Imate li povrće?|Da li imate povrće?
+s: Pan y queso, por favor. = Hleb i sir, molim.
+s: El jamón es muy bueno. = Pršut je jako dobar.|Pršut je veoma dobar.|Šunka je veoma dobra.
+g: Me ___ el jamón. = Volim pršut. :: gusta :: gustan, gusto, gustas
+
+## L restaurante | U restoranu
+w: camarero = konobar
+w: carta = jelovnik # lažni prijatelj — i pismo; karta je "billete" ili "entrada"
+w: la cuenta = račun
+w: desayuno = doručak
+w: comida = ručak|hrana
+w: cena = večera # lažni prijatelj — cena je "precio"
+w: mesa = sto
+w: silla = stolica
+w: que aproveche = prijatno
+w: pagar = platiti
+w: tarjeta = kartica
+s: Una mesa para dos, por favor. = Sto za dvoje, molim.
+s: La carta, por favor. = Jelovnik, molim.
+s: La cuenta, por favor. = Račun, molim.
+s: ¿Puedo pagar con tarjeta? = Mogu li da platim karticom?|Da li mogu da platim karticom?
+s: ¡Que aproveche! = Prijatno!
+s: ¿Qué me recomienda? = Šta mi preporučujete?|Šta preporučujete?
+g: ¿Puedo ___ con tarjeta? = Mogu li da platim karticom? :: pagar :: pago, pagas, paga
+
+## S tapas | Na tapasima
+l: Camarero: Buenas noches. ¿Mesa para dos? = Dobro veče. Sto za dvoje?
+l: Lucía: Sí, por favor. En la terraza, si es posible. = Da, molim. Na terasi, ako je moguće.
+l: Camarero: Claro. Aquí tienen la carta. = Naravno. Izvolite jelovnik.
+l: Goran: ¿Qué nos recomienda? = Šta nam preporučujete?
+l: Camarero: Hoy tenemos pulpo a la gallega y croquetas caseras. = Danas imamo hobotnicu na galicijski način i domaće krokete.
+q: Šta restoran danas preporučuje? :: Hobotnicu i krokete :: Piletinu i salatu, Samo paelju
+l: Goran: Quería las croquetas y una ración de jamón. = Hteo bih krokete i porciju pršuta.
+l: Lucía: Yo, el pulpo y una ensalada. = Ja hobotnicu i salatu.
+l: Camarero: ¿Y para beber? = A za piće?
+l: Goran: Una copa de vino blanco y agua. = Čašu belog vina i vodu.
+q: Šta Lucía naručuje? :: Hobotnicu i salatu :: Krokete i pršut, Belo vino
+l: Camarero: ¡Que aproveche! = Prijatno!
+l: Goran: La cuenta, por favor. ¿Puedo pagar con tarjeta? = Račun, molim. Mogu li da platim karticom?
+l: Camarero: Sí, claro, sin problema. = Da, naravno, nema problema.
+q: Kako Goran plaća? :: Karticom :: Gotovinom, Ne plaća on
+
+= UNIT | Kupovina | Prodavnica, pijaca, apoteka i odeća
+guide: "¿Cuánto cuesta?" = Koliko košta? (za množinu "¿Cuánto cuestan?"). Skupo je "caro", jeftino "barato".
+guide: Prodavnica je "la tienda", apoteka "la farmacia", a pijaca "el mercado".
+guide: Lažni prijatelj: "la ropa" je odeća, a ne roba (roba je "la mercancía").
+guide: Manje prodavnice u Španiji često rade sa pauzom za siestu (otprilike 14–17h), naročito van velikih gradova.
+
+## L tienda | U prodavnici
+w: tienda = prodavnica
+w: dinero = novac
+w: caro = skupo|skup
+w: barato = jeftino|jeftin
+w: caja = kasa|kutija
+w: bolsa = kesa|torba
+w: abierto = otvoreno
+w: cerrado = zatvoreno
+w: comprar = kupiti|kupovati
+w: todo = sve
+s: Es demasiado caro. = Preskupo je.|To je preskupo.
+s: ¿Tiene una bolsa? = Imate li kesu?
+s: La tienda está cerrada. = Prodavnica je zatvorena.
+s: Los domingos está cerrado. = Nedeljom je zatvoreno.
+s: Eso es todo. = To je sve.
+s: Quería comprar pan. = Hteo bih da kupim hleb.|Želeo bih da kupim hleb.
+
+## L servicios | Radnje i usluge
+w: farmacia = apoteka
+w: médico = lekar
+w: panadería = pekara
+w: banco = banka # i klupa
+w: correos = pošta
+w: mercado = pijaca
+w: efectivo = gotovina
+w: necesito = treba mi|potreban mi je
+w: abre = otvara
+s: ¿Dónde está la farmacia? = Gde je apoteka?
+s: Voy al mercado. = Idem na pijacu.
+s: Pago en efectivo. = Plaćam gotovinom.
+s: ¿A qué hora abre correos? = Kada otvara pošta?|U koliko sati otvara pošta?
+s: Necesito un médico. = Treba mi lekar.|Potreban mi je lekar.
+
+## L ropa | Odeća
+w: ropa = odeća # lažni prijatelj — nije roba
+w: pantalones = pantalone
+w: camisa = košulja
+w: camiseta = majica
+w: zapatos = cipele
+w: abrigo = kaput
+w: talla = veličina # za odeću; za cipele "número"
+w: pequeño = mali
+w: grande = veliki
+w: probar = probati
+s: ¿Tiene esto en una talla más grande? = Imate li ovo u većoj veličini?
+s: Los pantalones son demasiado grandes. = Pantalone su prevelike.
+s: ¿Puedo probármelo? = Mogu li da probam?|Mogu li to da probam?
+s: Estos zapatos son bonitos. = Ove cipele su lepe.
+g: Los pantalones ___ caros. = Pantalone su skupe. :: son :: es, está, somos
+
+## S mercado | Na pijaci
+l: Vendedora: ¡Buenos días! ¿Qué le pongo? = Dobar dan! Šta ćete?
+l: Goran: Buenos días. ¿Cuánto cuestan las naranjas? = Dobar dan. Koliko koštaju pomorandže?
+l: Vendedora: Dos euros el kilo. = Dva evra kilogram.
+l: Goran: Dos kilos, por favor. Y medio kilo de tomates. = Dva kilograma, molim. I pola kilograma paradajza.
+l: Vendedora: ¿Algo más? = Još nešto?
+q: Šta znači "¿Algo más?" :: Još nešto? :: Šta je to?, Koliko košta?
+l: Goran: No, nada más. ¿Cuánto es? = Ne, ništa više. Koliko je ukupno?
+l: Vendedora: Cinco euros. ¿Tiene bolsa? = Pet evra. Imate li kesu?
+l: Goran: Sí, tengo. Aquí tiene diez euros. = Da, imam. Izvolite deset evra.
+l: Vendedora: Gracias, cinco euros de cambio. ¡Que tenga un buen día! = Hvala, pet evra kusur. Prijatan dan!
+q: Koliko koštaju pomorandže? :: Dva evra kilogram :: Pet evra kilogram, Deset evra
+q: Koliko je Goran dobio nazad? :: Pet evra :: Deset evra, Ništa
+
+= UNIT | Grad i prevoz | Pravci, metro, voz i glagol ir
+guide: Pravci: a la izquierda (levo), a la derecha (desno), todo recto (pravo). "Lejos" je daleko, "cerca" blizu.
+guide: Voz je "el tren", stanica "la estación", a karta za prevoz "el billete" (u Latinskoj Americi "boleto").
+guide: Glagol ir (ići) je potpuno nepravilan: voy, vas, va, vamos, vais, van. "Vamos" znači i "idemo" i "ajde!".
+guide: Brzi voz u Španiji je AVE — Madrid i Barselonu deli oko dva i po sata vožnje.
+
+## L direcciones | Gde je…?
+w: izquierda = levo # a la izquierda
+w: derecha = desno # a la derecha
+w: todo recto = pravo
+w: cerca = blizu
+w: lejos = daleko
+w: calle = ulica
+w: plaza = trg
+w: centro = centar
+w: allí = tamo
+w: perdone = izvinite
+s: Perdone, ¿dónde está el centro? = Izvinite, gde je centar?
+s: Siga todo recto y luego a la izquierda. = Idite pravo, pa onda levo.|Idite pravo i onda levo.
+s: ¿Está lejos? = Da li je daleko?|Je li daleko?
+s: No está lejos, cinco minutos. = Nije daleko, pet minuta.
+s: El hotel está a la derecha. = Hotel je desno.|Hotel je sa desne strane.
+s: No lo sé, no soy de aquí. = Ne znam, nisam odavde.
+
+## L transporte | Prevoz
+w: autobús = autobus
+w: tren = voz
+w: estación = stanica
+w: metro = metro
+w: aeropuerto = aerodrom
+w: avión = avion
+w: coche = auto|kola # u Latinskoj Americi "carro"
+w: billete = karta|novčanica # lažni prijatelj — i karta za prevoz i novčanica
+w: retraso = kašnjenje
+w: andén = peron
+s: ¿A qué hora sale el tren para Sevilla? = Kada polazi voz za Sevilju?|U koliko sati polazi voz za Sevilju?
+s: Un billete para Toledo, por favor. = Jednu kartu za Toledo, molim.
+s: El autobús tiene retraso. = Autobus kasni.
+s: ¿Dónde está la estación de metro? = Gde je stanica metroa?
+s: Voy en coche. = Idem kolima.|Idem autom.
+
+## L ir | Glagol ir
+tip: ir: voy, vas, va, vamos, vais, van. "Voy a casa" = Idem kući. "Ir a + glagol" je buduće vreme: Voy a comer = Ješću, idem da jedem. "Venir" = doći: vengo, vienes, viene…
+w: voy = idem
+w: vas = ideš
+w: va = ide
+w: vamos = idemo # i "ajde!"
+w: van = idu
+w: venir = doći
+w: vengo = dolazim
+w: a casa = kući # "en casa" je kod kuće
+w: cine = bioskop
+s: Voy a casa. = Idem kući.
+s: ¿Adónde vamos? = Gde idemo?|Kuda idemo?
+s: ¿Vamos a tomar un café? = Hoćemo na kafu?|Idemo na kafu?|Hoćemo li na kafu?
+s: Vengo mañana. = Dolazim sutra.|Doći ću sutra.
+s: ¡Vamos! = Idemo!|Ajde!
+s: Voy a comer. = Idem da jedem.|Ješću.
+g: Nosotros ___ al cine. = Mi idemo u bioskop. :: vamos :: van, vais, voy
+g: Ellos ___ a casa. = Oni idu kući. :: van :: va, vamos, vais
+g: Voy ___. = Idem kući. :: a casa :: en casa, casa, de casa
+
+## S estacion | Na železničkoj stanici
+l: Goran: Buenos días. Un billete para Barcelona, por favor. = Dobar dan. Jednu kartu za Barselonu, molim.
+l: Empleada: ¿Solo ida o ida y vuelta? = Samo u jednom pravcu ili povratnu?
+l: Goran: Ida y vuelta, por favor. ¿A qué hora sale el próximo tren? = Povratnu, molim. U koliko sati polazi sledeći voz?
+l: Empleada: A las catorce y veinte, del andén tres. = U četrnaest i dvadeset, sa perona tri.
+q: Kakvu kartu Goran kupuje? :: Povratnu :: U jednom pravcu, Mesečnu
+l: Goran: ¿Cuánto dura el viaje? = Koliko traje putovanje?
+l: Empleada: Unas dos horas y media. = Otprilike dva i po sata.
+l: Goran: ¿Y cuánto cuesta? = A koliko košta?
+l: Empleada: Noventa euros. = Devedeset evra.
+q: Koliko traje putovanje? :: Oko dva i po sata :: Pola sata, Pet sati
+l: Empleada: Atención, hoy el tren tiene un poco de retraso. = Pažnja, danas voz malo kasni.
+l: Goran: ¡Qué mala suerte! = Baš peh!
+q: Šta je problem danas? :: Voz kasni :: Nema karata, Voz je pun
+
+= UNIT | Putovanje | Aerodrom, hotel i hitni slučajevi
+guide: Aerodrom je "el aeropuerto", let "el vuelo", prtljag "el equipaje", a izlaz za ukrcavanje "la puerta de embarque".
+guide: U hotelu: "Tengo una reserva" = imam rezervaciju. "¿El desayuno está incluido?" = Da li je doručak uključen?
+guide: Hitni broj u Španiji je 112 za sve hitne slučajeve. "¡Socorro!" = Upomoć!
+guide: Lažni prijatelj: "constipado" znači prehlađen — nema veze sa zatvorom.
+
+## L aeropuerto | Na aerodromu
+tip: Na tablama: "salidas" su polasci, "llegadas" dolasci, a "puerta" je izlaz za ukrcavanje (gate). "El vuelo tiene retraso" = let kasni.
+w: vuelo = let
+w: equipaje = prtljag
+w: maleta = kofer
+w: pasaporte = pasoš
+w: puerta = vrata|izlaz # na aerodromu: gate
+w: salidas = polasci # i izlazi
+w: llegadas = dolasci
+w: aduana = carina
+w: asiento = sedište
+w: ventanilla = prozor # u avionu, vozu ili šalter
+s: ¿Dónde está la puerta cinco? = Gde je izlaz pet?
+s: El vuelo tiene retraso. = Let kasni.
+s: He perdido mi maleta. = Izgubio sam kofer.|Izgubio sam svoj kofer.
+s: ¿Tiene el pasaporte? = Imate li pasoš?|Da li imate pasoš?
+s: Quería un asiento de ventanilla. = Hteo bih sedište do prozora.|Hteo bih sedište pored prozora.
+g: El vuelo ___ retraso. = Let kasni. :: tiene :: es, está, tengo
+
+## L hotel | U hotelu
+w: reserva = rezervacija
+w: recepción = recepcija
+w: habitación = soba
+w: individual = jednokrevetna # habitación individual
+w: doble = dvokrevetna # habitación doble
+w: noche = noć
+w: incluido = uključen
+w: toalla = peškir
+w: ascensor = lift
+w: aire acondicionado = klima
+s: Tengo una reserva a nombre de Kravos. = Imam rezervaciju na ime Kravos.
+s: ¿El desayuno está incluido? = Da li je doručak uključen?|Je li doručak uključen?
+s: ¿Para cuántas noches? = Za koliko noći?
+s: Para tres noches. = Za tri noći.
+s: El aire acondicionado no funciona. = Klima ne radi.
+s: ¿Dónde está el ascensor? = Gde je lift?
+g: El desayuno está ___. = Doručak je uključen. :: incluido :: incluida, incluidos, incluir
+
+## L emergencias | Hitni slučajevi
+tip: "¡Socorro!" = Upomoć! "¡Llame a una ambulancia!" = Zovite hitnu pomoć! Hitni broj je 112. "Me duele…" = Boli me…
+w: socorro = upomoć
+w: ambulancia = hitna pomoć|kola hitne pomoći
+w: hospital = bolnica
+w: medicamento = lek
+w: me duele = boli me
+w: cabeza = glava
+w: estómago = stomak
+w: muela = zub # kutnjak; zub uopšte je "diente"
+w: cartera = novčanik
+w: robado = ukraden
+w: constipado = prehlađen # lažni prijatelj
+s: ¡Llame a una ambulancia! = Zovite hitnu pomoć!
+s: Me duele la cabeza. = Boli me glava.
+s: Necesito un medicamento. = Treba mi lek.|Potreban mi je lek.
+s: Me han robado la cartera. = Ukrali su mi novčanik.
+s: He perdido el pasaporte. = Izgubio sam pasoš.
+s: ¿Dónde está el hospital más cercano? = Gde je najbliža bolnica?
+s: Estoy constipado. = Prehlađen sam.
+g: Me duele el ___. = Boli me stomak. :: estómago :: cabeza, muela, estómagos
+
+## S hotel | Prijava u hotel
+l: Recepcionista: Buenas noches, ¡bienvenido! = Dobro veče, dobro došli!
+l: Goran: Buenas noches. Tengo una reserva a nombre de Kravos. = Dobro veče. Imam rezervaciju na ime Kravos.
+l: Recepcionista: Sí, aquí está. ¿Una habitación doble para tres noches? = Da, evo je. Dvokrevetna soba za tri noći?
+l: Goran: Sí, exacto. ¿El desayuno está incluido? = Da, tačno. Da li je doručak uključen?
+l: Recepcionista: Claro, el desayuno es de siete a diez. = Naravno, doručak je od sedam do deset.
+q: Do kada traje doručak? :: Do deset :: Do sedam, Do podne
+l: Recepcionista: Su pasaporte, por favor. = Vaš pasoš, molim.
+l: Goran: Aquí tiene. ¿Tienen también aparcamiento? = Izvolite. Imate li i parking?
+l: Recepcionista: Tenemos garaje, quince euros al día. = Imamo garažu, petnaest evra dnevno.
+q: Koliko košta garaža? :: Petnaest evra dnevno :: Besplatna je, Pet evra dnevno
+l: Recepcionista: Habitación trescientos doce, tercera planta. El ascensor está a la izquierda. = Soba tristo dvanaest, treći sprat. Lift je levo.
+l: Goran: ¡Muchas gracias! = Hvala puno!
+q: Na kom spratu je soba? :: Na trećem :: Na prvom, Na desetom
+q: Koliko noći Goran ostaje? :: Tri :: Jednu, Sedam
+
+= UNIT | Porodica i ljudi | Porodica, ljudi i glagol tener
+guide: "Tener" (imati): tengo, tienes, tiene, tenemos, tenéis, tienen. Godine se "imaju": Tengo cincuenta años.
+guide: "Tener que + glagol" = morati: Tengo que trabajar = Moram da radim.
+guide: Množina muškog roda obuhvata i mešovitu grupu: "los padres" su roditelji, "los hermanos" braća ili brat i sestra, "los hijos" deca.
+guide: Prisvojne reči: mi (moj), tu (tvoj), su (njegov, njen, Vaš), nuestro (naš). U množini: mis, tus, sus.
+
+## L familia | Porodica
+w: familia = porodica
+w: madre = majka
+w: padre = otac
+w: hermano = brat
+w: hermana = sestra
+w: hijo = sin
+w: hija = ćerka
+w: mujer = žena|supruga
+w: marido = muž
+w: niño = dete
+w: padres = roditelji
+w: hijos = deca # i sinovi
+s: Tengo un hijo y una hija. = Imam sina i ćerku.
+s: Mi hermana vive en Canadá. = Moja sestra živi u Kanadi.
+s: No tengo hijos. = Nemam dece.
+s: Mis padres viven en Belgrado. = Moji roditelji žive u Beogradu.
+s: ¿Tienes hermanos? = Imaš li braću ili sestre?|Da li imaš braću i sestre?|Imaš li braće?
+g: ___ hermana vive en Madrid. = Moja sestra živi u Madridu. :: Mi :: Mis, Tu, Yo
+
+## L gente | Ljudi
+w: persona = osoba
+w: gente = ljudi # gramatički jednina: la gente es…
+w: hombre = muškarac|čovek
+w: chico = momak|dečko
+w: chica = devojka
+w: vecino = komšija|sused
+w: compañero = kolega|drug # compañero de trabajo
+w: simpático = simpatičan|ljubazan
+w: muy = veoma|jako|vrlo
+w: alto = visok
+s: Es mi amigo. = To je moj prijatelj.|On je moj prijatelj.
+s: Mi vecino es muy simpático. = Moj komšija je veoma simpatičan.|Moj komšija je jako ljubazan.|Moj komšija je veoma ljubazan.
+s: Ella es mi compañera de trabajo. = Ona je moja koleginica.|Ona je moja koleginica s posla.
+s: ¿Cuántas personas? = Koliko osoba?|Koliko ljudi?
+s: Ese chico es alto. = Taj momak je visok.
+
+## L tener | Glagol tener
+tip: tener: tengo, tienes, tiene, tenemos, tenéis, tienen. Odrično: no tengo. "¿Cuántos años tienes?" = Koliko imaš godina? "Tengo que…" = Moram…
+w: tengo = imam
+w: tienes = imaš
+w: tiene = ima
+w: tenemos = imamo
+w: tienen = imaju
+w: tengo que = moram
+w: años = godine|godina
+w: viejo = star
+w: joven = mlad
+s: ¿Cuántos años tienes? = Koliko imaš godina?
+s: Tiene ochenta años. = Ima osamdeset godina.
+s: Tienen dos hijos. = Imaju dvoje dece.|Imaju dva sina.
+s: Tengo que trabajar. = Moram da radim.|Moram raditi.
+s: No tiene tiempo. = Nema vremena.
+s: Tenemos un piso en Madrid. = Imamo stan u Madridu.
+g: Ellos ___ una casa. = Oni imaju kuću. :: tienen :: tenemos, tiene, tenéis
+g: Yo no ___ coche. = Ja nemam auto. :: tengo :: tienes, tiene, tenemos
+
+## S vecino | Novi komšija
+l: Vecino: ¡Buenos días! ¿Usted es el nuevo vecino? = Dobar dan! Vi ste novi komšija?
+l: Goran: Sí, me mudé hace una semana. = Da, preselio sam se pre nedelju dana.
+l: Vecino: ¡Bienvenido! Soy Javier, vivo en el segundo. = Dobro došli! Ja sam Havijer, živim na drugom spratu.
+l: Goran: Encantado. Yo soy Goran. = Drago mi je. Ja sam Goran.
+q: Gde živi Javier? :: Na drugom spratu :: U Beogradu, U prizemlju
+l: Javier: ¿Tiene familia? = Imate li porodicu?
+l: Goran: Tengo una hermana, pero vive en Belgrado. = Imam sestru, ali ona živi u Beogradu.
+l: Javier: Mi mujer, Elena, hace una tortilla buenísima. ¡Venga a cenar! = Moja žena Elena pravi odličnu tortilju. Dođite na večeru!
+l: Goran: ¡Con mucho gusto! Muchas gracias. = Sa zadovoljstvom! Hvala puno.
+q: Na šta Javier poziva Gorana? :: Na večeru :: Na kafu, Na pivo
+q: Kada se Goran preselio? :: Pre nedelju dana :: Juče, Pre godinu dana
+
+= UNIT | Svakodnevica | Dan, posao, sviđanje i povratni glagoli
+guide: Sadašnje vreme ima tri obrasca prema infinitivu: -ar (hablo, hablas, habla…), -er (como, comes, come…) i -ir (vivo, vives, vive…).
+guide: Povratni glagoli imaju "se" ispred glagola, kao kod nas: me levanto (dižem se), te levantas, se levanta.
+guide: "Me gusta" = sviđa mi se, volim: Me gusta el café. Za množinu: Me gustan los libros.
+guide: Najkorisnije rečenice: "No entiendo" (ne razumem), "Más despacio, por favor" (sporije, molim) i "¿Puede repetir?" (možete li da ponovite?).
+guide: NIE je identifikacioni broj za strance u Španiji — treba ti za skoro sve: stan, banku, posao.
+
+## L dia | Moj dan
+w: levantarse = ustati # me levanto
+w: me levanto = ustajem
+w: desayunar = doručkovati
+w: ducharse = tuširati se
+w: trabajar = raditi
+w: volver = vratiti se
+w: acostarse = leći # me acuesto
+w: siempre = uvek
+w: nunca = nikad
+w: a veces = ponekad
+s: Me levanto a las siete. = Ustajem u sedam.|Dižem se u sedam.
+s: Siempre desayuno en casa. = Uvek doručkujem kod kuće.
+s: Vuelvo a casa a las seis. = Vraćam se kući u šest.
+s: Nunca me acuesto antes de las doce. = Nikad ne ležem pre ponoći.|Nikad ne ležem pre dvanaest.
+s: A veces trabajo los sábados. = Ponekad radim subotom.
+g: Yo ___ levanto temprano. = Ja ustajem rano. :: me :: se, te, nos
+g: Ella ___ ducha por la mañana. = Ona se tušira ujutru. :: se :: me, te, le
+
+## L trabajo | Posao
+w: trabajo = posao
+w: empresa = firma|preduzeće
+w: oficina = kancelarija
+w: reunión = sastanak
+w: sueldo = plata
+w: vacaciones = odmor|godišnji odmor
+w: jubilación = penzija
+w: jubilado = penzioner
+w: jefe = šef
+s: ¿Dónde trabajas? = Gde radiš?
+s: Trabajo en una empresa grande. = Radim u velikoj firmi.
+s: Tengo una reunión a las nueve. = Imam sastanak u devet.
+s: Mañana estoy de vacaciones. = Sutra sam na odmoru.|Sutra sam na godišnjem odmoru.
+s: Mi jefe es muy simpático. = Moj šef je veoma simpatičan.|Moj šef je jako simpatičan.
+
+## L entender | Razgovor i sviđanje
+w: entender = razumeti
+w: no entiendo = ne razumem
+w: saber = znati # znati činjenicu: sé, sabes, sabe
+w: no sé = ne znam
+w: despacio = polako|sporo
+w: repetir = ponoviti
+w: palabra = reč
+w: español = španski
+w: significa = znači
+w: me gusta = sviđa mi se|volim
+s: No entiendo. = Ne razumem.
+s: Más despacio, por favor. = Sporije, molim.|Polakše, molim.
+s: ¿Puede repetir, por favor? = Možete li da ponovite, molim?|Možete li ponoviti, molim vas?
+s: Hablo un poco de español. = Govorim malo španski.|Malo govorim španski.
+s: ¿Qué significa esta palabra? = Šta znači ova reč?
+s: Me gusta mucho Madrid. = Mnogo mi se sviđa Madrid.|Jako volim Madrid.|Madrid mi se mnogo sviđa.
+g: No ___ español muy bien. = Ne govorim španski baš dobro. :: hablo :: hablas, habla, hablan
+g: Me ___ los libros. = Volim knjige. :: gustan :: gusta, gusto, gustas
+
+## S oficina | Na šalteru
+l: Funcionaria: Buenos días. ¿En qué puedo ayudarle? = Dobar dan. Kako mogu da vam pomognem?
+l: Goran: Buenos días. Quería pedir una cita para el NIE. = Dobar dan. Hteo bih da zakažem termin za NIE.
+l: Funcionaria: ¿Tiene el pasaporte? = Imate li pasoš?
+l: Goran: Sí, aquí tiene. = Da, izvolite.
+l: Funcionaria: También necesito el formulario y una foto. = Treba mi i obrazac i jedna fotografija.
+q: Šta je službenici još potrebno? :: Obrazac i fotografija :: Ugovor o radu, Izvod iz banke
+l: Goran: Perdone, no entiendo. ¿Puede repetir más despacio? = Izvinite, ne razumem. Možete li da ponovite sporije?
+l: Funcionaria: Claro. El formulario y una foto. = Naravno. Obrazac i jedna fotografija.
+l: Goran: Ah, vale, entiendo. Lo tengo todo aquí. = Aha, važi, razumem. Sve imam ovde.
+l: Funcionaria: Perfecto. Tiene cita el martes a las diez. = Odlično. Imate termin u utorak u deset.
+q: Kada je termin? :: U utorak u deset :: Sutra u devet, Za mesec dana
+q: Šta Goran kaže kad ne razume? :: ¿Puede repetir más despacio? :: ¡Salud!, ¡Que aproveche!
+
+= UNIT | Juče i sutra | Prošlo i buduće vreme, vremenska prognoza
+guide: Za ono što se desilo danas, ove nedelje ili ikad u Španiji se koristi "pretérito perfecto": he + particip. He comido = jeo sam (danas). Has visto, ha llegado, hemos ido…
+guide: Za završen događaj u prošlosti (juče, prošle godine) koristi se "indefinido": ayer comí (juče sam jeo), fui (bio sam, išao sam), estuve (bio sam). Najvažniji oblici: fui, fue, estuve, estuvo, comí, hablé.
+guide: Buduće vreme je najlakše preko "ir a": Voy a trabajar = Radiću. Mañana va a llover = Sutra će padati kiša.
+guide: "El tiempo" je i vreme koje teče i vremenska prognoza: ¿Qué tiempo hace? = Kakvo je vreme?
+
+## L pasado | Prošlo vreme
+w: he comido = jeo sam
+w: he visto = video sam|gledao sam
+w: ha llegado = stigao je
+w: hemos ido = išli smo|bili smo
+w: fui = bio sam|išao sam
+w: estuve = bio sam
+w: fue = bio je|bila je|bilo je
+w: dijo = rekao je
+w: el año pasado = prošle godine
+w: todavía = još
+s: Ayer estuve en Madrid. = Juče sam bio u Madridu.
+s: ¿Qué has dicho? = Šta si rekao?
+s: He visto la película. = Gledao sam film.|Video sam film.
+s: El año pasado fuimos a la playa. = Prošle godine smo išli na plažu.|Prošle godine smo bili na plaži.
+s: Todavía no ha llegado. = Još nije stigao.
+g: Hoy ___ comido paella. = Danas sam jeo paelju. :: he :: ha, has, hemos
+g: Ayer ___ en casa. = Juče sam bio kod kuće. :: estuve :: estoy, estuvo, estaré
+
+## L futuro | Buduće vreme
+w: voy a trabajar = radiću
+w: vas a ver = videćeš
+w: va a llover = padaće kiša
+w: vamos a ir = ići ćemo
+w: pronto = uskoro
+w: luego = posle|kasnije
+w: más tarde = kasnije
+w: el año que viene = sledeće godine
+w: plan = plan
+s: Mañana voy a estar en casa. = Sutra ću biti kod kuće.
+s: Pronto vamos a llegar. = Uskoro ćemo stići.
+s: ¿Qué vas a hacer mañana? = Šta ćeš raditi sutra?|Šta ćeš sutra da radiš?
+s: El año que viene voy a vivir en España. = Sledeće godine ću živeti u Španiji.
+s: ¿Va a llover? = Da li će padati kiša?|Hoće li padati kiša?
+g: Mañana ___ a trabajar. = Sutra ću raditi. :: voy :: va, vamos, he
+g: Ellos ___ a llegar más tarde. = Oni će stići kasnije. :: van :: va, vamos, voy
+
+## L clima | Vremenska prognoza
+tip: "¿Qué tiempo hace?" = Kakvo je vreme? "Hace calor / frío / sol" = toplo je / hladno je / sunčano je. "Llueve" = pada kiša.
+w: sol = sunce
+w: lluvia = kiša
+w: llueve = pada kiša
+w: nieve = sneg
+w: viento = vetar
+w: nublado = oblačno
+w: hace calor = toplo je|vruće je
+w: hace frío = hladno je
+w: grados = stepeni
+w: fuera = napolju
+s: ¿Qué tiempo hace? = Kakvo je vreme?
+s: Hoy hace sol y calor. = Danas je sunčano i toplo.|Danas je sunčano i vruće.
+s: Mañana va a llover. = Sutra će padati kiša.
+s: Fuera hace frío. = Napolju je hladno.
+s: Veinte grados. = Dvadeset stepeni.
+
+## S finde | Vikend
+l: Lucía: ¿Qué hiciste el fin de semana? = Šta si radio za vikend?
+l: Goran: El sábado estuve en Toledo. = U subotu sam bio u Toledu.
+l: Lucía: ¡Qué bien! ¿Qué tiempo hizo? = Baš lepo! Kakvo je bilo vreme?
+l: Goran: Por la mañana estuvo nublado, pero por la tarde hizo sol. = Ujutru je bilo oblačno, ali popodne je bilo sunčano.
+q: Gde je Goran bio u subotu? :: U Toledu :: U Barseloni, Kod kuće
+l: Goran: Y comí mazapán, ¡claro! = I jeo sam marcipan, naravno!
+l: Lucía: ¿Y qué vas a hacer el próximo fin de semana? = A šta ćeš raditi sledećeg vikenda?
+l: Goran: Todavía no lo sé. A lo mejor voy a Segovia. = Još ne znam. Možda idem u Segoviju.
+l: Lucía: ¡Si hace buen tiempo, voy contigo! = Ako bude lepo vreme, idem s tobom!
+q: Kakvo je bilo vreme popodne? :: Sunčano :: Kišovito, Oblačno
+q: Šta Goran planira sledećeg vikenda? :: Možda Segoviju :: Opet Toledo, Ostaje kod kuće
+
+= UNIT | Serije i filmovi | Razgovorni španski i scene iz serija
+guide: U španskim serijama stalno ćeš čuti: "vale" (važi), "tío/tía" (brate, druže), "guay" (super), "venga" (ajde), "¿qué pasa?" (šta ima, šta se dešava), "flipar" (biti oduševljen ili zapanjen).
+guide: Psovke su deo svakodnevnog govora u Španiji — prepoznaćeš ih brzo, ali nisu deo ovog kursa.
+guide: Savet: gledaj serije snimljene u Španiji (ne latinoameričku sinhronizaciju) sa španskim titlovima — uho se najbrže navikne na brz govor.
+
+## L frases | Fraze iz filmova
+w: claro = naravno|jasno
+w: quizás = možda
+w: de verdad = stvarno|zaista
+w: cuidado = pazi|oprezno
+w: espera = čekaj|sačekaj
+w: ven aquí = dođi ovamo
+w: vale = važi|može|ok # najčešća reč u Španiji
+w: venga = ajde|hajde
+w: ni idea = nemam pojma
+w: ojalá = daj bože|kamo sreće # od arapskog "ako Bog da"
+s: ¿Qué pasa? = Šta se dešava?|Šta ima?
+s: ¿Qué ha pasado? = Šta se desilo?|Šta se dogodilo?
+s: ¡Déjame en paz! = Pusti me na miru!|Ostavi me na miru!
+s: Tienes razón. = U pravu si.
+s: No te preocupes. = Ne brini.|Bez brige.
+s: ¡No me digas! = Ma nemoj!|Ma nije valjda!|Ne može biti!
+s: Vale, de acuerdo. = Važi, dogovoreno.|Dobro, dogovoreno.
+s: ¡Venga, vamos! = Ajde, idemo!|Hajde, idemo!
+
+## L coloquial | Kako stvarno pričaju
+tip: Ovo je govorni jezik Španije — u Latinskoj Americi ćeš čuti druge reči (npr. "chévere" umesto "guay").
+w: tío = brate|druže # i ujak ili stric; za žensko "tía"
+w: guay = super|kul
+w: mola = super je|kul je # "¡Mola!"
+w: currar = raditi # razgovorno
+w: curro = posao # razgovorno
+w: flipar = biti oduševljen|biti zapanjen
+w: pasta = pare|novac # razgovorno; inače testenina
+w: majo = fin|drag # "Es muy maja" = Ona je jako fina
+w: vaya = ma vidi|baš # "¡Vaya!" — iznenađenje
+w: me da igual = svejedno mi je
+s: ¿Qué pasa, tío? = Šta ima, brate?|Šta ima, druže?
+s: ¡Qué guay! = Baš super!|Super!
+s: Me da igual. = Svejedno mi je.
+s: Mañana tengo que currar. = Sutra moram da radim.|Sutra moram na posao.
+s: Estoy flipando. = Ne mogu da verujem.|Oduševljen sam.
+s: No tengo pasta. = Nemam para.|Nemam novca.
+s: Tu hermana es muy maja. = Tvoja sestra je jako fina.|Tvoja sestra je veoma fina.
+g: ¡Qué ___! = Baš super! :: guay :: guays, vale, tío
+
+## S serie | Scena iz serije
+l: Marta: ¿Qué te pasa? Estás muy callado. = Šta ti je? Baš si ćutljiv.
+l: Dani: Nada. Me da igual todo. = Ništa. Sve mi je svejedno.
+l: Marta: Venga, tío, veo que algo no va bien. = Ajde, brate, vidim da nešto nije u redu.
+l: Dani: Mi jefe me ha despedido. = Šef me je otpustio.
+q: Šta se desilo Daniju? :: Otpušten je :: Bolestan je, Dobio je povišicu
+l: Marta: ¿De verdad? ¿Por qué? = Stvarno? Zašto?
+l: Dani: Pues porque he llegado tarde otra vez. = Pa zato što sam opet zakasnio.
+l: Marta: No te preocupes. Vas a encontrar otro curro. = Ne brini. Naći ćeš drugi posao.
+q: Zašto je Dani otpušten? :: Opet je zakasnio :: Svađao se sa šefom, Ukrao je novac
+l: Dani: Gracias, eres muy maja. = Hvala, baš si fina.
+l: Marta: Ya lo sé. Venga, vamos a tomar una caña. = Znam. Ajde, idemo na pivo.
+q: Šta Marta predlaže? :: Da idu na pivo :: Da traže posao, Da gledaju film
+
+= UNIT | Vesti | Jezik vesti i lažni prijatelji
+guide: Jezik vesti je formalan i ponavlja iste obrasce: "el Gobierno ha aprobado" (vlada je usvojila), "según la policía" (prema policiji), "el tiempo para mañana" (prognoza za sutra).
+guide: Glavne vesti na televiziji su "el telediario", a javni servis je RTVE.
+guide: Lažni prijatelji vrebaju i ovde: "éxito" je uspeh (izlaz je "salida"), a "suceso" je događaj — često iz crne hronike.
+
+## L noticias | Vesti
+w: noticias = vesti
+w: noticia = vest
+w: gobierno = vlada
+w: elecciones = izbori
+w: ministro = ministar
+w: huelga = štrajk
+w: accidente = nesreća|udes
+w: policía = policija
+w: precio = cena # lažni prijatelj — "cena" je večera
+w: ley = zakon
+s: El Gobierno ha aprobado una nueva ley. = Vlada je usvojila novi zakon.
+s: Los precios han subido. = Cene su porasle.
+s: Las elecciones serán en otoño. = Izbori će biti na jesen.|Izbori će biti u jesen.
+s: Los trabajadores han convocado una huelga. = Radnici su najavili štrajk.|Radnici su sazvali štrajk.
+s: No hubo heridos en el accidente. = U nesreći nije bilo povređenih.
+
+## L frasesnoticias | Fraze sa vesti
+w: según = prema
+w: ha anunciado = najavio je|saopštio je
+w: subida = povećanje|poskupljenje
+w: bajada = smanjenje|pojeftinjenje
+w: por ciento = odsto|procenat
+w: país = zemlja|država
+w: ayuntamiento = opština|gradska uprava
+w: alcalde = gradonačelnik
+w: debido a = zbog
+w: suceso = događaj # lažni prijatelj — uspeh je "éxito"
+s: El Gobierno ha anunciado una bajada de impuestos. = Vlada je najavila smanjenje poreza.
+s: Los precios han subido un tres por ciento. = Cene su porasle za tri odsto.|Cene su porasle za tri procenta.
+s: El alcalde ha dicho que la calle estará cerrada. = Gradonačelnik je rekao da će ulica biti zatvorena.
+s: Debido a la nieve, han cerrado la carretera. = Zbog snega su zatvorili put.
+s: El ayuntamiento va a construir una nueva guardería. = Opština će izgraditi novi vrtić.|Grad će izgraditi novi vrtić.
+g: ___ la policía, no hubo heridos. = Prema policiji, nije bilo povređenih. :: Según :: Debido, Porque, Para
+
+## L falsos | Lažni prijatelji
+tip: Reči koje zvuče poznato, a znače nešto drugo: ropa (odeća), carta (jelovnik, pismo), cena (večera), vaso (čaša), éxito (uspeh), constipado (prehlađen), embarazada (trudna), billete (karta, novčanica), rato (trenutak), largo (dugačak).
+w: éxito = uspeh # lažni prijatelj — izlaz je "salida"
+w: salida = izlaz
+w: embarazada = trudna # lažni prijatelj — liči na englesko "embarrassed"
+w: rato = trenutak|kratko vreme # lažni prijatelj — rat je "guerra"
+w: largo = dugačak|dug # lažni prijatelj — ne znači "lagano"
+w: guerra = rat
+w: discusión = svađa|rasprava # lažni prijatelj — često baš svađa
+w: pastel = kolač|torta
+w: olvidar = zaboraviti
+w: buscar = tražiti
+s: Ha sido un gran éxito. = Bio je to veliki uspeh.|To je bio veliki uspeh.
+s: ¿Dónde está la salida? = Gde je izlaz?
+s: Mi mujer está embarazada. = Moja žena je trudna.
+s: Espera un rato. = Sačekaj malo.|Sačekaj trenutak.
+s: He olvidado las llaves. = Zaboravio sam ključeve.
+s: Busco una farmacia. = Tražim apoteku.
+g: El concierto fue un gran ___. = Koncert je bio veliki uspeh. :: éxito :: salida, suceso, rato
+
+## S telediario | Večernje vesti
+l: Presentadora: Buenas noches, bienvenidos al telediario. = Dobro veče, dobro došli u večernje vesti.
+l: Presentadora: El Gobierno ha aprobado hoy una nueva ley de pensiones. = Vlada je danas usvojila novi zakon o penzijama.
+l: Presentadora: Las pensiones van a subir un cuatro por ciento el año que viene. = Penzije će sledeće godine porasti za četiri odsto.
+q: O čemu je novi zakon? :: O penzijama :: O porezima, O školama
+q: Za koliko će porasti penzije? :: Četiri odsto :: Deset odsto, Dva odsto
+l: Presentadora: En la autovía entre Madrid y Valencia ha habido un accidente. = Na auto-putu između Madrida i Valensije dogodila se nesreća.
+l: Presentadora: Según la policía, no hubo heridos. = Prema policiji, nije bilo povređenih.
+q: Da li je bilo povređenih? :: Nije bilo :: Jedna osoba, Mnogo
+l: Presentadora: Y ahora, el tiempo: mañana estará nublado y por la tarde va a llover. = A sada vreme: sutra će biti oblačno, a popodne će padati kiša.
+l: Presentadora: Las temperaturas estarán entre diez y quince grados. = Temperature će biti između deset i petnaest stepeni.
+q: Kakvo će vreme biti sutra? :: Oblačno, popodne kiša :: Sunčano i toplo, Sneg

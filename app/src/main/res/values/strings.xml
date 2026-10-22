@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">Kravos Jezik</string>
     <string name="widget_name">Kravos Jezik – reč dana</string>
-    <string name="widget_desc">Jedna slovenačka reč dnevno</string>
+    <string name="widget_desc">Jedna reč dnevno iz jezika koji učiš</string>
 </resources>

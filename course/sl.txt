@@ -439,6 +439,87 @@ l: Uslužbenka: Pozor, danes ima vlak malo zamude. = Pažnja, danas voz malo kas
 l: Goran: Kakšna smola! = Baš peh!
 q: Šta je problem danas? :: Voz kasni :: Nema karata, Voz je pun
 
+= UNIT | Putovanje | Aerodrom, hotel i hitni slučajevi
+guide: Aerodrom je "letališče", let je "let" (ali pazi: "pet let" znači pet godina!), prtljag je "prtljaga", a ukrcavanje "vkrcanje".
+guide: U hotelu: "Imam rezervacijo" = imam rezervaciju. "Ali je zajtrk vključen?" = Da li je doručak uključen?
+guide: Hitni broj u Sloveniji je 112 (hitna pomoć i vatrogasci), a policija je 113. "Na pomoč!" = Upomoć!
+
+## L letalisce | Na aerodromu
+tip: "Odhodi" su polasci, "prihodi" dolasci. "Izhod" je izlaz — i na aerodromu (gate). "Let ima zamudo" = let kasni.
+w: vozni red = red vožnje
+w: let = let # lažni prijatelj — "pet let" znači pet godina
+w: prtljaga = prtljag
+w: kovček = kofer
+w: potni list = pasoš
+w: vkrcanje = ukrcavanje
+w: izhod = izlaz
+w: odhodi = polasci
+w: prihodi = dolasci
+w: carina = carina
+w: sedež = sedište
+s: Kje je izhod pet? = Gde je izlaz pet?
+s: Let ima zamudo. = Let kasni.
+s: Moj kovček se je izgubil. = Moj kofer se izgubio.|Izgubio mi se kofer.
+s: Imate potni list? = Imate li pasoš?|Da li imate pasoš?
+s: Rad bi sedež pri oknu. = Hteo bih sedište pored prozora.|Voleo bih sedište do prozora.|Hteo bih sedište do prozora.
+g: Let ___ zamudo. = Let kasni. :: ima :: je, imam, so
+
+## L hotel | U hotelu
+w: hotel = hotel
+w: rezervacija = rezervacija
+w: recepcija = recepcija
+w: enoposteljna soba = jednokrevetna soba
+w: dvoposteljna soba = dvokrevetna soba
+w: noč = noć
+w: vključen = uključen
+w: brisača = peškir
+w: dvigalo = lift
+w: klimatska naprava = klima
+s: Imam rezervacijo na ime Kravos. = Imam rezervaciju na ime Kravos.
+s: Ali je zajtrk vključen? = Da li je doručak uključen?|Je li doručak uključen?
+s: Za koliko noči? = Za koliko noći?
+s: Za tri noči. = Za tri noći.
+s: Klimatska naprava ne dela. = Klima ne radi.
+s: Kje je dvigalo? = Gde je lift?
+g: Zajtrk ___ vključen. = Doručak je uključen. :: je :: so, sem, sta
+
+## L nujno | Hitni slučajevi
+tip: "Na pomoč!" = Upomoć! "Pokličite rešilca!" = Zovite hitnu pomoć! Hitni broj je 112, policija 113. "Boli me…" = Boli me… isto kao kod nas.
+w: na pomoč = upomoć
+w: rešilec = hitna pomoć|kola hitne pomoći
+w: bolnišnica = bolnica
+w: zdravilo = lek
+w: boli me = boli me
+w: glava = glava
+w: trebuh = stomak
+w: zob = zub
+w: denarnica = novčanik
+w: ukraden = ukraden
+w: izgubil = izgubio
+s: Pokličite rešilca! = Zovite hitnu pomoć!
+s: Boli me glava. = Boli me glava.
+s: Potrebujem zdravilo. = Treba mi lek.|Potreban mi je lek.
+s: Ukradli so mi denarnico. = Ukrali su mi novčanik.
+s: Izgubil sem potni list. = Izgubio sam pasoš.
+s: Kje je najbližja bolnišnica? = Gde je najbliža bolnica?
+g: Boli me ___. = Boli me stomak. :: trebuh :: trebuha, glava, zob
+
+## S hotel | Prijava u hotel
+l: Receptor: Dober večer, dobrodošli! = Dobro veče, dobro došli!
+l: Goran: Dober večer. Imam rezervacijo na ime Kravos. = Dobro veče. Imam rezervaciju na ime Kravos.
+l: Receptor: Da, tukaj je. Dvoposteljna soba za tri noči? = Da, evo je. Dvokrevetna soba za tri noći?
+l: Goran: Ja, točno. Ali je zajtrk vključen? = Da, tačno. Da li je doručak uključen?
+l: Receptor: Seveda, zajtrk je od sedmih do desetih. = Naravno, doručak je od sedam do deset.
+q: Do kada traje doručak? :: Do deset :: Do sedam, Do podne
+l: Receptor: Vaš potni list, prosim. = Vaš pasoš, molim.
+l: Goran: Izvolite. Ali imate tudi parkirišče? = Izvolite. Imate li i parking?
+l: Receptor: Imamo garažo, deset evrov na dan. = Imamo garažu, deset evra dnevno.
+q: Koliko košta garaža? :: Deset evra dnevno :: Besplatna je, Pet evra dnevno
+l: Receptor: Soba tristo dvanajst, tretje nadstropje. Dvigalo je na levi. = Soba tristo dvanaest, treći sprat. Lift je levo.
+l: Goran: Hvala lepa! = Hvala lepo!
+q: Na kom spratu je soba? :: Na trećem :: Na prvom, Na desetom
+q: Koliko noći Goran ostaje? :: Tri :: Jednu, Sedam
+
 = UNIT | Porodica i ljudi | Porodica, komšije i glagol imeti
 guide: "Imam" / "nimam": posle "nimam" ide genitiv, kao kod nas: Nimam brata.
 guide: "Žena" je supruga, a žensko lice je "ženska". "Mož" je muž, a muškarac je "moški". Dete je "otrok", deca "otroci".
@@ -736,10 +817,10 @@ l: Maja: Če bo lepo vreme, grem s tabo! = Ako bude lepo vreme, idem s tobom!
 q: Kakvo je bilo vreme popodne? :: Sunčano :: Kišovito, Oblačno
 q: Šta Goran planira sledećeg vikenda? :: Možda Piran :: Opet Bled, Ostaje kod kuće
 
-= UNIT | Filmovi i vesti | Razgovorni jezik, vesti i lažni prijatelji
+= UNIT | Serije i filmovi | Razgovorni jezik i scene iz serija
 guide: U filmovima i na ulici čućeš razgovorni slovenački: "ful" (mnogo, jako), "itak" (naravno), "fajn" (fino), "lej" (gledaj), "a" na početku pitanja ("A greš?" = Ideš li?).
-guide: Jezik vesti je formalan i ponavlja iste obrasce: "vlada je sprejela" (vlada je usvojila), "po podatkih policije" (prema podacima policije), "napoved vremena" (vremenska prognoza).
-guide: "Poročila" su vesti, a "poroka" je venčanje!
+guide: U govoru se mnogo reči skraćuje: "kva" umesto "kaj", "men" umesto "meni", "mam" umesto "imam", "pejt" umesto "pojdi".
+guide: Savet: gledaj slovenačke serije i emisije sa slovenačkim titlovima — RTV Slovenija ih ima na svojoj platformi RTV 365.
 
 ## L film | Fraze iz filmova
 w: seveda = naravno
@@ -762,6 +843,47 @@ s: To je ful dobro. = To je baš dobro.|To je jako dobro.
 s: Pojdiva! = Idemo!
 s: Zmenjeno. = Dogovoreno.
 
+## L pogovorno | Kako stvarno pričaju
+tip: Ovo je govorni jezik — na vestima i u pisanju ga nećeš sresti, ali u serijama i na ulici stalno.
+w: kva = šta # razgovorno za "kaj"
+w: dej no = ma daj
+w: a res = stvarno|zaista # kao pitanje: "A res?" = Stvarno?
+w: kul = kul
+w: men je vseeno = svejedno mi je
+w: sori = izvini # razgovorno
+w: glih = baš|upravo # razgovorno
+w: mam = imam # razgovorno
+w: pejt = idi|ajde # razgovorno za "pojdi"
+w: ni panike = nema panike
+w: a ne = zar ne
+s: Kva delaš? = Šta radiš?
+s: Dej no, ne bodi tak! = Ma daj, ne budi takav!
+s: Men je vseeno. = Svejedno mi je.
+s: Sori, nisem vedel. = Izvini, nisam znao.
+s: Glih sem prišel. = Baš sam stigao.|Upravo sam stigao.|Upravo sam došao.
+s: Lepo je, a ne? = Lepo je, zar ne?
+s: Ni panike! = Nema panike!
+g: ___ delaš? = Šta radiš? :: Kva :: Kdo, Kje, Kam
+
+## S serija | Scena iz serije
+l: Nina: Kva je narobe? Zakaj si tak tiho? = Šta nije u redu? Zašto si tako tih?
+l: Luka: Nič. Men je vseeno. = Ništa. Svejedno mi je.
+l: Nina: Dej no, vidim, da nekaj ni v redu. = Ma daj, vidim da nešto nije u redu.
+l: Luka: Šef me je odpustil. = Šef me je otpustio.
+q: Šta se desilo Luki? :: Otpušten je :: Bolestan je, Dobio je platu
+l: Nina: A res? Zakaj? = Stvarno? Zašto?
+l: Luka: Glih zato, ker sem spet zamujal. = Baš zato što sam opet kasnio.
+l: Nina: Ni panike. Boš našel novo službo. = Nema panike. Naći ćeš novi posao.
+q: Zašto je Luka otpušten? :: Opet je kasnio :: Svađao se sa šefom, Ukrao je novac
+l: Luka: Hvala, ti si zakon. = Hvala, ti si super.
+l: Nina: Vem. Pejt, greva na pivo. = Znam. Ajde, idemo na pivo.
+q: Šta Nina predlaže? :: Da idu na pivo :: Da traže posao, Da gledaju film
+
+= UNIT | Vesti | Jezik vesti i lažni prijatelji
+guide: Jezik vesti je formalan i ponavlja iste obrasce: "vlada je sprejela" (vlada je usvojila), "po podatkih policije" (prema podacima policije), "napoved vremena" (vremenska prognoza).
+guide: "Poročila" su vesti, a "poroka" je venčanje!
+guide: Glavne večernje vesti na javnoj televiziji su "Dnevnik" na TV Slovenija.
+
 ## L novice | Vesti
 w: poročila = vesti # lažni prijatelj — "poroka" je venčanje
 w: novica = vest
@@ -779,6 +901,25 @@ s: Cene so se zvišale. = Cene su porasle.
 s: Volitve bodo jeseni. = Izbori će biti na jesen.|Izbori će biti u jesen.
 s: Delavci so napovedali stavko. = Radnici su najavili štrajk.
 s: V prometni nesreči ni bilo poškodovanih. = U saobraćajnoj nesreći nije bilo povređenih.
+
+## L napoved | Fraze sa vesti
+w: po podatkih = prema podacima
+w: sporočil = saopštio
+w: napovedal = najavio
+w: zvišanje = povećanje|poskupljenje
+w: znižanje = smanjenje|pojeftinjenje
+w: odstotek = procenat|odsto
+w: država = država
+w: občina = opština
+w: župan = gradonačelnik # na čelu opštine
+w: dogodek = događaj
+w: zaradi = zbog
+s: Vlada je napovedala znižanje davkov. = Vlada je najavila smanjenje poreza.
+s: Cene so se zvišale za tri odstotke. = Cene su porasle za tri odsto.|Cene su porasle za tri procenta.
+s: Župan je sporočil, da bo cesta zaprta. = Gradonačelnik je saopštio da će put biti zatvoren.
+s: Zaradi snega so zaprli cesto. = Zbog snega su zatvorili put.
+s: Občina bo zgradila nov vrtec. = Opština će izgraditi novi vrtić.
+g: ___ dežja je bila tekma odpovedana. = Zbog kiše je utakmica otkazana. :: Zaradi :: Zato, Ker, Za
 
 ## L lazni | Lažni prijatelji
 tip: Reči koje zvuče poznato, a znače nešto drugo. Najopasnije: jutri (sutra), stol (stolica), miza (sto), lekarna (apoteka), čas (vreme), vreme (prognoza), kmalu (uskoro), beseda (reč), dišati (mirisati), ne morem (ne mogu), hitro (brzo).

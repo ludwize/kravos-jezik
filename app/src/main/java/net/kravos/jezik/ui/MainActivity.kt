@@ -67,10 +67,14 @@ class MainActivity : ComponentActivity() {
         if (intent?.getBooleanExtra(EXTRA_TEST, false) == true) app.testMode = true
         if (intent?.getBooleanExtra(EXTRA_WORDS, false) == true) nav.tab(Tab.WORDS)
         setContent {
-            val theme by app.progress.theme.collectAsState()
+            val theme by app.settings.theme.collectAsState()
+            val lang by app.lang.collectAsState()
             JezikTheme(theme) {
                 CompositionLocalProvider(LocalNav provides nav, LocalApp provides app) {
-                    androidx.compose.material3.Surface(color = MaterialTheme.colorScheme.background) { Root(app) }
+                    androidx.compose.material3.Surface(color = MaterialTheme.colorScheme.background) {
+                        // switching the language rebuilds every screen with the other course
+                        androidx.compose.runtime.key(lang) { Root(app) }
+                    }
                 }
             }
         }

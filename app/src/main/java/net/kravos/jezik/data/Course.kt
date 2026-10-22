@@ -45,6 +45,14 @@ class Course(
     val native: String,
     val flag: String,
     val tts: String,
+    /** "na slovenačkom" / "na španskom". */
+    val loc: String,
+    /** "na slovenački" / "na španski". */
+    val acc: String,
+    /** Special letters offered as buttons when typing. */
+    val chars: List<String>,
+    /** Name of the voice used for the bundled recordings. */
+    val voice: String,
     val units: List<CourseUnit>,
 ) {
     val lessons: List<Lesson> = units.flatMap { it.lessons }
@@ -89,7 +97,18 @@ class Course(
                 }
                 CourseUnit(u.getString("id"), ui, u.getString("title"), u.optString("desc"), u.optJSONArray("guide").strs(), lessons)
             }
-            return Course(o.getString("lang"), o.getString("name"), o.optString("native"), o.optString("flag"), o.optString("tts", "sl-SI"), units)
+            return Course(
+                o.getString("lang"), o.getString("name"), o.optString("native"), o.optString("flag"), o.optString("tts", "sl-SI"),
+                o.optString("loc", o.getString("name").lowercase()), o.optString("acc", o.getString("name").lowercase()),
+                o.optJSONArray("chars").strs(), o.optString("voice"), units,
+            )
+        }
+
+        /** Language codes of the bundled courses, in display order. */
+        fun available(ctx: Context): List<String> {
+            val all = runCatching { ctx.assets.list("courses")?.filter { it.endsWith(".json") }?.map { it.removeSuffix(".json") } }.getOrNull().orEmpty()
+            val order = listOf("sl", "es")
+            return all.sortedBy { order.indexOf(it).let { i -> if (i < 0) 99 else i } }
         }
     }
 }

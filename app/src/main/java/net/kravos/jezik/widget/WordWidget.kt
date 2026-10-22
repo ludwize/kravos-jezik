@@ -59,11 +59,12 @@ class WordWidget : GlanceAppWidget() {
         val app = context.applicationContext as App
         val (w, ex) = WordOfDay.pick(app)
         val streak = app.progress.streak()
-        provideContent { Content(w, ex, streak) }
+        val flag = app.course.flag
+        provideContent { Content(w, ex, streak, flag) }
     }
 
     @Composable
-    private fun Content(w: Word, example: String?, streak: Int) {
+    private fun Content(w: Word, example: String?, streak: Int, flag: String) {
         val white = ColorProvider(Color.White)
         val dim = ColorProvider(Color(0xB3FFFFFF))
         val green = ColorProvider(Color(0xFF58CC02))
@@ -74,7 +75,7 @@ class WordWidget : GlanceAppWidget() {
                 .clickable(actionStartActivity(intent)),
         ) {
             Row {
-                Text("REČ DANA", style = TextStyle(color = green, fontSize = 11.sp, fontWeight = FontWeight.Bold))
+                Text("$flag  REČ DANA", style = TextStyle(color = green, fontSize = 11.sp, fontWeight = FontWeight.Bold))
                 Text(if (streak > 0) "   🔥 $streak" else "", style = TextStyle(color = dim, fontSize = 11.sp, fontWeight = FontWeight.Bold))
             }
             Spacer(GlanceModifier.height(4.dp))

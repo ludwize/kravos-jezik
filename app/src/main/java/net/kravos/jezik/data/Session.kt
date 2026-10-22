@@ -174,7 +174,7 @@ class SessionBuilder(
     )
 
     private fun pickSrSl(w: Word, pool: List<Word>): Ex = Ex.Pick(
-        id(), "Kako se kaže na slovenačkom?", w.meaning, (distract(w, pool, sl = true) + w.sl).shuffled(rng), w.sl,
+        id(), "Kako se kaže na ${course.loc}?", w.meaning, (distract(w, pool, sl = true) + w.sl).shuffled(rng), w.sl,
         promptIsSl = false, listen = false, word = w, sl = w.sl,
     )
 
@@ -193,7 +193,7 @@ class SessionBuilder(
     private fun arrangeSl(s: Sentence, others: List<Sentence>): Ex {
         val t = Text.tokens(s.text)
         return Ex.Arrange(
-            id(), "Prevedi na slovenački", s.meaning, (t + extraTiles(t, others.map { it.text }, 3)).shuffled(rng),
+            id(), "Prevedi na ${course.acc}", s.meaning, (t + extraTiles(t, others.map { it.text }, 3)).shuffled(rng),
             s.sl, promptIsSl = false, listen = false, sl = s.text, meaning = s.meaning,
         )
     }
@@ -215,11 +215,11 @@ class SessionBuilder(
     }
 
     private fun typeSl(s: Sentence): Ex = Ex.Type(
-        id(), "Napiši na slovenačkom", s.meaning, s.sl, answerIsSl = true, listen = false, word = null, sl = s.text, meaning = s.meaning,
+        id(), "Napiši na ${course.loc}", s.meaning, s.sl, answerIsSl = true, listen = false, word = null, sl = s.text, meaning = s.meaning,
     )
 
     private fun typeWord(w: Word): Ex = Ex.Type(
-        id(), "Napiši na slovenačkom", w.meaning, listOf(w.sl), answerIsSl = true, listen = false, word = w, sl = w.sl, meaning = w.meaning,
+        id(), "Napiši na ${course.loc}", w.meaning, listOf(w.sl), answerIsSl = true, listen = false, word = w, sl = w.sl, meaning = w.meaning,
     )
 
     private fun dictation(w: Word): Ex = Ex.Type(

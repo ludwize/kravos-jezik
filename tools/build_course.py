@@ -8,7 +8,10 @@ import re
 import sys
 
 META = {
-    "sl": {"lang": "sl", "name": "Slovenački", "native": "Slovenščina", "flag": "🇸🇮", "tts": "sl-SI"},
+    "sl": {"lang": "sl", "name": "Slovenački", "native": "Slovenščina", "flag": "🇸🇮", "tts": "sl-SI",
+           "loc": "slovenačkom", "acc": "slovenački", "chars": ["č", "š", "ž"], "voice": "Piper · sl_SI artur"},
+    "es": {"lang": "es", "name": "Španski", "native": "Español", "flag": "🇪🇸", "tts": "es-ES",
+           "loc": "španskom", "acc": "španski", "chars": ["á", "é", "í", "ó", "ú", "ñ", "¿", "¡"], "voice": "Piper · es_ES davefx"},
 }
 
 
@@ -46,7 +49,8 @@ def parse(path):
         m = re.match(r"^## ([LS]) (\w+) \| (.+)$", line)
         if m:
             kind, slug, title = m.groups()
-            lesson = {"id": f"{unit['id']}-{slug}", "type": "lesson" if kind == "L" else "story", "title": title.strip()}
+            # ids must stay stable when units are inserted: lessons are "<slug>", stories "p-<slug>"
+            lesson = {"id": slug if kind == "L" else f"p-{slug}", "type": "lesson" if kind == "L" else "story", "title": title.strip()}
             if kind == "L":
                 lesson.update({"tip": "", "words": [], "sentences": [], "grammar": []})
             else:
@@ -127,6 +131,19 @@ def audio_texts(course):
 if __name__ == "__main__":
     src, dst = sys.argv[1], sys.argv[2]
     c = parse(src)
+    ids = [l["id"] for u in c["units"] for l in u["lessons"]]
+    dup = {i for i in ids if ids.count(i) > 1}
+    if dup:
+        sys.exit(f"duplicate lesson ids: {sorted(dup)}")
+    seen = {}
+    for u in c["units"]:
+        for l in u["lessons"]:
+            for w in l.get("words", []):
+                k = w["sl"].lower()
+                if k in seen:
+                    print(f"warning: word '{w['sl']}' in {l['id']} already in {seen[k]}")
+                else:
+                    seen[k] = l["id"]
     for u in c["units"]:
         for l in u["lessons"]:
             if l["type"] == "lesson" and (len(l["words"]) < 4 or len(l["sentences"]) < 3):

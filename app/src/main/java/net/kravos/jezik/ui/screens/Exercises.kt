@@ -215,6 +215,7 @@ fun ArrangeView(ex: Ex.Arrange, locked: Boolean, onChange: (String?) -> Unit) {
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun TypeView(ex: Ex.Type, locked: Boolean, onChange: (String?) -> Unit) {
     val pal = LocalPalette.current
@@ -228,16 +229,17 @@ fun TypeView(ex: Ex.Type, locked: Boolean, onChange: (String?) -> Unit) {
         value = v,
         onValueChange = { if (!locked) set(it) },
         modifier = Modifier.fillMaxWidth().heightIn(min = 120.dp),
-        placeholder = { Text(if (ex.answerIsSl) "Piši na slovenačkom" else "Piši na srpskom", color = pal.dim) },
+        placeholder = { Text(if (ex.answerIsSl) "Piši na ${LocalApp.current.course.loc}" else "Piši na srpskom", color = pal.dim) },
         textStyle = MaterialTheme.typography.bodyLarge.copy(fontSize = 19.sp),
         keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences, autoCorrectEnabled = false, imeAction = ImeAction.Done),
         shape = RoundedCornerShape(16.dp),
         colors = OutlinedTextFieldDefaults.colors(unfocusedBorderColor = pal.border, focusedBorderColor = K.Blue, unfocusedContainerColor = MaterialTheme.colorScheme.surfaceContainer, focusedContainerColor = MaterialTheme.colorScheme.surfaceContainer),
     )
-    if (ex.answerIsSl) {
+    val chars = LocalApp.current.course.chars
+    if (ex.answerIsSl && chars.isNotEmpty()) {
         Spacer(Modifier.height(10.dp))
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            listOf("č", "š", "ž").forEach { ch ->
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            chars.forEach { ch ->
                 WordTile(ch, used = false) {
                     if (!locked) {
                         val s = v.selection.start.coerceIn(0, v.text.length)
@@ -256,6 +258,7 @@ fun SpeakView(ex: Ex.Speak, locked: Boolean, onResult: (String?) -> Unit) {
     val ctx = LocalContext.current
     val pal = LocalPalette.current
     val sp = LocalApp.current.speaker
+    val langTag = LocalApp.current.course.tts
     var listening by remember(ex.uid) { mutableStateOf(false) }
     var heard by remember(ex.uid) { mutableStateOf<String?>(null) }
     var msg by remember(ex.uid) { mutableStateOf<String?>(null) }
@@ -288,8 +291,8 @@ fun SpeakView(ex: Ex.Speak, locked: Boolean, onResult: (String?) -> Unit) {
         })
         val i = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
             .putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-            .putExtra(RecognizerIntent.EXTRA_LANGUAGE, "sl-SI")
-            .putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, "sl-SI")
+            .putExtra(RecognizerIntent.EXTRA_LANGUAGE, langTag)
+            .putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, langTag)
             .putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 5)
             .putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
         runCatching { r.startListening(i) }.onFailure { msg = "Ne mogu da pokrenem mikrofon" }

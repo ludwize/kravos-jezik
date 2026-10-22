@@ -79,9 +79,17 @@ tap_text "POČNI +15 XP"; sleep 3
 run_session lesson 40
 sleep 2; shot path-after
 
+# switch to Spanish from the language picker in the top bar
+tap_text "Slovenački"; sleep 2; shot lang-sheet
+tap_text "Španski"; sleep 4; shot es-path
+tap_text "Pozdravi"; sleep 2; shot es-sheet
+tap_text "POČNI +15 XP"; sleep 3
+run_session es 40
+sleep 2; shot es-path-after
+
 # a story (locked → "Ipak počni")
 scroll
-tap_text "Na kafi"; sleep 2; shot story-sheet
+tap_text "Na kafi|U kafiću"; sleep 2; shot story-sheet
 tap_text "IPAK POČNI|POČNI PRIČU +15 XP"; sleep 3
 j=0
 while [ $j -lt 25 ]; do
@@ -113,14 +121,20 @@ tap_text "Naučene (0)|Naučene (10)|Naučene (11)" ; sleep 1; shot words-learne
 
 tap_text "Profil"; sleep 2; shot profile
 scroll; shot profile-scroll
+scroll
 tap_text "PODEŠAVANJA"; sleep 2; shot settings
 scroll; shot settings-scroll
+adb shell input swipe $((W / 2)) $((H / 4)) $((W / 2)) $((H * 3 / 4)) 300; sleep 1
+adb shell input swipe $((W / 2)) $((H / 4)) $((W / 2)) $((H * 3 / 4)) 300; sleep 1
+# switch back to Slovenian from settings: progress must still be there
+tap_text "Slovenački"; sleep 4; shot sl-back
 
 PID=$(adb shell pidof $PKG | tr -d '\r')
 echo "pid=$PID" > "$OUT/status.txt"
 adb logcat -d > "$OUT/logcat.txt"
 grep -n -A 40 "FATAL EXCEPTION" "$OUT/logcat.txt" > "$OUT/crash.txt" || true
 grep -n -E "KravosJezik|AndroidRuntime|net.kravos|TextToSpeech|MediaPlayer" "$OUT/logcat.txt" | tail -500 > "$OUT/app-log.txt" || true
+grep -E "audio clips|tts init" "$OUT/logcat.txt" > "$OUT/audio-status.txt" || true
 if [ -s "$OUT/crash.txt" ]; then echo "CRASH" >> "$OUT/status.txt"; fi
 rm -f "$OUT/logcat.txt" "$OUT/ui.xml"
 cat "$OUT/status.txt" "$OUT/steps.txt"

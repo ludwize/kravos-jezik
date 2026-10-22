@@ -27,7 +27,7 @@ object Text {
 
     /** Lowercase, no punctuation, single spaces. */
     fun norm(s: String): String = latin(s).lowercase()
-        .replace(Regex("[.,!?;:\"'„“”‚‘’«»()…\\-–—]"), " ")
+        .replace(Regex("[.,!?¿¡;:\"'„“”‚‘’«»()…\\-–—]"), " ")
         .replace(Regex("\\s+"), " ")
         .trim()
 
@@ -72,7 +72,7 @@ object Text {
         return 1f - lev(x, y).toFloat() / m
     }
 
-    fun tokens(s: String): List<String> = s.replace(Regex("[.,!?;:\"„“”…]"), " ").split(Regex("\\s+")).filter { it.isNotBlank() }
+    fun tokens(s: String): List<String> = s.replace(Regex("[.,!?¿¡;:\"„“”…]"), " ").split(Regex("\\s+")).filter { it.isNotBlank() }
 
     /** Must match tools/gen_audio.py: sha1(text.strip())[:16]. */
     fun audioKey(text: String): String {

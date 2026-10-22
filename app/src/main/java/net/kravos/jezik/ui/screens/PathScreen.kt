@@ -59,6 +59,7 @@ import net.kravos.jezik.ui.theme.K
 import net.kravos.jezik.ui.theme.LocalPalette
 import kotlin.math.sin
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun StatsBar() {
     val app = LocalApp.current
@@ -67,19 +68,70 @@ fun StatsBar() {
     val streak = app.progress.streak()
     val today = app.progress.todayXp()
     val goal = app.progress.dailyGoal
+    var picker by remember { mutableStateOf(false) }
     Row(
-        Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 18.dp, vertical = 10.dp),
+        Modifier.fillMaxWidth().statusBarsPadding().padding(horizontal = 10.dp, vertical = 4.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Text(app.course.flag, fontSize = 26.sp)
-        Spacer(Modifier.width(6.dp))
-        Text(app.course.name, fontWeight = FontWeight.Bold, fontSize = 16.sp)
+        Row(
+            Modifier.clip(RoundedCornerShape(12.dp)).clickable { picker = true }.padding(horizontal = 8.dp, vertical = 6.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(app.course.flag, fontSize = 26.sp)
+            Spacer(Modifier.width(6.dp))
+            Text(app.course.name, fontWeight = FontWeight.Bold, fontSize = 16.sp)
+            if (app.langs.size > 1) Text(" ▾", color = pal.dim, fontSize = 14.sp)
+        }
         Spacer(Modifier.weight(1f))
         Text("🔥", fontSize = 20.sp, color = if (app.progress.streakAliveToday()) Color.Unspecified else pal.dim)
         Text(" $streak", fontWeight = FontWeight.ExtraBold, color = if (app.progress.streakAliveToday()) K.Orange else pal.dim, fontSize = 17.sp)
         Spacer(Modifier.width(16.dp))
         Text("⚡", fontSize = 20.sp)
         Text(" $today/$goal", fontWeight = FontWeight.ExtraBold, color = if (today >= goal) K.Gold else pal.dim, fontSize = 17.sp)
+        Spacer(Modifier.width(8.dp))
+    }
+    if (picker) {
+        val st = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        ModalBottomSheet(onDismissRequest = { picker = false }, sheetState = st, containerColor = MaterialTheme.colorScheme.surfaceContainer) {
+            Column(Modifier.fillMaxWidth().padding(horizontal = 18.dp).padding(bottom = 28.dp)) {
+                Text("Koji jezik učiš?", style = MaterialTheme.typography.titleLarge, modifier = Modifier.padding(bottom = 12.dp))
+                LanguageList { picker = false }
+            }
+        }
+    }
+}
+
+/** One card per bundled course; picking one switches the whole app to it. */
+@Composable
+fun LanguageList(onPicked: () -> Unit) {
+    val app = LocalApp.current
+    val nav = LocalNav.current
+    val pal = LocalPalette.current
+    Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        app.langs.forEach { l ->
+            val c = app.courseFor(l)
+            val p = app.progressFor(l)
+            val sel = l == app.lang.value
+            Chunky(
+                Modifier.fillMaxWidth(), color = if (sel) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.background,
+                shadow = if (sel) K.Blue else pal.border, border = if (sel) K.Blue else pal.border, depth = 3.dp,
+                onClick = { onPicked(); if (!sel) { nav.tab(net.kravos.jezik.ui.Tab.LEARN); app.switchTo(l) } },
+            ) {
+                Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text(c.flag, fontSize = 34.sp)
+                    Spacer(Modifier.width(12.dp))
+                    Column(Modifier.weight(1f)) {
+                        Text(c.name, fontWeight = FontWeight.ExtraBold, fontSize = 18.sp, color = if (sel) K.Blue else MaterialTheme.colorScheme.onBackground)
+                        Text(
+                            if (!p.started()) "${c.native} · ${c.units.size} jedinica · još nisi počeo"
+                            else "🔥 ${p.streak()} · ⚡ ${p.totalXp()} XP · ${p.lessonsDone()}/${c.lessons.size} lekcija",
+                            color = pal.dim, fontSize = 13.sp,
+                        )
+                    }
+                    if (sel) Icon(Icons.Filled.Check, "Izabrano", tint = K.Blue)
+                }
+            }
+        }
     }
 }
 
