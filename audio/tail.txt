@@ -1,1 +1,23 @@
-614 clips, 0 to generate
+== sl (sl/sl_SI/artur/medium/sl_SI-artur-medium)
+718 clips, 104 to generate
+  0/104 vozni red
+  50/104 Dober večer, dobrodošli!
+  100/104 Župan je sporočil, da bo cesta zaprta.
+sl: 719 files, 3.9M
+== es (es/es_ES/davefx/medium/es_ES-davefx-medium)
+664 clips, 664 to generate
+  0/664 hola
+  50/664 ¿Sois amigos?
+  100/664 veinte
+  150/664 Hoy no tengo tiempo. ¿Mañana?
+  200/664 mesa
+  250/664 ¿A qué hora abre correos?
+  300/664 retraso
+  350/664 recepción
+  400/664 hijo
+  450/664 Tengo una hermana, pero vive en Belgrado.
+  500/664 No hablo español muy bien.
+  550/664 hace frío
+  600/664 Tu hermana es muy maja.
+  650/664 buscar
+es: 665 files, 3.5M
