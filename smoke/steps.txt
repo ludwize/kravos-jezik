@@ -163,7 +163,7 @@ tapped DALJE 160 594
 shot es-done
 tapped NASTAVI 160 586
 shot es-path-after
-tapped U kafiću 88 394
+tapped U kafiću 88 395
 shot story-sheet
 tapped IPAK POČNI 160 582
 shot story-1

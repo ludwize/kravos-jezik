@@ -1,4 +1,4 @@
-10-26 14:34:36.963  3041  3041 I KravosJezik: audio clips bundled: 718
-10-26 14:34:39.102  3041  3041 I KravosJezik: tts init status=0 slovenian=false
-10-26 14:39:15.557  3041  3041 I KravosJezik: audio clips bundled: 664
-10-26 14:39:15.643  3041  3041 I KravosJezik: tts init status=0 slovenian=true
+10-26 15:32:06.447  3196  3196 I KravosJezik: audio clips bundled: 718
+10-26 15:32:07.211  3196  3196 I KravosJezik: tts init status=0 slovenian=false
+10-26 15:36:45.021  3196  3196 I KravosJezik: audio clips bundled: 664
+10-26 15:36:45.098  3196  3196 I KravosJezik: tts init status=0 slovenian=true
