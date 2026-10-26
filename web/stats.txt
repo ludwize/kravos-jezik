@@ -1,0 +1,8 @@
+sl: 12 units, 718 clips
+  audio 'živjo' -> HTTP 200, 2300 bytes, audio/ogg
+es: 11 units, 664 clips
+  audio 'hola' -> HTTP 200, 1592 bytes, audio/ogg
+desk: lesson took 37 presses
+desk errors: []
+mob: lesson took 37 presses
+mob errors: []
