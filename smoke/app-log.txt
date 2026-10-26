@@ -1,500 +1,500 @@
-70572:10-22 10:43:21.229  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-70577:10-22 10:43:22.638  9411  9411 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-70578:10-22 10:43:22.641  9411  9411 I AndroidRuntime: Using default boot image
-70579:10-22 10:43:22.641  9411  9411 I AndroidRuntime: Leaving lock profiling enabled
-70592:10-22 10:43:22.724  9411  9411 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-70648:10-22 10:43:23.747  9411  9411 D AndroidRuntime: Shutting down VM
-70720:10-22 10:43:24.798  9438  9438 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-70721:10-22 10:43:24.802  9438  9438 I AndroidRuntime: Using default boot image
-70722:10-22 10:43:24.802  9438  9438 I AndroidRuntime: Leaving lock profiling enabled
-70735:10-22 10:43:24.885  9438  9438 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-70790:10-22 10:43:25.901  9438  9438 D AndroidRuntime: Shutting down VM
-70865:10-22 10:43:26.784   476  2994 D MediaPlayerService: OMX service is not available
-70937:10-22 10:43:27.427  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-70938:10-22 10:43:27.427  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-70944:10-22 10:43:27.430  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-70956:10-22 10:43:29.987  9473  9473 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-70957:10-22 10:43:29.991  9473  9473 I AndroidRuntime: Using default boot image
-70958:10-22 10:43:29.991  9473  9473 I AndroidRuntime: Leaving lock profiling enabled
-70971:10-22 10:43:30.071  9473  9473 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-71026:10-22 10:43:31.094  9473  9473 D AndroidRuntime: Shutting down VM
-71103:10-22 10:43:34.052  9495  9495 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-71104:10-22 10:43:34.056  9495  9495 I AndroidRuntime: Using default boot image
-71105:10-22 10:43:34.056  9495  9495 I AndroidRuntime: Leaving lock profiling enabled
-71118:10-22 10:43:34.134  9495  9495 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-71176:10-22 10:43:35.159  9495  9495 D AndroidRuntime: Shutting down VM
-71247:10-22 10:43:36.202  9515  9515 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-71248:10-22 10:43:36.206  9515  9515 I AndroidRuntime: Using default boot image
-71249:10-22 10:43:36.206  9515  9515 I AndroidRuntime: Leaving lock profiling enabled
-71262:10-22 10:43:36.285  9515  9515 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-71318:10-22 10:43:37.300  9515  9515 D AndroidRuntime: Shutting down VM
-71407:10-22 10:43:44.790  9546  9546 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-71408:10-22 10:43:44.793  9546  9546 I AndroidRuntime: Using default boot image
-71409:10-22 10:43:44.793  9546  9546 I AndroidRuntime: Leaving lock profiling enabled
-71422:10-22 10:43:44.872  9546  9546 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-71477:10-22 10:43:45.911  9546  9546 D AndroidRuntime: Shutting down VM
-71552:10-22 10:43:46.810   521   827 D CoreBackPreview: Window{dce61c2 u0 net.kravos.jezik/net.kravos.jezik.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a24d80e, mPriority=0, mIsAnimationCallback=false}
-71553:10-22 10:43:46.840   521   905 I ImeTracker: net.kravos.jezik:6e53bb85: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-71554:10-22 10:43:46.840   521   905 I ImeTracker: net.kravos.jezik:6e53bb85: onCancelled at PHASE_SERVER_SHOULD_HIDE
-71557:10-22 10:43:46.842  1542  1542 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.jezik fieldId=0 fieldName=null extras=null}, false)
-71566:10-22 10:43:50.972  9574  9574 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-71567:10-22 10:43:50.976  9574  9574 I AndroidRuntime: Using default boot image
-71568:10-22 10:43:50.976  9574  9574 I AndroidRuntime: Leaving lock profiling enabled
-71581:10-22 10:43:51.055  9574  9574 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-71639:10-22 10:43:52.077  9574  9574 D AndroidRuntime: Shutting down VM
-71755:10-22 10:43:52.973   521   827 D CoreBackPreview: Window{dce61c2 u0 net.kravos.jezik/net.kravos.jezik.ui.MainActivity}: Setting back callback null
-71756:10-22 10:43:52.975   521   827 W InputManager-JNI: Input channel object 'dce61c2 net.kravos.jezik/net.kravos.jezik.ui.MainActivity (client)' was disposed without first being removed with the input manager!
-71763:10-22 10:43:52.996   476   476 D MediaPlayerService: OMX service is not available
-71770:10-22 10:43:53.007   521   915 I ImeTracker: net.kravos.jezik:690bb84b: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-71771:10-22 10:43:53.007   521   915 I ImeTracker: net.kravos.jezik:690bb84b: onCancelled at PHASE_SERVER_SHOULD_HIDE
-71781:10-22 10:43:53.008  1542  1542 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.jezik fieldId=0 fieldName=null extras=null}, false)
-71899:10-22 10:43:54.422  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-71900:10-22 10:43:54.422  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-71916:10-22 10:43:58.039  9627  9627 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-71917:10-22 10:43:58.042  9627  9627 I AndroidRuntime: Using default boot image
-71918:10-22 10:43:58.042  9627  9627 I AndroidRuntime: Leaving lock profiling enabled
-71931:10-22 10:43:58.118  9627  9627 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-71977:10-22 10:43:59.132  9627  9627 D AndroidRuntime: Shutting down VM
-72070:10-22 10:44:00.178  9648  9648 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-72071:10-22 10:44:00.182  9648  9648 I AndroidRuntime: Using default boot image
-72072:10-22 10:44:00.182  9648  9648 I AndroidRuntime: Leaving lock profiling enabled
-72085:10-22 10:44:00.256  9648  9648 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-72136:10-22 10:44:01.280  9648  9648 D AndroidRuntime: Shutting down VM
-72209:10-22 10:44:02.177   476  2994 D MediaPlayerService: OMX service is not available
-72279:10-22 10:44:04.229  9678  9678 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-72280:10-22 10:44:04.233  9678  9678 I AndroidRuntime: Using default boot image
-72281:10-22 10:44:04.233  9678  9678 I AndroidRuntime: Leaving lock profiling enabled
-72294:10-22 10:44:04.311  9678  9678 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-72337:10-22 10:44:04.514  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-72338:10-22 10:44:04.514  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-72345:10-22 10:44:04.518  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-72366:10-22 10:44:05.337  9678  9678 D AndroidRuntime: Shutting down VM
-72430:10-22 10:44:06.258  9695  9695 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-72431:10-22 10:44:06.261  9695  9695 I AndroidRuntime: Using default boot image
-72432:10-22 10:44:06.261  9695  9695 I AndroidRuntime: Leaving lock profiling enabled
-72445:10-22 10:44:06.338  9695  9695 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-72515:10-22 10:44:07.368  9695  9695 D AndroidRuntime: Shutting down VM
-72573:10-22 10:44:08.261   476  2994 D MediaPlayerService: OMX service is not available
-72639:10-22 10:44:09.818  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-72640:10-22 10:44:09.818  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-72646:10-22 10:44:09.820  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-72657:10-22 10:44:10.309  9726  9726 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-72658:10-22 10:44:10.312  9726  9726 I AndroidRuntime: Using default boot image
-72659:10-22 10:44:10.312  9726  9726 I AndroidRuntime: Leaving lock profiling enabled
-72672:10-22 10:44:10.388  9726  9726 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-72729:10-22 10:44:11.411  9726  9726 D AndroidRuntime: Shutting down VM
-72795:10-22 10:44:12.340  9743  9743 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-72796:10-22 10:44:12.343  9743  9743 I AndroidRuntime: Using default boot image
-72797:10-22 10:44:12.344  9743  9743 I AndroidRuntime: Leaving lock profiling enabled
-72810:10-22 10:44:12.421  9743  9743 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-72856:10-22 10:44:13.440  9743  9743 D AndroidRuntime: Shutting down VM
-72935:10-22 10:44:14.328   476  3094 D MediaPlayerService: OMX service is not available
-73008:10-22 10:44:15.236  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-73009:10-22 10:44:15.236  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-73016:10-22 10:44:15.239  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-73022:10-22 10:44:16.382  9774  9774 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-73023:10-22 10:44:16.385  9774  9774 I AndroidRuntime: Using default boot image
-73024:10-22 10:44:16.385  9774  9774 I AndroidRuntime: Leaving lock profiling enabled
-73037:10-22 10:44:16.460  9774  9774 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-73084:10-22 10:44:17.482  9774  9774 D AndroidRuntime: Shutting down VM
-73160:10-22 10:44:18.396  9790  9790 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-73161:10-22 10:44:18.399  9790  9790 I AndroidRuntime: Using default boot image
-73162:10-22 10:44:18.399  9790  9790 I AndroidRuntime: Leaving lock profiling enabled
-73175:10-22 10:44:18.475  9790  9790 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-73224:10-22 10:44:19.495  9790  9790 D AndroidRuntime: Shutting down VM
-73303:10-22 10:44:20.395   476  3094 D MediaPlayerService: OMX service is not available
-73373:10-22 10:44:21.541  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-73374:10-22 10:44:21.541  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-73382:10-22 10:44:21.545  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-73387:10-22 10:44:22.441  9821  9821 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-73388:10-22 10:44:22.444  9821  9821 I AndroidRuntime: Using default boot image
-73389:10-22 10:44:22.445  9821  9821 I AndroidRuntime: Leaving lock profiling enabled
-73402:10-22 10:44:22.520  9821  9821 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-73450:10-22 10:44:23.542  9821  9821 D AndroidRuntime: Shutting down VM
-73532:10-22 10:44:24.580  9841  9841 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-73533:10-22 10:44:24.583  9841  9841 I AndroidRuntime: Using default boot image
-73534:10-22 10:44:24.583  9841  9841 I AndroidRuntime: Leaving lock profiling enabled
-73548:10-22 10:44:24.663  9841  9841 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-73596:10-22 10:44:25.688  9841  9841 D AndroidRuntime: Shutting down VM
-73674:10-22 10:44:26.580   476  3094 D MediaPlayerService: OMX service is not available
-73742:10-22 10:44:28.284  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-73743:10-22 10:44:28.284  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-73749:10-22 10:44:28.287  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-73756:10-22 10:44:28.629  9872  9872 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-73757:10-22 10:44:28.632  9872  9872 I AndroidRuntime: Using default boot image
-73758:10-22 10:44:28.633  9872  9872 I AndroidRuntime: Leaving lock profiling enabled
-73771:10-22 10:44:28.710  9872  9872 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-73827:10-22 10:44:29.738  9872  9872 D AndroidRuntime: Shutting down VM
-73892:10-22 10:44:30.658  9889  9889 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-73893:10-22 10:44:30.661  9889  9889 I AndroidRuntime: Using default boot image
-73894:10-22 10:44:30.661  9889  9889 I AndroidRuntime: Leaving lock profiling enabled
-73907:10-22 10:44:30.736  9889  9889 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-73953:10-22 10:44:31.752  9889  9889 D AndroidRuntime: Shutting down VM
-74043:10-22 10:44:34.688  9910  9910 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-74044:10-22 10:44:34.692  9910  9910 I AndroidRuntime: Using default boot image
-74045:10-22 10:44:34.692  9910  9910 I AndroidRuntime: Leaving lock profiling enabled
-74058:10-22 10:44:34.767  9910  9910 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-74116:10-22 10:44:35.783  9910  9910 D AndroidRuntime: Shutting down VM
-74180:10-22 10:44:36.701  9927  9927 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-74181:10-22 10:44:36.704  9927  9927 I AndroidRuntime: Using default boot image
-74182:10-22 10:44:36.704  9927  9927 I AndroidRuntime: Leaving lock profiling enabled
-74195:10-22 10:44:36.778  9927  9927 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-74304:10-22 10:44:37.805  9927  9927 D AndroidRuntime: Shutting down VM
-74417:10-22 10:44:38.697   476  3094 D MediaPlayerService: OMX service is not available
-74484:10-22 10:44:40.602  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-74485:10-22 10:44:40.602  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-74491:10-22 10:44:40.605  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-74498:10-22 10:44:40.749  9975  9975 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-74499:10-22 10:44:40.753  9975  9975 I AndroidRuntime: Using default boot image
-74500:10-22 10:44:40.753  9975  9975 I AndroidRuntime: Leaving lock profiling enabled
-74513:10-22 10:44:40.826  9975  9975 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-74561:10-22 10:44:41.841  9975  9975 D AndroidRuntime: Shutting down VM
-74635:10-22 10:44:42.763  9991  9991 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-74636:10-22 10:44:42.766  9991  9991 I AndroidRuntime: Using default boot image
-74637:10-22 10:44:42.766  9991  9991 I AndroidRuntime: Leaving lock profiling enabled
-74650:10-22 10:44:42.842  9991  9991 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-74697:10-22 10:44:43.855  9991  9991 D AndroidRuntime: Shutting down VM
-74779:10-22 10:44:44.743   476  3094 D MediaPlayerService: OMX service is not available
-74847:10-22 10:44:46.265  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-74848:10-22 10:44:46.265  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-74855:10-22 10:44:46.268  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-74861:10-22 10:44:46.796 10022 10022 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-74862:10-22 10:44:46.799 10022 10022 I AndroidRuntime: Using default boot image
-74863:10-22 10:44:46.799 10022 10022 I AndroidRuntime: Leaving lock profiling enabled
-74876:10-22 10:44:46.873 10022 10022 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-74928:10-22 10:44:47.891 10022 10022 D AndroidRuntime: Shutting down VM
-75006:10-22 10:44:48.924 10043 10043 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-75007:10-22 10:44:48.928 10043 10043 I AndroidRuntime: Using default boot image
-75008:10-22 10:44:48.928 10043 10043 I AndroidRuntime: Leaving lock profiling enabled
-75021:10-22 10:44:49.023 10043 10043 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-75081:10-22 10:44:50.042 10043 10043 D AndroidRuntime: Shutting down VM
-75146:10-22 10:44:50.925   476  3094 D MediaPlayerService: OMX service is not available
-75218:10-22 10:44:52.466  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-75219:10-22 10:44:52.466  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-75226:10-22 10:44:52.470  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-75233:10-22 10:44:52.980 10074 10074 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-75234:10-22 10:44:52.986 10074 10074 I AndroidRuntime: Using default boot image
-75235:10-22 10:44:52.986 10074 10074 I AndroidRuntime: Leaving lock profiling enabled
-75248:10-22 10:44:53.060 10074 10074 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-75306:10-22 10:44:54.080 10074 10074 D AndroidRuntime: Shutting down VM
-75371:10-22 10:44:55.005 10091 10091 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-75372:10-22 10:44:55.008 10091 10091 I AndroidRuntime: Using default boot image
-75373:10-22 10:44:55.008 10091 10091 I AndroidRuntime: Leaving lock profiling enabled
-75386:10-22 10:44:55.082 10091 10091 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-75433:10-22 10:44:56.100 10091 10091 D AndroidRuntime: Shutting down VM
-75516:10-22 10:44:59.037 10112 10112 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-75517:10-22 10:44:59.041 10112 10112 I AndroidRuntime: Using default boot image
-75518:10-22 10:44:59.041 10112 10112 I AndroidRuntime: Leaving lock profiling enabled
-75531:10-22 10:44:59.115 10112 10112 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-75589:10-22 10:45:00.138 10112 10112 D AndroidRuntime: Shutting down VM
-75660:10-22 10:45:01.056 10128 10128 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-75661:10-22 10:45:01.060 10128 10128 I AndroidRuntime: Using default boot image
-75662:10-22 10:45:01.060 10128 10128 I AndroidRuntime: Leaving lock profiling enabled
-75675:10-22 10:45:01.133 10128 10128 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-75725:10-22 10:45:02.150 10128 10128 D AndroidRuntime: Shutting down VM
-75799:10-22 10:45:03.043   476   476 D MediaPlayerService: OMX service is not available
-75874:10-22 10:45:04.262  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-75875:10-22 10:45:04.262  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-75883:10-22 10:45:04.265  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-75890:10-22 10:45:05.091 10159 10159 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-75891:10-22 10:45:05.094 10159 10159 I AndroidRuntime: Using default boot image
-75892:10-22 10:45:05.094 10159 10159 I AndroidRuntime: Leaving lock profiling enabled
-75905:10-22 10:45:05.170 10159 10159 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-75955:10-22 10:45:06.187 10159 10159 D AndroidRuntime: Shutting down VM
-76130:10-22 10:45:06.313  1028  1028 V MediaPlayerList: onActiveSessionsChanged: number of controllers: 1
-76131:10-22 10:45:06.313  1028  1028 D MediaPlayerList: onActiveSessionsChanged: controller: com.google.android.googlequicksearchbox
-76132:10-22 10:45:06.314  1028  1028 V MediaPlayerList: onActiveSessionsChanged: number of controllers: 1
-76134:10-22 10:45:06.314  1028  1028 D MediaPlayerList: onActiveSessionsChanged: controller: com.google.android.googlequicksearchbox
-76177:10-22 10:45:07.098 10175 10175 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-76178:10-22 10:45:07.101 10175 10175 I AndroidRuntime: Using default boot image
-76179:10-22 10:45:07.101 10175 10175 I AndroidRuntime: Leaving lock profiling enabled
-76192:10-22 10:45:07.176 10175 10175 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-76239:10-22 10:45:08.191 10175 10175 D AndroidRuntime: Shutting down VM
-76321:10-22 10:45:09.078   476  3094 D MediaPlayerService: OMX service is not available
-76387:10-22 10:45:11.124 10205 10205 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-76388:10-22 10:45:11.127 10205 10205 I AndroidRuntime: Using default boot image
-76389:10-22 10:45:11.127 10205 10205 I AndroidRuntime: Leaving lock profiling enabled
-76402:10-22 10:45:11.202 10205 10205 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-76449:10-22 10:45:11.681  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-76450:10-22 10:45:11.681  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-76454:10-22 10:45:11.683  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-76467:10-22 10:45:12.219 10205 10205 D AndroidRuntime: Shutting down VM
-76547:10-22 10:45:13.233 10226 10226 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-76548:10-22 10:45:13.236 10226 10226 I AndroidRuntime: Using default boot image
-76549:10-22 10:45:13.236 10226 10226 I AndroidRuntime: Leaving lock profiling enabled
-76562:10-22 10:45:13.312 10226 10226 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-76607:10-22 10:45:14.328 10226 10226 D AndroidRuntime: Shutting down VM
-76692:10-22 10:45:17.257 10247 10247 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-76693:10-22 10:45:17.260 10247 10247 I AndroidRuntime: Using default boot image
-76694:10-22 10:45:17.260 10247 10247 I AndroidRuntime: Leaving lock profiling enabled
-76707:10-22 10:45:17.330 10247 10247 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-76763:10-22 10:45:18.353 10247 10247 D AndroidRuntime: Shutting down VM
-76832:10-22 10:45:19.367 10268 10268 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-76833:10-22 10:45:19.370 10268 10268 I AndroidRuntime: Using default boot image
-76834:10-22 10:45:19.370 10268 10268 I AndroidRuntime: Leaving lock profiling enabled
-76847:10-22 10:45:19.439 10268 10268 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-76917:10-22 10:45:20.467 10268 10268 D AndroidRuntime: Shutting down VM
-76976:10-22 10:45:25.496 10293 10293 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-76977:10-22 10:45:25.499 10293 10293 I AndroidRuntime: Using default boot image
-76978:10-22 10:45:25.499 10293 10293 I AndroidRuntime: Leaving lock profiling enabled
-76991:10-22 10:45:25.568 10293 10293 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-77042:10-22 10:45:26.586 10293 10293 D AndroidRuntime: Shutting down VM
-77122:10-22 10:45:32.167 10324 10324 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-77123:10-22 10:45:32.169 10324 10324 I AndroidRuntime: Using default boot image
-77124:10-22 10:45:32.169 10324 10324 I AndroidRuntime: Leaving lock profiling enabled
-77137:10-22 10:45:32.240 10324 10324 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-77232:10-22 10:45:33.271 10324 10324 D AndroidRuntime: Shutting down VM
-77281:10-22 10:45:42.859 10365 10365 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-77282:10-22 10:45:42.862 10365 10365 I AndroidRuntime: Using default boot image
-77283:10-22 10:45:42.862 10365 10365 I AndroidRuntime: Leaving lock profiling enabled
-77296:10-22 10:45:42.931 10365 10365 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-77354:10-22 10:45:43.955 10365 10365 D AndroidRuntime: Shutting down VM
-77541:10-22 10:45:45.650   521   541 V WindowManager:     info={id=7 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{26e3aab Task{a0c5834 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x213ca5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{7eadb25 Task{70f7696 #8 type=standard A=10192:net.kravos.jezik}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x36de48f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{fabcab9 token=android.os.Binder@c077480})/@0xc3493c8 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-77662:10-22 10:45:48.999 10421 10421 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-77663:10-22 10:45:49.002 10421 10421 I AndroidRuntime: Using default boot image
-77664:10-22 10:45:49.003 10421 10421 I AndroidRuntime: Leaving lock profiling enabled
-77677:10-22 10:45:49.077 10421 10421 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-77731:10-22 10:45:50.112 10421 10421 D AndroidRuntime: Shutting down VM
-77802:10-22 10:45:51.018   476  3094 D MediaPlayerService: OMX service is not available
-77874:10-22 10:45:51.459  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-77875:10-22 10:45:51.459  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-77894:10-22 10:45:56.044 10455 10455 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-77895:10-22 10:45:56.047 10455 10455 I AndroidRuntime: Using default boot image
-77896:10-22 10:45:56.047 10455 10455 I AndroidRuntime: Leaving lock profiling enabled
-77910:10-22 10:45:56.119 10455 10455 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-77969:10-22 10:45:57.144 10455 10455 D AndroidRuntime: Shutting down VM
-78038:10-22 10:45:58.162 10476 10476 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-78039:10-22 10:45:58.165 10476 10476 I AndroidRuntime: Using default boot image
-78040:10-22 10:45:58.165 10476 10476 I AndroidRuntime: Leaving lock profiling enabled
-78053:10-22 10:45:58.236 10476 10476 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-78110:10-22 10:45:59.264 10476 10476 D AndroidRuntime: Shutting down VM
-78185:10-22 10:46:00.133   476   476 D MediaPlayerService: OMX service is not available
-78252:10-22 10:46:00.587  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-78253:10-22 10:46:00.587  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-78340:10-22 10:46:03.339 10511 10511 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-78341:10-22 10:46:03.342 10511 10511 I AndroidRuntime: Using default boot image
-78342:10-22 10:46:03.342 10511 10511 I AndroidRuntime: Leaving lock profiling enabled
-78355:10-22 10:46:03.413 10511 10511 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-78403:10-22 10:46:04.438 10511 10511 D AndroidRuntime: Shutting down VM
-78488:10-22 10:46:05.327   476   476 D MediaPlayerService: OMX service is not available
-78553:10-22 10:46:05.754  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-78554:10-22 10:46:05.754  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-78567:10-22 10:46:07.373 10559 10559 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-78568:10-22 10:46:07.376 10559 10559 I AndroidRuntime: Using default boot image
-78569:10-22 10:46:07.376 10559 10559 I AndroidRuntime: Leaving lock profiling enabled
-78582:10-22 10:46:07.455 10559 10559 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-78636:10-22 10:46:08.473 10559 10559 D AndroidRuntime: Shutting down VM
-78710:10-22 10:46:09.487 10579 10579 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-78711:10-22 10:46:09.490 10579 10579 I AndroidRuntime: Using default boot image
-78712:10-22 10:46:09.490 10579 10579 I AndroidRuntime: Leaving lock profiling enabled
-78725:10-22 10:46:09.562 10579 10579 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-78770:10-22 10:46:10.584 10579 10579 D AndroidRuntime: Shutting down VM
-78854:10-22 10:46:11.464   476   476 D MediaPlayerService: OMX service is not available
-78924:10-22 10:46:11.895  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-78925:10-22 10:46:11.895  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-78944:10-22 10:46:14.643 10615 10615 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-78945:10-22 10:46:14.646 10615 10615 I AndroidRuntime: Using default boot image
-78946:10-22 10:46:14.646 10615 10615 I AndroidRuntime: Leaving lock profiling enabled
-78959:10-22 10:46:14.720 10615 10615 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-79005:10-22 10:46:15.749 10615 10615 D AndroidRuntime: Shutting down VM
-79086:10-22 10:46:16.644   476  3556 D MediaPlayerService: OMX service is not available
-79153:10-22 10:46:17.175  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-79154:10-22 10:46:17.175  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-79166:10-22 10:46:18.686 10646 10646 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-79167:10-22 10:46:18.689 10646 10646 I AndroidRuntime: Using default boot image
-79168:10-22 10:46:18.689 10646 10646 I AndroidRuntime: Leaving lock profiling enabled
-79181:10-22 10:46:18.762 10646 10646 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-79241:10-22 10:46:19.789 10646 10646 D AndroidRuntime: Shutting down VM
-79307:10-22 10:46:20.805 10666 10666 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-79308:10-22 10:46:20.808 10666 10666 I AndroidRuntime: Using default boot image
-79309:10-22 10:46:20.808 10666 10666 I AndroidRuntime: Leaving lock profiling enabled
-79322:10-22 10:46:20.881 10666 10666 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-79368:10-22 10:46:21.903 10666 10666 D AndroidRuntime: Shutting down VM
-79450:10-22 10:46:22.782   476   476 D MediaPlayerService: OMX service is not available
-79520:10-22 10:46:23.327  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-79521:10-22 10:46:23.327  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-79539:10-22 10:46:25.958 10701 10701 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-79540:10-22 10:46:25.961 10701 10701 I AndroidRuntime: Using default boot image
-79541:10-22 10:46:25.961 10701 10701 I AndroidRuntime: Leaving lock profiling enabled
-79554:10-22 10:46:26.035 10701 10701 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-79612:10-22 10:46:27.050 10701 10701 D AndroidRuntime: Shutting down VM
-79683:10-22 10:46:29.982 10722 10722 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-79684:10-22 10:46:29.985 10722 10722 I AndroidRuntime: Using default boot image
-79685:10-22 10:46:29.985 10722 10722 I AndroidRuntime: Leaving lock profiling enabled
-79698:10-22 10:46:30.056 10722 10722 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-79743:10-22 10:46:31.070 10722 10722 D AndroidRuntime: Shutting down VM
-79823:10-22 10:46:32.090 10744 10744 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-79824:10-22 10:46:32.093 10744 10744 I AndroidRuntime: Using default boot image
-79825:10-22 10:46:32.093 10744 10744 I AndroidRuntime: Leaving lock profiling enabled
-79838:10-22 10:46:32.165 10744 10744 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-79883:10-22 10:46:33.182 10744 10744 D AndroidRuntime: Shutting down VM
-79962:10-22 10:46:34.053   476   476 D MediaPlayerService: OMX service is not available
-80031:10-22 10:46:34.696  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-80032:10-22 10:46:34.696  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-80040:10-22 10:46:34.700  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-80051:10-22 10:46:37.224 10779 10779 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-80052:10-22 10:46:37.227 10779 10779 I AndroidRuntime: Using default boot image
-80053:10-22 10:46:37.227 10779 10779 I AndroidRuntime: Leaving lock profiling enabled
-80066:10-22 10:46:37.298 10779 10779 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-80113:10-22 10:46:38.321 10779 10779 D AndroidRuntime: Shutting down VM
-80196:10-22 10:46:41.257 10800 10800 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-80197:10-22 10:46:41.260 10800 10800 I AndroidRuntime: Using default boot image
-80198:10-22 10:46:41.260 10800 10800 I AndroidRuntime: Leaving lock profiling enabled
-80211:10-22 10:46:41.333 10800 10800 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-80257:10-22 10:46:42.351 10800 10800 D AndroidRuntime: Shutting down VM
-80336:10-22 10:46:43.365 10820 10820 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-80337:10-22 10:46:43.368 10820 10820 I AndroidRuntime: Using default boot image
-80338:10-22 10:46:43.368 10820 10820 I AndroidRuntime: Leaving lock profiling enabled
-80351:10-22 10:46:43.447 10820 10820 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-80398:10-22 10:46:44.475 10820 10820 D AndroidRuntime: Shutting down VM
-80477:10-22 10:46:45.347   476   476 D MediaPlayerService: OMX service is not available
-80545:10-22 10:46:46.374  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-80546:10-22 10:46:46.374  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-80553:10-22 10:46:46.377  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-80564:10-22 10:46:48.520 10856 10856 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-80565:10-22 10:46:48.523 10856 10856 I AndroidRuntime: Using default boot image
-80566:10-22 10:46:48.523 10856 10856 I AndroidRuntime: Leaving lock profiling enabled
-80579:10-22 10:46:48.597 10856 10856 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-80636:10-22 10:46:49.621 10856 10856 D AndroidRuntime: Shutting down VM
-80710:10-22 10:46:52.547 10877 10877 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-80711:10-22 10:46:52.549 10877 10877 I AndroidRuntime: Using default boot image
-80712:10-22 10:46:52.549 10877 10877 I AndroidRuntime: Leaving lock profiling enabled
-80725:10-22 10:46:52.620 10877 10877 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-80780:10-22 10:46:53.640 10877 10877 D AndroidRuntime: Shutting down VM
-80851:10-22 10:46:54.656 10897 10897 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-80852:10-22 10:46:54.659 10897 10897 I AndroidRuntime: Using default boot image
-80853:10-22 10:46:54.659 10897 10897 I AndroidRuntime: Leaving lock profiling enabled
-80866:10-22 10:46:54.731 10897 10897 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-80912:10-22 10:46:55.750 10897 10897 D AndroidRuntime: Shutting down VM
-80990:10-22 10:46:56.627   476   476 D MediaPlayerService: OMX service is not available
-81056:10-22 10:46:57.414  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-81057:10-22 10:46:57.414  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-81065:10-22 10:46:57.418  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-81075:10-22 10:46:59.805 10936 10936 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-81076:10-22 10:46:59.809 10936 10936 I AndroidRuntime: Using default boot image
-81077:10-22 10:46:59.809 10936 10936 I AndroidRuntime: Leaving lock profiling enabled
-81090:10-22 10:46:59.886 10936 10936 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-81144:10-22 10:47:00.906 10936 10936 D AndroidRuntime: Shutting down VM
-81228:10-22 10:47:01.799   476 10924 D MediaPlayerService: OMX service is not available
-81293:10-22 10:47:02.425  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-81294:10-22 10:47:02.425  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-81306:10-22 10:47:03.835 10968 10968 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-81307:10-22 10:47:03.838 10968 10968 I AndroidRuntime: Using default boot image
-81308:10-22 10:47:03.838 10968 10968 I AndroidRuntime: Leaving lock profiling enabled
-81321:10-22 10:47:03.910 10968 10968 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-81368:10-22 10:47:04.934 10968 10968 D AndroidRuntime: Shutting down VM
-81447:10-22 10:47:05.944 10988 10988 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-81448:10-22 10:47:05.947 10988 10988 I AndroidRuntime: Using default boot image
-81449:10-22 10:47:05.947 10988 10988 I AndroidRuntime: Leaving lock profiling enabled
-81462:10-22 10:47:06.019 10988 10988 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-81516:10-22 10:47:07.034 10988 10988 D AndroidRuntime: Shutting down VM
-81590:10-22 10:47:07.919   476  3204 D MediaPlayerService: OMX service is not available
-81661:10-22 10:47:08.546  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-81662:10-22 10:47:08.546  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-81669:10-22 10:47:08.549  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-81680:10-22 10:47:11.099 11023 11023 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-81681:10-22 10:47:11.102 11023 11023 I AndroidRuntime: Using default boot image
-81682:10-22 10:47:11.102 11023 11023 I AndroidRuntime: Leaving lock profiling enabled
-81695:10-22 10:47:11.179 11023 11023 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-81749:10-22 10:47:12.206 11023 11023 D AndroidRuntime: Shutting down VM
-81822:10-22 10:47:13.097   476   896 D MediaPlayerService: OMX service is not available
-81891:10-22 10:47:14.720  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-81892:10-22 10:47:14.720  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-81900:10-22 10:47:14.724  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-81905:10-22 10:47:15.136 11055 11055 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-81906:10-22 10:47:15.139 11055 11055 I AndroidRuntime: Using default boot image
-81907:10-22 10:47:15.139 11055 11055 I AndroidRuntime: Leaving lock profiling enabled
-81920:10-22 10:47:15.212 11055 11055 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-81978:10-22 10:47:16.240 11055 11055 D AndroidRuntime: Shutting down VM
-82045:10-22 10:47:17.250 11075 11075 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-82046:10-22 10:47:17.253 11075 11075 I AndroidRuntime: Using default boot image
-82047:10-22 10:47:17.253 11075 11075 I AndroidRuntime: Leaving lock profiling enabled
-82061:10-22 10:47:17.327 11075 11075 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-82107:10-22 10:47:18.341 11075 11075 D AndroidRuntime: Shutting down VM
-82185:10-22 10:47:19.211   476  3204 D MediaPlayerService: OMX service is not available
-82257:10-22 10:47:20.830  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-82258:10-22 10:47:20.830  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-82275:10-22 10:47:22.388 11113 11113 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-82276:10-22 10:47:22.391 11113 11113 I AndroidRuntime: Using default boot image
-82277:10-22 10:47:22.391 11113 11113 I AndroidRuntime: Leaving lock profiling enabled
-82290:10-22 10:47:22.465 11113 11113 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-82335:10-22 10:47:23.483 11113 11113 D AndroidRuntime: Shutting down VM
-82422:10-22 10:47:26.416 11134 11134 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-82423:10-22 10:47:26.419 11134 11134 I AndroidRuntime: Using default boot image
-82424:10-22 10:47:26.419 11134 11134 I AndroidRuntime: Leaving lock profiling enabled
-82437:10-22 10:47:26.491 11134 11134 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-82484:10-22 10:47:27.511 11134 11134 D AndroidRuntime: Shutting down VM
-82562:10-22 10:47:28.532 11154 11154 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-82563:10-22 10:47:28.535 11154 11154 I AndroidRuntime: Using default boot image
-82564:10-22 10:47:28.535 11154 11154 I AndroidRuntime: Leaving lock profiling enabled
-82577:10-22 10:47:28.607 11154 11154 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-82684:10-22 10:47:29.636 11154 11154 D AndroidRuntime: Shutting down VM
-82701:10-22 10:47:30.510   476  3204 D MediaPlayerService: OMX service is not available
-82773:10-22 10:47:31.571  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-82774:10-22 10:47:31.571  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-82791:10-22 10:47:33.686 11190 11190 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-82792:10-22 10:47:33.689 11190 11190 I AndroidRuntime: Using default boot image
-82793:10-22 10:47:33.689 11190 11190 I AndroidRuntime: Leaving lock profiling enabled
-82806:10-22 10:47:33.765 11190 11190 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-82861:10-22 10:47:34.788 11190 11190 D AndroidRuntime: Shutting down VM
-82939:10-22 10:47:37.720 11212 11212 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-82940:10-22 10:47:37.723 11212 11212 I AndroidRuntime: Using default boot image
-82941:10-22 10:47:37.723 11212 11212 I AndroidRuntime: Leaving lock profiling enabled
-82954:10-22 10:47:37.795 11212 11212 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-83004:10-22 10:47:38.815 11212 11212 D AndroidRuntime: Shutting down VM
-83079:10-22 10:47:39.835 11232 11232 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-83080:10-22 10:47:39.838 11232 11232 I AndroidRuntime: Using default boot image
-83081:10-22 10:47:39.838 11232 11232 I AndroidRuntime: Leaving lock profiling enabled
-83094:10-22 10:47:39.910 11232 11232 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-83144:10-22 10:47:40.930 11232 11232 D AndroidRuntime: Shutting down VM
-83218:10-22 10:47:41.801   476  3204 D MediaPlayerService: OMX service is not available
-83287:10-22 10:47:42.515  2699  2699 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
-83288:10-22 10:47:42.515  2699  2699 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
-83296:10-22 10:47:42.517  2699  2699 W MediaPlayer: mediaplayer went away with unhandled events
-83307:10-22 10:47:44.976 11268 11268 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-83308:10-22 10:47:44.979 11268 11268 I AndroidRuntime: Using default boot image
-83309:10-22 10:47:44.979 11268 11268 I AndroidRuntime: Leaving lock profiling enabled
-83322:10-22 10:47:45.051 11268 11268 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-83385:10-22 10:47:46.074 11268 11268 D AndroidRuntime: Shutting down VM
-83455:10-22 10:47:49.004 11290 11290 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-83456:10-22 10:47:49.007 11290 11290 I AndroidRuntime: Using default boot image
-83457:10-22 10:47:49.007 11290 11290 I AndroidRuntime: Leaving lock profiling enabled
-83470:10-22 10:47:49.078 11290 11290 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-83516:10-22 10:47:50.091 11290 11290 D AndroidRuntime: Shutting down VM
-83595:10-22 10:47:51.100 11310 11310 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-83596:10-22 10:47:51.103 11310 11310 I AndroidRuntime: Using default boot image
-83597:10-22 10:47:51.103 11310 11310 I AndroidRuntime: Leaving lock profiling enabled
-83610:10-22 10:47:51.175 11310 11310 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-83661:10-22 10:47:52.194 11310 11310 D AndroidRuntime: Shutting down VM
-83735:10-22 10:47:55.128 11331 11331 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-83736:10-22 10:47:55.131 11331 11331 I AndroidRuntime: Using default boot image
-83737:10-22 10:47:55.131 11331 11331 I AndroidRuntime: Leaving lock profiling enabled
-83750:10-22 10:47:55.205 11331 11331 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-83832:10-22 10:47:56.237 11331 11331 D AndroidRuntime: Shutting down VM
-83890:10-22 10:48:03.301 11363 11363 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-83891:10-22 10:48:03.304 11363 11363 I AndroidRuntime: Using default boot image
-83892:10-22 10:48:03.304 11363 11363 I AndroidRuntime: Leaving lock profiling enabled
-83905:10-22 10:48:03.379 11363 11363 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-83961:10-22 10:48:04.414 11363 11363 D AndroidRuntime: Shutting down VM
-84104:10-22 10:48:05.365   521   541 V WindowManager:     info={id=8 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{26e3aab Task{a0c5834 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x213ca5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{7eadb25 Task{70f7696 #8 type=standard A=10192:net.kravos.jezik}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x36de48f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{fabcab9 token=android.os.Binder@c077480})/@0xc3493c8 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-84238:10-22 10:48:09.482 11424 11424 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-84239:10-22 10:48:09.485 11424 11424 I AndroidRuntime: Using default boot image
-84240:10-22 10:48:09.485 11424 11424 I AndroidRuntime: Leaving lock profiling enabled
-84253:10-22 10:48:09.559 11424 11424 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-84311:10-22 10:48:10.592 11424 11424 D AndroidRuntime: Shutting down VM
-84379:10-22 10:48:12.608 11445 11445 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-84380:10-22 10:48:12.611 11445 11445 I AndroidRuntime: Using default boot image
-84381:10-22 10:48:12.611 11445 11445 I AndroidRuntime: Leaving lock profiling enabled
-84394:10-22 10:48:12.684 11445 11445 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-84453:10-22 10:48:13.711 11445 11445 D AndroidRuntime: Shutting down VM
-84544:10-22 10:48:14.644   521   541 V WindowManager:     info={id=9 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{26e3aab Task{a0c5834 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x213ca5 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{7eadb25 Task{70f7696 #8 type=standard A=10192:net.kravos.jezik}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x36de48f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{fabcab9 token=android.os.Binder@c077480})/@0xc3493c8 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-84601:10-22 10:48:23.719 11492 11492 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-84602:10-22 10:48:23.723 11492 11492 I AndroidRuntime: Using default boot image
-84603:10-22 10:48:23.723 11492 11492 I AndroidRuntime: Leaving lock profiling enabled
-84616:10-22 10:48:23.796 11492 11492 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-84674:10-22 10:48:24.828 11492 11492 D AndroidRuntime: Shutting down VM
-84825:10-22 10:48:35.068 11542 11542 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-84826:10-22 10:48:35.071 11542 11542 I AndroidRuntime: Using default boot image
-84827:10-22 10:48:35.071 11542 11542 I AndroidRuntime: Leaving lock profiling enabled
-84840:10-22 10:48:35.143 11542 11542 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-84931:10-22 10:48:36.177 11542 11542 D AndroidRuntime: Shutting down VM
+68370:10-26 14:42:42.602  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+68371:10-26 14:42:42.602  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+68378:10-26 14:42:42.607  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+68384:10-26 14:42:43.678  9444  9444 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+68385:10-26 14:42:43.681  9444  9444 I AndroidRuntime: Using default boot image
+68386:10-26 14:42:43.681  9444  9444 I AndroidRuntime: Leaving lock profiling enabled
+68399:10-26 14:42:43.765  9444  9444 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+68452:10-26 14:42:44.786  9444  9444 D AndroidRuntime: Shutting down VM
+68526:10-26 14:42:45.834  9465  9465 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+68527:10-26 14:42:45.838  9465  9465 I AndroidRuntime: Using default boot image
+68528:10-26 14:42:45.838  9465  9465 I AndroidRuntime: Leaving lock profiling enabled
+68541:10-26 14:42:45.920  9465  9465 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+68590:10-26 14:42:46.937  9465  9465 D AndroidRuntime: Shutting down VM
+68674:10-26 14:42:47.825   467  2787 D MediaPlayerService: OMX service is not available
+68741:10-26 14:42:48.789  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+68742:10-26 14:42:48.790  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+68759:10-26 14:42:51.025  9500  9500 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+68760:10-26 14:42:51.029  9500  9500 I AndroidRuntime: Using default boot image
+68761:10-26 14:42:51.029  9500  9500 I AndroidRuntime: Leaving lock profiling enabled
+68774:10-26 14:42:51.108  9500  9500 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+68821:10-26 14:42:52.129  9500  9500 D AndroidRuntime: Shutting down VM
+68903:10-26 14:42:55.080  9521  9521 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+68904:10-26 14:42:55.083  9521  9521 I AndroidRuntime: Using default boot image
+68905:10-26 14:42:55.083  9521  9521 I AndroidRuntime: Leaving lock profiling enabled
+68918:10-26 14:42:55.160  9521  9521 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+68964:10-26 14:42:56.178  9521  9521 D AndroidRuntime: Shutting down VM
+69044:10-26 14:42:57.227  9542  9542 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+69045:10-26 14:42:57.230  9542  9542 I AndroidRuntime: Using default boot image
+69046:10-26 14:42:57.230  9542  9542 I AndroidRuntime: Leaving lock profiling enabled
+69059:10-26 14:42:57.311  9542  9542 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+69115:10-26 14:42:58.327  9542  9542 D AndroidRuntime: Shutting down VM
+69207:10-26 14:43:05.802  9572  9572 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+69208:10-26 14:43:05.805  9572  9572 I AndroidRuntime: Using default boot image
+69209:10-26 14:43:05.805  9572  9572 I AndroidRuntime: Leaving lock profiling enabled
+69222:10-26 14:43:05.880  9572  9572 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+69281:10-26 14:43:06.907  9572  9572 D AndroidRuntime: Shutting down VM
+69353:10-26 14:43:07.789   519  2605 D CoreBackPreview: Window{1c8e1b9 u0 net.kravos.jezik/net.kravos.jezik.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@50ce075, mPriority=0, mIsAnimationCallback=false}
+69354:10-26 14:43:07.819   519  2344 I ImeTracker: net.kravos.jezik:406de922: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+69355:10-26 14:43:07.819   519  2344 I ImeTracker: net.kravos.jezik:406de922: onCancelled at PHASE_SERVER_SHOULD_HIDE
+69358:10-26 14:43:07.822  1514  1514 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.jezik fieldId=0 fieldName=null extras=null}, false)
+69367:10-26 14:43:11.964  9601  9601 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+69368:10-26 14:43:11.968  9601  9601 I AndroidRuntime: Using default boot image
+69369:10-26 14:43:11.968  9601  9601 I AndroidRuntime: Leaving lock profiling enabled
+69382:10-26 14:43:12.046  9601  9601 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+69437:10-26 14:43:13.087  9601  9601 D AndroidRuntime: Shutting down VM
+69507:10-26 14:43:13.967   519   534 D CoreBackPreview: Window{1c8e1b9 u0 net.kravos.jezik/net.kravos.jezik.ui.MainActivity}: Setting back callback null
+69508:10-26 14:43:13.970   519   534 W InputManager-JNI: Input channel object '1c8e1b9 net.kravos.jezik/net.kravos.jezik.ui.MainActivity (client)' was disposed without first being removed with the input manager!
+69514:10-26 14:43:13.988   467  2787 D MediaPlayerService: OMX service is not available
+69539:10-26 14:43:14.001   519   830 I ImeTracker: net.kravos.jezik:fafb49b6: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+69540:10-26 14:43:14.001   519   830 I ImeTracker: net.kravos.jezik:fafb49b6: onCancelled at PHASE_SERVER_SHOULD_HIDE
+69545:10-26 14:43:14.002  1514  1514 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.jezik fieldId=0 fieldName=null extras=null}, false)
+69590:10-26 14:43:15.410  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+69591:10-26 14:43:15.410  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+69599:10-26 14:43:15.414  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+69607:10-26 14:43:19.027  9633  9633 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+69608:10-26 14:43:19.030  9633  9633 I AndroidRuntime: Using default boot image
+69609:10-26 14:43:19.030  9633  9633 I AndroidRuntime: Leaving lock profiling enabled
+69622:10-26 14:43:19.106  9633  9633 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+69678:10-26 14:43:20.120  9633  9633 D AndroidRuntime: Shutting down VM
+69756:10-26 14:43:21.152  9653  9653 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+69757:10-26 14:43:21.155  9653  9653 I AndroidRuntime: Using default boot image
+69758:10-26 14:43:21.155  9653  9653 I AndroidRuntime: Leaving lock profiling enabled
+69771:10-26 14:43:21.230  9653  9653 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+69826:10-26 14:43:22.246  9653  9653 D AndroidRuntime: Shutting down VM
+69896:10-26 14:43:23.142   467  2787 D MediaPlayerService: OMX service is not available
+69961:10-26 14:43:25.186  9683  9683 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+69962:10-26 14:43:25.189  9683  9683 I AndroidRuntime: Using default boot image
+69963:10-26 14:43:25.189  9683  9683 I AndroidRuntime: Leaving lock profiling enabled
+69976:10-26 14:43:25.268  9683  9683 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+70018:10-26 14:43:25.480  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+70019:10-26 14:43:25.480  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+70027:10-26 14:43:25.484  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+70036:10-26 14:43:26.284  9683  9683 D AndroidRuntime: Shutting down VM
+70112:10-26 14:43:27.200  9700  9700 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+70113:10-26 14:43:27.204  9700  9700 I AndroidRuntime: Using default boot image
+70114:10-26 14:43:27.204  9700  9700 I AndroidRuntime: Leaving lock profiling enabled
+70127:10-26 14:43:27.280  9700  9700 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+70185:10-26 14:43:28.300  9700  9700 D AndroidRuntime: Shutting down VM
+70255:10-26 14:43:29.189   467  2787 D MediaPlayerService: OMX service is not available
+70322:10-26 14:43:30.746  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+70323:10-26 14:43:30.746  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+70330:10-26 14:43:30.750  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+70340:10-26 14:43:31.242  9731  9731 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+70341:10-26 14:43:31.245  9731  9731 I AndroidRuntime: Using default boot image
+70342:10-26 14:43:31.245  9731  9731 I AndroidRuntime: Leaving lock profiling enabled
+70355:10-26 14:43:31.325  9731  9731 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+70412:10-26 14:43:32.352  9731  9731 D AndroidRuntime: Shutting down VM
+70477:10-26 14:43:33.275  9747  9747 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+70478:10-26 14:43:33.279  9747  9747 I AndroidRuntime: Using default boot image
+70479:10-26 14:43:33.279  9747  9747 I AndroidRuntime: Leaving lock profiling enabled
+70493:10-26 14:43:33.359  9747  9747 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+70561:10-26 14:43:34.384  9747  9747 D AndroidRuntime: Shutting down VM
+70617:10-26 14:43:35.273   467  2997 D MediaPlayerService: OMX service is not available
+70690:10-26 14:43:36.252  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+70691:10-26 14:43:36.252  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+70703:10-26 14:43:37.330  9781  9781 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+70704:10-26 14:43:37.333  9781  9781 I AndroidRuntime: Using default boot image
+70705:10-26 14:43:37.333  9781  9781 I AndroidRuntime: Leaving lock profiling enabled
+70718:10-26 14:43:37.414  9781  9781 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+70764:10-26 14:43:38.437  9781  9781 D AndroidRuntime: Shutting down VM
+70841:10-26 14:43:39.356  9798  9798 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+70842:10-26 14:43:39.359  9798  9798 I AndroidRuntime: Using default boot image
+70843:10-26 14:43:39.359  9798  9798 I AndroidRuntime: Leaving lock profiling enabled
+70856:10-26 14:43:39.433  9798  9798 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+70912:10-26 14:43:40.452  9798  9798 D AndroidRuntime: Shutting down VM
+70985:10-26 14:43:41.357   467  2787 D MediaPlayerService: OMX service is not available
+71055:10-26 14:43:42.507  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+71056:10-26 14:43:42.507  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+71064:10-26 14:43:42.510  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+71069:10-26 14:43:43.402  9830  9830 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+71070:10-26 14:43:43.405  9830  9830 I AndroidRuntime: Using default boot image
+71071:10-26 14:43:43.405  9830  9830 I AndroidRuntime: Leaving lock profiling enabled
+71084:10-26 14:43:43.480  9830  9830 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+71186:10-26 14:43:44.508  9830  9830 D AndroidRuntime: Shutting down VM
+71212:10-26 14:43:45.538  9850  9850 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+71213:10-26 14:43:45.542  9850  9850 I AndroidRuntime: Using default boot image
+71214:10-26 14:43:45.542  9850  9850 I AndroidRuntime: Leaving lock profiling enabled
+71227:10-26 14:43:45.617  9850  9850 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+71285:10-26 14:43:46.640  9850  9850 D AndroidRuntime: Shutting down VM
+71354:10-26 14:43:47.524   467  2787 D MediaPlayerService: OMX service is not available
+71425:10-26 14:43:49.228  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+71426:10-26 14:43:49.228  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+71433:10-26 14:43:49.233  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+71439:10-26 14:43:49.581  9881  9881 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+71440:10-26 14:43:49.584  9881  9881 I AndroidRuntime: Using default boot image
+71441:10-26 14:43:49.584  9881  9881 I AndroidRuntime: Leaving lock profiling enabled
+71454:10-26 14:43:49.661  9881  9881 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+71501:10-26 14:43:50.681  9881  9881 D AndroidRuntime: Shutting down VM
+71576:10-26 14:43:51.596  9898  9898 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+71577:10-26 14:43:51.600  9898  9898 I AndroidRuntime: Using default boot image
+71578:10-26 14:43:51.600  9898  9898 I AndroidRuntime: Leaving lock profiling enabled
+71591:10-26 14:43:51.675  9898  9898 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+71679:10-26 14:43:52.705  9898  9898 D AndroidRuntime: Shutting down VM
+71722:10-26 14:43:55.648  9920  9920 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+71723:10-26 14:43:55.651  9920  9920 I AndroidRuntime: Using default boot image
+71724:10-26 14:43:55.651  9920  9920 I AndroidRuntime: Leaving lock profiling enabled
+71738:10-26 14:43:55.726  9920  9920 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+71784:10-26 14:43:56.748  9920  9920 D AndroidRuntime: Shutting down VM
+71860:10-26 14:43:57.710  9937  9937 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+71861:10-26 14:43:57.713  9937  9937 I AndroidRuntime: Using default boot image
+71862:10-26 14:43:57.713  9937  9937 I AndroidRuntime: Leaving lock profiling enabled
+71875:10-26 14:43:57.789  9937  9937 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+71923:10-26 14:43:58.805  9937  9937 D AndroidRuntime: Shutting down VM
+72001:10-26 14:43:59.707   467  2998 D MediaPlayerService: OMX service is not available
+72077:10-26 14:44:01.618  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+72078:10-26 14:44:01.618  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+72085:10-26 14:44:01.621  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+72091:10-26 14:44:01.763  9968  9968 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+72092:10-26 14:44:01.767  9968  9968 I AndroidRuntime: Using default boot image
+72093:10-26 14:44:01.767  9968  9968 I AndroidRuntime: Leaving lock profiling enabled
+72106:10-26 14:44:01.848  9968  9968 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+72203:10-26 14:44:02.879  9968  9968 D AndroidRuntime: Shutting down VM
+72227:10-26 14:44:03.802  9984  9984 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+72228:10-26 14:44:03.805  9984  9984 I AndroidRuntime: Using default boot image
+72229:10-26 14:44:03.805  9984  9984 I AndroidRuntime: Leaving lock profiling enabled
+72242:10-26 14:44:03.883  9984  9984 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+72298:10-26 14:44:04.897  9984  9984 D AndroidRuntime: Shutting down VM
+72369:10-26 14:44:05.791   467  2998 D MediaPlayerService: OMX service is not available
+72437:10-26 14:44:07.315  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+72438:10-26 14:44:07.315  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+72446:10-26 14:44:07.320  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+72451:10-26 14:44:07.837 10015 10015 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+72452:10-26 14:44:07.840 10015 10015 I AndroidRuntime: Using default boot image
+72453:10-26 14:44:07.840 10015 10015 I AndroidRuntime: Leaving lock profiling enabled
+72467:10-26 14:44:07.916 10015 10015 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+72513:10-26 14:44:08.934 10015 10015 D AndroidRuntime: Shutting down VM
+72594:10-26 14:44:09.960 10035 10035 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+72595:10-26 14:44:09.963 10035 10035 I AndroidRuntime: Using default boot image
+72596:10-26 14:44:09.963 10035 10035 I AndroidRuntime: Leaving lock profiling enabled
+72609:10-26 14:44:10.038 10035 10035 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+72656:10-26 14:44:11.061 10035 10035 D AndroidRuntime: Shutting down VM
+72734:10-26 14:44:11.957   467  2998 D MediaPlayerService: OMX service is not available
+72806:10-26 14:44:13.506  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+72807:10-26 14:44:13.506  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+72819:10-26 14:44:14.007 10066 10066 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+72820:10-26 14:44:14.010 10066 10066 I AndroidRuntime: Using default boot image
+72821:10-26 14:44:14.010 10066 10066 I AndroidRuntime: Leaving lock profiling enabled
+72834:10-26 14:44:14.089 10066 10066 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+72880:10-26 14:44:15.114 10066 10066 D AndroidRuntime: Shutting down VM
+72955:10-26 14:44:16.038 10082 10082 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+72956:10-26 14:44:16.041 10082 10082 I AndroidRuntime: Using default boot image
+72957:10-26 14:44:16.041 10082 10082 I AndroidRuntime: Leaving lock profiling enabled
+72970:10-26 14:44:16.119 10082 10082 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+73016:10-26 14:44:17.136 10082 10082 D AndroidRuntime: Shutting down VM
+73104:10-26 14:44:20.077 10103 10103 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+73105:10-26 14:44:20.080 10103 10103 I AndroidRuntime: Using default boot image
+73106:10-26 14:44:20.080 10103 10103 I AndroidRuntime: Leaving lock profiling enabled
+73119:10-26 14:44:20.159 10103 10103 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+73175:10-26 14:44:21.180 10103 10103 D AndroidRuntime: Shutting down VM
+73241:10-26 14:44:22.101 10120 10120 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+73242:10-26 14:44:22.104 10120 10120 I AndroidRuntime: Using default boot image
+73243:10-26 14:44:22.104 10120 10120 I AndroidRuntime: Leaving lock profiling enabled
+73256:10-26 14:44:22.179 10120 10120 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+73399:10-26 14:44:23.200 10120 10120 D AndroidRuntime: Shutting down VM
+73463:10-26 14:44:24.090   467  2787 D MediaPlayerService: OMX service is not available
+73630:10-26 14:44:25.314  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+73631:10-26 14:44:25.314  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+73637:10-26 14:44:25.318  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+73645:10-26 14:44:26.140 10175 10175 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+73646:10-26 14:44:26.143 10175 10175 I AndroidRuntime: Using default boot image
+73647:10-26 14:44:26.143 10175 10175 I AndroidRuntime: Leaving lock profiling enabled
+73660:10-26 14:44:26.219 10175 10175 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+73709:10-26 14:44:27.233 10175 10175 D AndroidRuntime: Shutting down VM
+73918:10-26 14:44:28.145 10191 10191 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+73919:10-26 14:44:28.148 10191 10191 I AndroidRuntime: Using default boot image
+73920:10-26 14:44:28.148 10191 10191 I AndroidRuntime: Leaving lock profiling enabled
+73937:10-26 14:44:28.224 10191 10191 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+74051:10-26 14:44:29.250 10191 10191 D AndroidRuntime: Shutting down VM
+74123:10-26 14:44:30.139   467  2998 D MediaPlayerService: OMX service is not available
+74194:10-26 14:44:32.184 10249 10249 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+74195:10-26 14:44:32.187 10249 10249 I AndroidRuntime: Using default boot image
+74196:10-26 14:44:32.187 10249 10249 I AndroidRuntime: Leaving lock profiling enabled
+74209:10-26 14:44:32.256 10249 10249 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+74254:10-26 14:44:32.740  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+74255:10-26 14:44:32.740  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+74263:10-26 14:44:32.743  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+74271:10-26 14:44:33.278 10249 10249 D AndroidRuntime: Shutting down VM
+74352:10-26 14:44:34.294 10270 10270 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+74353:10-26 14:44:34.297 10270 10270 I AndroidRuntime: Using default boot image
+74354:10-26 14:44:34.297 10270 10270 I AndroidRuntime: Leaving lock profiling enabled
+74367:10-26 14:44:34.369 10270 10270 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+74417:10-26 14:44:35.385 10270 10270 D AndroidRuntime: Shutting down VM
+74498:10-26 14:44:38.318 10292 10292 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+74499:10-26 14:44:38.321 10292 10292 I AndroidRuntime: Using default boot image
+74500:10-26 14:44:38.321 10292 10292 I AndroidRuntime: Leaving lock profiling enabled
+74513:10-26 14:44:38.394 10292 10292 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+74562:10-26 14:44:39.412 10292 10292 D AndroidRuntime: Shutting down VM
+74640:10-26 14:44:40.433 10312 10312 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+74641:10-26 14:44:40.436 10312 10312 I AndroidRuntime: Using default boot image
+74642:10-26 14:44:40.436 10312 10312 I AndroidRuntime: Leaving lock profiling enabled
+74655:10-26 14:44:40.509 10312 10312 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+74750:10-26 14:44:41.539 10312 10312 D AndroidRuntime: Shutting down VM
+74783:10-26 14:44:46.579 10337 10337 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+74784:10-26 14:44:46.583 10337 10337 I AndroidRuntime: Using default boot image
+74785:10-26 14:44:46.583 10337 10337 I AndroidRuntime: Leaving lock profiling enabled
+74798:10-26 14:44:46.659 10337 10337 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+74845:10-26 14:44:47.681 10337 10337 D AndroidRuntime: Shutting down VM
+74930:10-26 14:44:53.280 10368 10368 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+74931:10-26 14:44:53.283 10368 10368 I AndroidRuntime: Using default boot image
+74932:10-26 14:44:53.283 10368 10368 I AndroidRuntime: Leaving lock profiling enabled
+74945:10-26 14:44:53.353 10368 10368 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+74999:10-26 14:44:54.375 10368 10368 D AndroidRuntime: Shutting down VM
+75095:10-26 14:45:03.978 10409 10409 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+75096:10-26 14:45:03.980 10409 10409 I AndroidRuntime: Using default boot image
+75097:10-26 14:45:03.980 10409 10409 I AndroidRuntime: Leaving lock profiling enabled
+75110:10-26 14:45:04.051 10409 10409 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+75169:10-26 14:45:05.075 10409 10409 D AndroidRuntime: Shutting down VM
+75369:10-26 14:45:06.919   519   539 V WindowManager:     info={id=7 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{d3e5428 Task{67b6766 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x38993de sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{de2371a Task{f7f75de #8 type=standard A=10192:net.kravos.jezik}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x1fc703c sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{58fc1db token=android.os.Binder@27e2b8c})/@0xf700415 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+75452:10-26 14:45:07.163  1029  1029 V MediaPlayerList: onActiveSessionsChanged: number of controllers: 1
+75453:10-26 14:45:07.164  1029  1029 D MediaPlayerList: onActiveSessionsChanged: controller: com.google.android.googlequicksearchbox
+75454:10-26 14:45:07.166  1029  1029 I MediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
+75455:10-26 14:45:07.166  1029  1029 D MediaPlayerList: sendMediaUpdate state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=39077, actions=2409991, custom actions=[Action:mName='Rewind 10 seconds, mIcon=2131234345, mExtras=null, Action:mName='Fast forward 30 second, mIcon=2131234125, mExtras=null, Action:mName='Skip to next episode, mIcon=2131234405, mExtras=null], active item id=-1, error=null}
+75458:10-26 14:45:07.169  1029  1029 V MediaPlayerList: onActiveSessionsChanged: number of controllers: 1
+75459:10-26 14:45:07.170  1029  1029 D MediaPlayerList: onActiveSessionsChanged: controller: com.google.android.googlequicksearchbox
+75460:10-26 14:45:07.170  1029  1029 I MediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
+75461:10-26 14:45:07.170  1029  1029 D MediaPlayerList: sendMediaUpdate state=PlaybackState {state=NONE(0), position=0, buffered position=0, speed=0.0, updated=39077, actions=2409991, custom actions=[Action:mName='Rewind 10 seconds, mIcon=2131234345, mExtras=null, Action:mName='Fast forward 30 second, mIcon=2131234125, mExtras=null, Action:mName='Skip to next episode, mIcon=2131234405, mExtras=null], active item id=-1, error=null}
+75473:10-26 14:45:10.125 10460 10460 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+75474:10-26 14:45:10.128 10460 10460 I AndroidRuntime: Using default boot image
+75475:10-26 14:45:10.128 10460 10460 I AndroidRuntime: Leaving lock profiling enabled
+75488:10-26 14:45:10.199 10460 10460 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+75546:10-26 14:45:11.223 10460 10460 D AndroidRuntime: Shutting down VM
+75615:10-26 14:45:17.160 10484 10484 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+75616:10-26 14:45:17.163 10484 10484 I AndroidRuntime: Using default boot image
+75617:10-26 14:45:17.163 10484 10484 I AndroidRuntime: Leaving lock profiling enabled
+75630:10-26 14:45:17.234 10484 10484 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+75747:10-26 14:45:18.253 10484 10484 D AndroidRuntime: Shutting down VM
+75829:10-26 14:45:19.267 10522 10522 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+75830:10-26 14:45:19.270 10522 10522 I AndroidRuntime: Using default boot image
+75831:10-26 14:45:19.270 10522 10522 I AndroidRuntime: Leaving lock profiling enabled
+75844:10-26 14:45:19.343 10522 10522 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+75894:10-26 14:45:20.357 10522 10522 D AndroidRuntime: Shutting down VM
+75970:10-26 14:45:21.229   467  2998 D MediaPlayerService: OMX service is not available
+76046:10-26 14:45:21.677  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+76047:10-26 14:45:21.677  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+76066:10-26 14:45:24.405 10558 10558 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+76067:10-26 14:45:24.408 10558 10558 I AndroidRuntime: Using default boot image
+76068:10-26 14:45:24.408 10558 10558 I AndroidRuntime: Leaving lock profiling enabled
+76081:10-26 14:45:24.481 10558 10558 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+76127:10-26 14:45:25.503 10558 10558 D AndroidRuntime: Shutting down VM
+76212:10-26 14:45:28.440 10580 10580 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+76213:10-26 14:45:28.443 10580 10580 I AndroidRuntime: Using default boot image
+76214:10-26 14:45:28.443 10580 10580 I AndroidRuntime: Leaving lock profiling enabled
+76227:10-26 14:45:28.514 10580 10580 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+76288:10-26 14:45:29.540 10580 10580 D AndroidRuntime: Shutting down VM
+76353:10-26 14:45:30.550 10600 10600 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+76354:10-26 14:45:30.553 10600 10600 I AndroidRuntime: Using default boot image
+76355:10-26 14:45:30.553 10600 10600 I AndroidRuntime: Leaving lock profiling enabled
+76368:10-26 14:45:30.623 10600 10600 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+76413:10-26 14:45:31.643 10600 10600 D AndroidRuntime: Shutting down VM
+76492:10-26 14:45:32.520   467  2626 D MediaPlayerService: OMX service is not available
+76562:10-26 14:45:33.581  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+76563:10-26 14:45:33.581  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+76571:10-26 14:45:33.585  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+76581:10-26 14:45:35.704 10635 10635 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+76582:10-26 14:45:35.707 10635 10635 I AndroidRuntime: Using default boot image
+76583:10-26 14:45:35.707 10635 10635 I AndroidRuntime: Leaving lock profiling enabled
+76596:10-26 14:45:35.787 10635 10635 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+76642:10-26 14:45:36.809 10635 10635 D AndroidRuntime: Shutting down VM
+76723:10-26 14:45:37.707   467  2626 D MediaPlayerService: OMX service is not available
+76788:10-26 14:45:38.667  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+76789:10-26 14:45:38.667  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+76797:10-26 14:45:38.671  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+76806:10-26 14:45:39.750 10666 10666 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+76807:10-26 14:45:39.753 10666 10666 I AndroidRuntime: Using default boot image
+76808:10-26 14:45:39.753 10666 10666 I AndroidRuntime: Leaving lock profiling enabled
+76821:10-26 14:45:39.831 10666 10666 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+76866:10-26 14:45:40.849 10666 10666 D AndroidRuntime: Shutting down VM
+76948:10-26 14:45:41.863 10687 10687 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+76949:10-26 14:45:41.866 10687 10687 I AndroidRuntime: Using default boot image
+76950:10-26 14:45:41.866 10687 10687 I AndroidRuntime: Leaving lock profiling enabled
+76963:10-26 14:45:41.936 10687 10687 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+77014:10-26 14:45:42.956 10687 10687 D AndroidRuntime: Shutting down VM
+77091:10-26 14:45:43.836   467  2787 D MediaPlayerService: OMX service is not available
+77161:10-26 14:45:44.798  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+77162:10-26 14:45:44.798  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+77169:10-26 14:45:44.802  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+77180:10-26 14:45:47.011 10722 10722 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+77181:10-26 14:45:47.015 10722 10722 I AndroidRuntime: Using default boot image
+77182:10-26 14:45:47.015 10722 10722 I AndroidRuntime: Leaving lock profiling enabled
+77195:10-26 14:45:47.090 10722 10722 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+77246:10-26 14:45:48.111 10722 10722 D AndroidRuntime: Shutting down VM
+77324:10-26 14:45:51.051 10744 10744 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+77325:10-26 14:45:51.054 10744 10744 I AndroidRuntime: Using default boot image
+77326:10-26 14:45:51.054 10744 10744 I AndroidRuntime: Leaving lock profiling enabled
+77339:10-26 14:45:51.126 10744 10744 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+77391:10-26 14:45:52.147 10744 10744 D AndroidRuntime: Shutting down VM
+77465:10-26 14:45:53.166 10765 10765 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+77466:10-26 14:45:53.169 10765 10765 I AndroidRuntime: Using default boot image
+77467:10-26 14:45:53.169 10765 10765 I AndroidRuntime: Leaving lock profiling enabled
+77480:10-26 14:45:53.242 10765 10765 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+77536:10-26 14:45:54.264 10765 10765 D AndroidRuntime: Shutting down VM
+77604:10-26 14:45:55.145   467  2787 D MediaPlayerService: OMX service is not available
+77675:10-26 14:45:55.670  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+77676:10-26 14:45:55.670  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+77694:10-26 14:45:58.325 10800 10800 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+77695:10-26 14:45:58.328 10800 10800 I AndroidRuntime: Using default boot image
+77696:10-26 14:45:58.328 10800 10800 I AndroidRuntime: Leaving lock profiling enabled
+77709:10-26 14:45:58.403 10800 10800 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+77769:10-26 14:45:59.426 10800 10800 D AndroidRuntime: Shutting down VM
+77846:10-26 14:46:02.364 10821 10821 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+77847:10-26 14:46:02.367 10821 10821 I AndroidRuntime: Using default boot image
+77848:10-26 14:46:02.367 10821 10821 I AndroidRuntime: Leaving lock profiling enabled
+77861:10-26 14:46:02.441 10821 10821 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+77912:10-26 14:46:03.464 10821 10821 D AndroidRuntime: Shutting down VM
+77987:10-26 14:46:04.487 10841 10841 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+77988:10-26 14:46:04.490 10841 10841 I AndroidRuntime: Using default boot image
+77989:10-26 14:46:04.490 10841 10841 I AndroidRuntime: Leaving lock profiling enabled
+78002:10-26 14:46:04.567 10841 10841 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+78048:10-26 14:46:05.590 10841 10841 D AndroidRuntime: Shutting down VM
+78126:10-26 14:46:06.462   467  2626 D MediaPlayerService: OMX service is not available
+78195:10-26 14:46:06.888  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+78196:10-26 14:46:06.889  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+78215:10-26 14:46:09.651 10876 10876 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+78216:10-26 14:46:09.654 10876 10876 I AndroidRuntime: Using default boot image
+78217:10-26 14:46:09.654 10876 10876 I AndroidRuntime: Leaving lock profiling enabled
+78230:10-26 14:46:09.733 10876 10876 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+78278:10-26 14:46:10.752 10876 10876 D AndroidRuntime: Shutting down VM
+78358:10-26 14:46:13.687 10898 10898 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+78359:10-26 14:46:13.690 10898 10898 I AndroidRuntime: Using default boot image
+78360:10-26 14:46:13.690 10898 10898 I AndroidRuntime: Leaving lock profiling enabled
+78373:10-26 14:46:13.762 10898 10898 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+78418:10-26 14:46:14.785 10898 10898 D AndroidRuntime: Shutting down VM
+78499:10-26 14:46:15.797 10918 10918 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+78500:10-26 14:46:15.800 10918 10918 I AndroidRuntime: Using default boot image
+78501:10-26 14:46:15.800 10918 10918 I AndroidRuntime: Leaving lock profiling enabled
+78514:10-26 14:46:15.874 10918 10918 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+78559:10-26 14:46:16.896 10918 10918 D AndroidRuntime: Shutting down VM
+78638:10-26 14:46:17.778   467  2626 D MediaPlayerService: OMX service is not available
+78710:10-26 14:46:18.483  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+78711:10-26 14:46:18.483  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+78718:10-26 14:46:18.486  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+78729:10-26 14:46:20.956 10953 10953 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+78730:10-26 14:46:20.959 10953 10953 I AndroidRuntime: Using default boot image
+78731:10-26 14:46:20.960 10953 10953 I AndroidRuntime: Leaving lock profiling enabled
+78744:10-26 14:46:21.033 10953 10953 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+78791:10-26 14:46:22.053 10953 10953 D AndroidRuntime: Shutting down VM
+78872:10-26 14:46:24.988 10974 10974 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+78873:10-26 14:46:24.991 10974 10974 I AndroidRuntime: Using default boot image
+78874:10-26 14:46:24.991 10974 10974 I AndroidRuntime: Leaving lock profiling enabled
+78887:10-26 14:46:25.062 10974 10974 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+78936:10-26 14:46:26.083 10974 10974 D AndroidRuntime: Shutting down VM
+79013:10-26 14:46:27.106 10994 10994 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+79014:10-26 14:46:27.109 10994 10994 I AndroidRuntime: Using default boot image
+79015:10-26 14:46:27.109 10994 10994 I AndroidRuntime: Leaving lock profiling enabled
+79028:10-26 14:46:27.183 10994 10994 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+79074:10-26 14:46:28.206 10994 10994 D AndroidRuntime: Shutting down VM
+79154:10-26 14:46:29.082   467  2998 D MediaPlayerService: OMX service is not available
+79223:10-26 14:46:29.879  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+79224:10-26 14:46:29.879  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+79231:10-26 14:46:29.882  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+79242:10-26 14:46:32.266 11029 11029 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+79243:10-26 14:46:32.269 11029 11029 I AndroidRuntime: Using default boot image
+79244:10-26 14:46:32.269 11029 11029 I AndroidRuntime: Leaving lock profiling enabled
+79258:10-26 14:46:32.351 11029 11029 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+79312:10-26 14:46:33.377 11029 11029 D AndroidRuntime: Shutting down VM
+79386:10-26 14:46:34.274   467  2787 D MediaPlayerService: OMX service is not available
+79452:10-26 14:46:35.174  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+79453:10-26 14:46:35.174  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+79465:10-26 14:46:36.311 11061 11061 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+79466:10-26 14:46:36.315 11061 11061 I AndroidRuntime: Using default boot image
+79467:10-26 14:46:36.315 11061 11061 I AndroidRuntime: Leaving lock profiling enabled
+79480:10-26 14:46:36.391 11061 11061 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+79525:10-26 14:46:37.413 11061 11061 D AndroidRuntime: Shutting down VM
+79609:10-26 14:46:38.433 11081 11081 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+79610:10-26 14:46:38.436 11081 11081 I AndroidRuntime: Using default boot image
+79611:10-26 14:46:38.437 11081 11081 I AndroidRuntime: Leaving lock profiling enabled
+79624:10-26 14:46:38.511 11081 11081 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+79679:10-26 14:46:39.528 11081 11081 D AndroidRuntime: Shutting down VM
+79752:10-26 14:46:40.412   467  2997 D MediaPlayerService: OMX service is not available
+79822:10-26 14:46:41.320  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+79823:10-26 14:46:41.320  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+79830:10-26 14:46:41.324  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+79841:10-26 14:46:43.591 11116 11116 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+79842:10-26 14:46:43.593 11116 11116 I AndroidRuntime: Using default boot image
+79843:10-26 14:46:43.593 11116 11116 I AndroidRuntime: Leaving lock profiling enabled
+79856:10-26 14:46:43.673 11116 11116 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+79904:10-26 14:46:44.697 11116 11116 D AndroidRuntime: Shutting down VM
+79982:10-26 14:46:45.574   467  2997 D MediaPlayerService: OMX service is not available
+80050:10-26 14:46:46.198  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+80051:10-26 14:46:46.198  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+80064:10-26 14:46:47.635 11149 11149 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+80065:10-26 14:46:47.639 11149 11149 I AndroidRuntime: Using default boot image
+80066:10-26 14:46:47.639 11149 11149 I AndroidRuntime: Leaving lock profiling enabled
+80079:10-26 14:46:47.716 11149 11149 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+80164:10-26 14:46:48.743 11149 11149 D AndroidRuntime: Shutting down VM
+80207:10-26 14:46:49.760 11169 11169 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+80208:10-26 14:46:49.763 11169 11169 I AndroidRuntime: Using default boot image
+80209:10-26 14:46:49.763 11169 11169 I AndroidRuntime: Leaving lock profiling enabled
+80222:10-26 14:46:49.836 11169 11169 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+80312:10-26 14:46:50.857 11169 11169 D AndroidRuntime: Shutting down VM
+80351:10-26 14:46:51.733   467  2997 D MediaPlayerService: OMX service is not available
+80422:10-26 14:46:52.355  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+80423:10-26 14:46:52.355  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+80431:10-26 14:46:52.359  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+80441:10-26 14:46:54.911 11204 11204 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+80442:10-26 14:46:54.914 11204 11204 I AndroidRuntime: Using default boot image
+80443:10-26 14:46:54.914 11204 11204 I AndroidRuntime: Leaving lock profiling enabled
+80456:10-26 14:46:54.989 11204 11204 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+80512:10-26 14:46:56.013 11204 11204 D AndroidRuntime: Shutting down VM
+80585:10-26 14:46:58.951 11226 11226 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+80586:10-26 14:46:58.954 11226 11226 I AndroidRuntime: Using default boot image
+80587:10-26 14:46:58.954 11226 11226 I AndroidRuntime: Leaving lock profiling enabled
+80600:10-26 14:46:59.026 11226 11226 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+80666:10-26 14:47:00.050 11226 11226 D AndroidRuntime: Shutting down VM
+80734:10-26 14:47:01.069 11247 11247 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+80735:10-26 14:47:01.072 11247 11247 I AndroidRuntime: Using default boot image
+80736:10-26 14:47:01.072 11247 11247 I AndroidRuntime: Leaving lock profiling enabled
+80749:10-26 14:47:01.147 11247 11247 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+80797:10-26 14:47:02.165 11247 11247 D AndroidRuntime: Shutting down VM
+80873:10-26 14:47:03.040   467  2998 D MediaPlayerService: OMX service is not available
+80941:10-26 14:47:04.657  3041  3041 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+80942:10-26 14:47:04.657  3041  3041 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+80950:10-26 14:47:04.661  3041  3041 W MediaPlayer: mediaplayer went away with unhandled events
+80960:10-26 14:47:06.218 11282 11282 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+80961:10-26 14:47:06.221 11282 11282 I AndroidRuntime: Using default boot image
+80962:10-26 14:47:06.221 11282 11282 I AndroidRuntime: Leaving lock profiling enabled
+80975:10-26 14:47:06.298 11282 11282 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+81030:10-26 14:47:07.317 11282 11282 D AndroidRuntime: Shutting down VM
+81107:10-26 14:47:10.253 11304 11304 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+81108:10-26 14:47:10.256 11304 11304 I AndroidRuntime: Using default boot image
+81109:10-26 14:47:10.256 11304 11304 I AndroidRuntime: Leaving lock profiling enabled
+81122:10-26 14:47:10.331 11304 11304 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+81210:10-26 14:47:11.357 11304 11304 D AndroidRuntime: Shutting down VM
+81248:10-26 14:47:12.377 11325 11325 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+81249:10-26 14:47:12.380 11325 11325 I AndroidRuntime: Using default boot image
+81250:10-26 14:47:12.380 11325 11325 I AndroidRuntime: Leaving lock profiling enabled
+81263:10-26 14:47:12.453 11325 11325 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+81309:10-26 14:47:13.469 11325 11325 D AndroidRuntime: Shutting down VM
+81386:10-26 14:47:16.405 11346 11346 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+81387:10-26 14:47:16.408 11346 11346 I AndroidRuntime: Using default boot image
+81388:10-26 14:47:16.408 11346 11346 I AndroidRuntime: Leaving lock profiling enabled
+81401:10-26 14:47:16.478 11346 11346 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+81458:10-26 14:47:17.496 11346 11346 D AndroidRuntime: Shutting down VM
+81534:10-26 14:47:24.557 11378 11378 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+81535:10-26 14:47:24.560 11378 11378 I AndroidRuntime: Using default boot image
+81536:10-26 14:47:24.560 11378 11378 I AndroidRuntime: Leaving lock profiling enabled
+81550:10-26 14:47:24.638 11378 11378 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+81595:10-26 14:47:25.667 11378 11378 D AndroidRuntime: Shutting down VM
+81699:10-26 14:47:26.597   519   539 V WindowManager:     info={id=8 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{d3e5428 Task{67b6766 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x38993de sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{de2371a Task{f7f75de #8 type=standard A=10192:net.kravos.jezik}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x1fc703c sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{58fc1db token=android.os.Binder@27e2b8c})/@0xf700415 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+81746:10-26 14:47:30.709 11411 11411 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+81747:10-26 14:47:30.713 11411 11411 I AndroidRuntime: Using default boot image
+81748:10-26 14:47:30.713 11411 11411 I AndroidRuntime: Leaving lock profiling enabled
+81761:10-26 14:47:30.788 11411 11411 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+81818:10-26 14:47:31.807 11411 11411 D AndroidRuntime: Shutting down VM
+81886:10-26 14:47:33.830 11432 11432 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+81887:10-26 14:47:33.833 11432 11432 I AndroidRuntime: Using default boot image
+81888:10-26 14:47:33.833 11432 11432 I AndroidRuntime: Leaving lock profiling enabled
+81901:10-26 14:47:33.902 11432 11432 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+81951:10-26 14:47:34.918 11432 11432 D AndroidRuntime: Shutting down VM
+82043:10-26 14:47:35.845   519   539 V WindowManager:     info={id=9 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{d3e5428 Task{67b6766 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x38993de sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{de2371a Task{f7f75de #8 type=standard A=10192:net.kravos.jezik}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x1fc703c sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{58fc1db token=android.os.Binder@27e2b8c})/@0xf700415 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+82108:10-26 14:47:44.932 11479 11479 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+82109:10-26 14:47:44.935 11479 11479 I AndroidRuntime: Using default boot image
+82110:10-26 14:47:44.935 11479 11479 I AndroidRuntime: Leaving lock profiling enabled
+82123:10-26 14:47:45.006 11479 11479 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+82171:10-26 14:47:46.032 11479 11479 D AndroidRuntime: Shutting down VM
+82333:10-26 14:47:56.261 11529 11529 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+82334:10-26 14:47:56.264 11529 11529 I AndroidRuntime: Using default boot image
+82335:10-26 14:47:56.264 11529 11529 I AndroidRuntime: Leaving lock profiling enabled
+82348:10-26 14:47:56.333 11529 11529 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+82408:10-26 14:47:57.362 11529 11529 D AndroidRuntime: Shutting down VM
