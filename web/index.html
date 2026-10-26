@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Kravos Jezik</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'%3E%3Crect width='108' height='108' rx='24' fill='%23131F24'/%3E%3Cpath fill='%231CB0F6' d='M52,40 L76,40 A8,8 0 0,1 84,48 L84,64 A8,8 0 0,1 76,72 L74,72 L74,80 L66,72 L60,72 A8,8 0 0,1 52,64 Z'/%3E%3Cpath fill='%2358CC02' d='M32,26 L64,26 A9,9 0 0,1 73,35 L73,56 A9,9 0 0,1 64,65 L44,65 L34,75 L34,65 L32,65 A9,9 0 0,1 23,56 L23,35 A9,9 0 0,1 32,26 Z'/%3E%3Cpath fill='%23fff' d='M36,33 L42,33 L42,43 L50,33 L58,33 L48,45.5 L58,58 L50,58 L42,48 L42,58 L36,58 Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #58CC02; --green-d: #46A302; --blue: #1CB0F6; --blue-d: #1899D6; --orange: #FF9600; --red: #FF4B4B; --red-d: #EA2B2B;
+  --gold: #FFC800; --purple: #CE82FF; --purple-d: #A568CC;
+  --bg: #FFFFFF; --ink: #3C3C3C; --dim: #777777; --border: #E5E5E5; --surface: #F7F7F7; --sheet: #FFFFFF;
+  --ok-bg: #D7FFB8; --bad-bg: #FFDFE0; --sel-bg: #DDF4FF; --locked: #E5E5E5; --shadow: 0 20px 60px rgba(0,0,0,.18);
+  --font: Nunito, "Segoe UI", Roboto, system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131F24; --ink: #F1F7FB; --dim: #8A9BA5; --border: #37464F; --surface: #1A2830; --sheet: #1A2830;
+    --ok-bg: #1C2E12; --bad-bg: #3A1A1C; --sel-bg: #1B3A4B; --locked: #37464F; --shadow: 0 20px 60px rgba(0,0,0,.55);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131F24; --ink: #F1F7FB; --dim: #8A9BA5; --border: #37464F; --surface: #1A2830; --sheet: #1A2830;
+  --ok-bg: #1C2E12; --bad-bg: #3A1A1C; --sel-bg: #1B3A4B; --locked: #37464F; --shadow: 0 20px 60px rgba(0,0,0,.55);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font-family: var(--font); font-size: 16px; line-height: 1.45; font-weight: 600; -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+input { font: inherit; color: inherit; }
+a { color: inherit; text-decoration: none; }
+.dim { color: var(--dim); }
+h1, h2, h3 { margin: 0; font-weight: 900; letter-spacing: -.01em; }
+
+/* ---------- shell ---------- */
+.shell { display: grid; grid-template-columns: 240px minmax(0, 1fr) 340px; min-height: 100vh; }
+.rail { position: sticky; top: 0; height: 100vh; border-right: 2px solid var(--border); padding: 22px 14px; display: flex; flex-direction: column; gap: 4px; }
+.logo { display: flex; align-items: center; gap: 10px; padding: 4px 12px 22px; font-size: 21px; white-space: nowrap; font-weight: 900; color: var(--green); letter-spacing: -.02em; }
+.logo svg { width: 34px; height: 34px; }
+.rail a { display: flex; align-items: center; gap: 14px; padding: 10px 14px; border-radius: 14px; border: 2px solid transparent; font-weight: 800; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--dim); }
+.rail a:hover { background: var(--surface); }
+.rail a.on { color: var(--blue); background: var(--sel-bg); border-color: var(--blue); }
+.rail a svg, .bnav a svg { width: 28px; height: 28px; flex: none; }
+.main { min-width: 0; padding: 0 24px 60px; }
+.col { max-width: 620px; margin: 0 auto; }
+.aside { position: sticky; top: 0; height: 100vh; overflow-y: auto; padding: 22px 24px; display: flex; flex-direction: column; gap: 18px; }
+.topbar { display: none; }
+.bnav { display: none; }
+@media (max-width: 1100px) { .shell { grid-template-columns: 96px minmax(0, 1fr) 300px; } .rail .lbl, .logo span { display: none; } .rail a { justify-content: center; } }
+@media (max-width: 860px) {
+  .shell { display: block; }
+  .rail, .aside { display: none; }
+  .main { padding: 0 16px calc(84px + env(safe-area-inset-bottom)); }
+  .topbar { display: flex; position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 2px solid var(--border); padding: 8px 10px; align-items: center; gap: 6px; }
+  .bnav { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--bg); border-top: 2px solid var(--border); padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); }
+  .bnav a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11px; font-weight: 800; color: var(--dim); padding: 4px 0; border-radius: 12px; }
+  .bnav a.on { color: var(--blue); }
+  .bnav a.on svg { background: var(--sel-bg); border-radius: 12px; }
+}
+.stats { display: flex; align-items: center; gap: 14px; font-weight: 900; font-size: 17px; white-space: nowrap; }
+.stats .st { display: flex; align-items: center; gap: 4px; }
+.langbtn { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 12px; font-weight: 800; }
+.langbtn:hover { background: var(--surface); }
+.langbtn .flag { font-size: 26px; line-height: 1; }
+.langbtn .car { color: var(--dim); font-size: 13px; }
+
+/* ---------- chunky controls ---------- */
+.btn { --c: var(--green); --d: var(--green-d); display: block; width: 100%; padding: 14px 18px; border-radius: 16px; background: var(--c); color: #fff;
+  font-weight: 900; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; box-shadow: 0 4px 0 var(--d); transition: transform .05s, box-shadow .05s; text-align: center; }
+.btn:active:not(:disabled) { transform: translateY(4px); box-shadow: 0 0 0 var(--d); }
+.btn:disabled { background: var(--locked); color: var(--dim); box-shadow: 0 4px 0 var(--locked); cursor: default; }
+.btn.blue { --c: var(--blue); --d: var(--blue-d); } .btn.red { --c: var(--red); --d: var(--red-d); } .btn.purple { --c: var(--purple); --d: var(--purple-d); }
+.btn.ghost { background: var(--bg); color: var(--blue); border: 2px solid var(--border); box-shadow: 0 4px 0 var(--border); }
+.btn.inline { display: inline-block; width: auto; }
+.opt { display: block; width: 100%; text-align: center; padding: 13px 14px; border-radius: 16px; border: 2px solid var(--border); box-shadow: 0 3px 0 var(--border);
+  background: var(--bg); font-weight: 700; font-size: 17px; transition: transform .05s, box-shadow .05s; position: relative; }
+.opt:hover:not(:disabled) { background: var(--surface); }
+.opt:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 0 0 var(--border); }
+.opt .kbd { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 12px; color: var(--dim); border: 2px solid var(--border); border-radius: 8px; width: 24px; height: 24px; display: grid; place-items: center; }
+.opt.sel { background: var(--sel-bg); border-color: var(--blue); box-shadow: 0 3px 0 var(--blue); color: var(--blue); }
+.opt.right { background: var(--ok-bg); border-color: var(--green); box-shadow: 0 3px 0 var(--green); color: var(--green); }
+.opt.wrong { background: var(--bad-bg); border-color: var(--red); box-shadow: 0 3px 0 var(--red); color: var(--red); }
+.opt.done { color: var(--border); box-shadow: 0 3px 0 var(--border); cursor: default; }
+.opts { display: grid; gap: 10px; }
+.opts.two { grid-template-columns: 1fr 1fr; }
+.spk { width: 56px; height: 56px; flex: none; border-radius: 14px; background: var(--blue); box-shadow: 0 4px 0 var(--blue-d); display: grid; place-items: center; color: #fff; }
+.spk:active { transform: translateY(4px); box-shadow: none; }
+.spk svg { width: 55%; height: 55%; }
+.spk.big { width: 100px; height: 100px; border-radius: 22px; } .spk.sm { width: 42px; height: 42px; border-radius: 12px; } .spk.xs { width: 34px; height: 34px; border-radius: 10px; }
+.spk.turtle { width: 64px; height: 64px; font-size: 30px; }
+.tile { padding: 9px 13px; border-radius: 12px; border: 2px solid var(--border); box-shadow: 0 3px 0 var(--border); background: var(--bg); font-size: 18px; font-weight: 700; }
+.tile:active { transform: translateY(3px); box-shadow: none; }
+.tile.used { background: var(--border); color: transparent; box-shadow: none; pointer-events: none; }
+.bubble { display: inline-block; padding: 10px 14px; border: 2px solid var(--border); border-radius: 14px; font-size: 22px; font-weight: 700; }
+.pill { height: 16px; border-radius: 99px; background: var(--border); overflow: hidden; flex: 1; }
+.pill > i { display: block; height: 100%; border-radius: 99px; background: var(--green); position: relative; transition: width .3s; }
+.pill > i::after { content: ""; position: absolute; left: 8px; right: 8px; top: 4px; height: 4px; border-radius: 99px; background: rgba(255,255,255,.28); }
+.card { border: 2px solid var(--border); border-radius: 16px; padding: 16px; }
+.card h3 { font-size: 18px; margin-bottom: 10px; }
+.tip { display: flex; gap: 10px; padding: 14px; border-radius: 14px; background: var(--sel-bg); font-size: 15px; font-weight: 600; }
+
+/* ---------- path ---------- */
+.unit { margin: 22px 0 8px; border-radius: 16px; padding: 16px 18px; color: #fff; display: flex; align-items: center; gap: 12px; }
+.unit .k { font-size: 12px; font-weight: 900; letter-spacing: .1em; opacity: .85; }
+.unit h2 { font-size: 22px; }
+.unit p { margin: 2px 0 0; font-size: 14px; opacity: .92; }
+.unit .guideb { margin-left: auto; flex: none; display: flex; gap: 6px; align-items: center; padding: 10px 14px; border-radius: 12px; border: 2px solid rgba(255,255,255,.4); box-shadow: 0 3px 0 rgba(0,0,0,.2); font-weight: 900; font-size: 13px; letter-spacing: .06em; color: #fff; }
+.unit .guideb svg { width: 18px; height: 18px; }
+.nodes { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 12px 0; }
+.nodew { display: flex; flex-direction: column; align-items: center; }
+.node { width: 74px; height: 70px; border-radius: 50%; background: var(--c); box-shadow: 0 7px 0 var(--d); display: grid; place-items: center; color: #fff; transition: transform .05s, box-shadow .05s; }
+.node:active { transform: translateY(7px); box-shadow: none; }
+.node svg { width: 34px; height: 34px; }
+.node.cur { outline: 6px solid color-mix(in srgb, var(--c) 35%, transparent); outline-offset: 5px; }
+.node.locked { --c: var(--locked); --d: color-mix(in srgb, var(--locked) 75%, #000); color: var(--dim); }
+.nodew .t { font-size: 12px; font-weight: 800; margin-top: 10px; max-width: 130px; text-align: center; }
+.nodew.locked .t { color: var(--dim); }
+.start { margin-bottom: 10px; border: 2px solid var(--border); border-radius: 12px; padding: 7px 14px; font-weight: 900; letter-spacing: .08em; background: var(--bg); animation: bob 1.2s ease-in-out infinite; }
+@keyframes bob { 50% { transform: translateY(-5px); } }
+@media (prefers-reduced-motion: reduce) { .start { animation: none; } }
+
+/* ---------- modals ---------- */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 80; display: flex; align-items: center; justify-content: center; padding: 16px; }
+.modal { background: var(--sheet); border-radius: 20px; width: min(460px, 100%); max-height: 88vh; overflow-y: auto; padding: 22px; box-shadow: var(--shadow); }
+@media (max-width: 860px) { .scrim { align-items: flex-end; padding: 0; } .modal { width: 100%; border-radius: 22px 22px 0 0; padding-bottom: calc(24px + env(safe-area-inset-bottom)); } }
+.modal h2 { font-size: 24px; }
+.kick { font-size: 13px; font-weight: 900; letter-spacing: .1em; }
+.langrow { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 14px; border-radius: 16px; border: 2px solid var(--border); box-shadow: 0 3px 0 var(--border); }
+.langrow:hover { background: var(--surface); }
+.langrow.sel { border-color: var(--blue); box-shadow: 0 3px 0 var(--blue); background: var(--sel-bg); }
+.langrow .flag { font-size: 36px; }
+.langrow b { font-size: 18px; font-weight: 900; display: block; }
+.langrow.sel b { color: var(--blue); }
+.langrow small { color: var(--dim); font-size: 13px; }
+
+/* ---------- session ---------- */
+.sess { position: fixed; inset: 0; z-index: 50; background: var(--bg); display: flex; flex-direction: column; }
+.sess .top { width: 100%; max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 14px; padding: 18px 20px 6px; }
+.x { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: var(--dim); }
+.x:hover { background: var(--surface); }
+.x svg { width: 26px; height: 26px; }
+.sess .body { flex: 1; overflow-y: auto; }
+.sess .inner { max-width: 620px; margin: 0 auto; padding: 18px 20px 30px; }
+.sess h1 { font-size: 27px; margin-bottom: 20px; }
+.foot { border-top: 2px solid var(--border); }
+.foot .in { max-width: 1000px; margin: 0 auto; padding: 18px 20px calc(18px + env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 16px; }
+.foot .in .btn { width: auto; min-width: 170px; margin-left: auto; }
+.foot.ok { background: var(--ok-bg); border-top-color: transparent; } .foot.bad { background: var(--bad-bg); border-top-color: transparent; }
+.verdict { display: flex; gap: 14px; align-items: flex-start; min-width: 0; }
+.verdict .ic { width: 64px; height: 64px; flex: none; border-radius: 50%; background: var(--bg); display: grid; place-items: center; font-size: 34px; font-weight: 900; }
+.verdict h3 { font-size: 22px; }
+.verdict .ans { font-size: 17px; font-weight: 700; } .verdict .mean { font-size: 14px; opacity: .85; }
+.foot.ok .verdict { color: var(--green); } .foot.bad .verdict { color: var(--red); }
+.foot.ok .ic { color: var(--green); } .foot.bad .ic { color: var(--red); }
+.skip { color: var(--dim); font-weight: 900; letter-spacing: .06em; font-size: 13px; text-transform: uppercase; padding: 10px 6px; }
+.skip:hover { color: var(--ink); }
+@media (max-width: 640px) {
+  .foot .in { flex-direction: column; align-items: stretch; gap: 10px; }
+  .foot .in .btn { width: 100%; margin: 0; }
+  .verdict .ic { width: 34px; height: 34px; font-size: 18px; }
+  .sess h1 { font-size: 22px; }
+}
+.listen { display: flex; justify-content: center; align-items: center; gap: 18px; padding: 10px 0 6px; }
+.lines { position: relative; min-height: 120px; margin: 18px 0 26px; background: repeating-linear-gradient(transparent 0 56px, var(--border) 56px 58px); }
+.lines .chosen { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 8px; }
+.bank { display: flex; flex-wrap: wrap; gap: 10px 8px; justify-content: center; }
+textarea.type { width: 100%; min-height: 130px; border-radius: 16px; border: 2px solid var(--border); background: var(--surface); color: var(--ink); padding: 14px; font: inherit; font-size: 19px; font-weight: 700; resize: vertical; outline: none; }
+textarea.type:focus { border-color: var(--blue); }
+.chars { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.newword { text-align: center; padding-top: 18px; }
+.newword .w { font-size: 40px; font-weight: 900; margin-top: 18px; }
+.newword .m { font-size: 22px; color: var(--dim); }
+.mic { width: 100%; padding: 22px; border-radius: 16px; border: 2px solid var(--border); box-shadow: 0 4px 0 var(--border); display: flex; gap: 10px; justify-content: center; align-items: center; color: var(--blue); font-weight: 900; letter-spacing: .08em; }
+.mic.on { background: var(--red); border-color: var(--red); box-shadow: 0 4px 0 var(--red-d); color: #fff; }
+.mic svg { width: 28px; height: 28px; }
+.pairs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
+.pairs .c { display: grid; gap: 10px; }
+
+/* ---------- done ---------- */
+.done { text-align: center; max-width: 520px; margin: 0 auto; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; min-height: 100%; justify-content: center; gap: 8px; }
+.done .big { font-size: 90px; line-height: 1; }
+.done h1 { font-size: 32px; }
+.statboxes { display: flex; gap: 12px; width: 100%; margin: 22px 0 10px; }
+.sbox { flex: 1; border-radius: 16px; background: var(--c); padding: 2px; }
+.sbox small { display: block; color: #fff; font-weight: 900; font-size: 11px; letter-spacing: .1em; padding: 4px 0; }
+.sbox b { display: block; background: var(--bg); border-radius: 14px; padding: 14px 0; color: var(--c); font-size: 22px; font-weight: 900; }
+
+/* ---------- story ---------- */
+.line { display: flex; gap: 10px; align-items: flex-start; margin: 10px 0; animation: pop .25s ease-out; }
+@keyframes pop { from { opacity: 0; transform: translateY(8px); } }
+.avatar { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 900; font-size: 18px; flex: none; }
+.say { flex: 1; text-align: left; padding: 12px 14px; border-radius: 16px; background: var(--surface); }
+.say .who { font-size: 13px; font-weight: 900; }
+.say .sl { font-size: 19px; font-weight: 700; }
+.say .sr { font-size: 15px; color: var(--dim); margin-top: 6px; }
+.q { margin: 18px 0; }
+.q h3 { font-size: 18px; margin-bottom: 10px; }
+
+/* ---------- lists ---------- */
+.ptitle { font-size: 28px; padding: 24px 0 12px; }
+.search { width: 100%; padding: 14px 16px; border-radius: 16px; border: 2px solid var(--border); background: var(--surface); outline: none; font-weight: 700; }
+.search:focus { border-color: var(--blue); }
+.wrow { display: flex; align-items: center; gap: 12px; padding: 11px 6px; border-bottom: 2px solid var(--border); cursor: pointer; }
+.wrow:hover { background: var(--surface); }
+.wrow .w { font-weight: 900; font-size: 17px; }
+.wrow .note { color: var(--blue); font-size: 13px; }
+.bars { display: flex; gap: 3px; align-items: flex-end; }
+.bars i { width: 5px; border-radius: 2px; background: var(--border); }
+.bars i.on { background: var(--green); }
+.chips { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; }
+.chips .opt { width: auto; padding: 8px 14px; font-size: 14px; }
+.toolrow { display: flex; align-items: center; gap: 14px; padding: 14px; border: 2px solid var(--border); border-radius: 16px; margin: 8px 0; width: 100%; text-align: left; }
+.toolrow:hover { background: var(--surface); }
+.toolrow .ic { font-size: 28px; }
+.toolrow small { display: block; color: var(--dim); font-weight: 600; font-size: 13px; }
+.hero { border-radius: 18px; padding: 20px; color: #fff; margin: 6px 0 14px; }
+.hero h2 { font-size: 22px; }
+.hero p { margin: 4px 0 14px; opacity: .92; font-size: 14px; }
+.hero .btn { background: #fff; color: var(--c); box-shadow: 0 4px 0 rgba(0,0,0,.2); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0; }
+.stat { display: flex; gap: 10px; align-items: center; border: 2px solid var(--border); border-radius: 16px; padding: 14px; }
+.stat .ic { font-size: 26px; } .stat b { font-size: 21px; font-weight: 900; display: block; line-height: 1.1; } .stat small { color: var(--dim); font-size: 13px; }
+.week { display: flex; justify-content: space-between; align-items: flex-end; height: 130px; }
+.week .d { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 12px; color: var(--dim); }
+.week .d i { width: 24px; border-radius: 7px; background: var(--border); display: block; }
+.week .d.today { color: var(--ink); font-weight: 900; }
+.toggle { display: flex; align-items: center; gap: 12px; padding: 10px 0; cursor: pointer; }
+.toggle .t { flex: 1; } .toggle small { display: block; color: var(--dim); font-weight: 600; font-size: 13px; }
+.sw { width: 52px; height: 30px; border-radius: 99px; background: var(--border); position: relative; flex: none; transition: background .15s; }
+.sw::after { content: ""; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: #fff; transition: transform .15s; }
+.sw.on { background: var(--green); } .sw.on::after { transform: translateX(22px); }
+.guidehead { border-radius: 0 0 18px 18px; padding: 22px; color: #fff; margin: 0 -16px 10px; }
+@media (min-width: 861px) { .guidehead { margin: 20px 0 10px; border-radius: 18px; } }
+.guidehead h1 { font-size: 30px; }
+.gp { font-size: 17px; line-height: 1.6; margin: 12px 0; font-weight: 600; }
+.ex { display: flex; gap: 10px; padding: 7px 0; cursor: pointer; }
+.ex b { display: block; } .ex small { color: var(--dim); }
+.wod .w { font-size: 26px; font-weight: 900; }
+.foot-note { color: var(--dim); font-size: 13px; text-align: center; padding: 18px 0; font-weight: 600; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="overlay"></div>
+<div id="modal"></div>
+<script>
+'use strict';
+/* =========================================================================
+   Kravos Jezik — web edition. Same courses and recordings as the Android app.
+   Progress lives in this browser (localStorage).
+   ========================================================================= */
+const TEST = new URLSearchParams(location.search).has('test');
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+};
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const uniq = (a, f = x => x) => { const s = new Set(); return a.filter(x => { const k = f(x); if (s.has(k)) return false; s.add(k); return true; }); };
+const today = () => { const d = new Date(); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000); };
+const pick = a => a[Math.floor(Math.random() * a.length)];
+const daysWord = n => (n % 10 === 1 && n % 100 !== 11) ? 'dan' : 'dana';
+const UNIT_COLORS = ['#58CC02', '#CE82FF', '#1CB0F6', '#FF9600', '#FF86D0', '#00CD9C', '#FF4B4B', '#2B70C9', '#A568CC', '#E5A100', '#2EB872', '#E0607E'];
+const darker = (hex, f = 0.78) => { const n = parseInt(hex.slice(1), 16); const c = [n >> 16, (n >> 8) & 255, n & 255].map(v => Math.round(v * f)); return `rgb(${c.join(',')})`; };
+const PRAISE = ['Odlično!', 'Bravo!', 'Tačno!', 'Sjajno!', 'Super!', 'Tako je!'];
+
+const I = {
+  home: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg>',
+  review: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.65 6.35A7.96 7.96 0 0 0 12 4a8 8 0 1 0 7.73 10h-2.08A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"/></svg>',
+  book: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 5c-1.1-.35-2.3-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5z"/></svg>',
+  user: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+  gear: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94a7.3 7.3 0 0 0 0-1.88l2.03-1.58a.5.5 0 0 0 .12-.61l-1.92-3.32a.5.5 0 0 0-.59-.22l-2.39.96a7 7 0 0 0-1.62-.94l-.36-2.54a.5.5 0 0 0-.5-.42h-3.84a.5.5 0 0 0-.49.42l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96a.5.5 0 0 0-.59.22L2.7 8.87a.5.5 0 0 0 .12.61l2.03 1.58a7.3 7.3 0 0 0 0 1.88l-2.03 1.58a.5.5 0 0 0-.12.61l1.92 3.32c.12.22.37.31.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.25.42.49.42h3.84c.25 0 .45-.18.49-.42l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.09.47 0 .59-.22l1.92-3.32a.5.5 0 0 0-.12-.61zM12 15.6a3.6 3.6 0 1 1 0-7.2 3.6 3.6 0 0 1 0 7.2z"/></svg>',
+  vol: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06A9 9 0 0 0 14 3.23z"/></svg>',
+  star: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>',
+  check: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>',
+  lock: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-6 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm3.1-9H8.9V6a3.1 3.1 0 0 1 6.2 0z"/></svg>',
+  close: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>',
+  mic: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5.3-3a5.3 5.3 0 0 1-10.6 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11z"/></svg>',
+  logo: '<svg viewBox="0 0 108 108"><path fill="#1CB0F6" d="M52,40 L76,40 A8,8 0 0,1 84,48 L84,64 A8,8 0 0,1 76,72 L74,72 L74,80 L66,72 L60,72 A8,8 0 0,1 52,64 Z"/><path fill="#58CC02" d="M32,26 L64,26 A9,9 0 0,1 73,35 L73,56 A9,9 0 0,1 64,65 L44,65 L34,75 L34,65 L32,65 A9,9 0 0,1 23,56 L23,35 A9,9 0 0,1 32,26 Z"/><path fill="#fff" d="M36,33 L42,33 L42,43 L50,33 L58,33 L48,45.5 L58,58 L50,58 L42,48 L42,58 L36,58 Z"/></svg>',
+};
+
+/* ------------------------------------------------------------- text checks */
+const CYR = { 'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'ђ': 'đ', 'е': 'e', 'ж': 'ž', 'з': 'z', 'и': 'i', 'ј': 'j', 'к': 'k', 'л': 'l', 'љ': 'lj', 'м': 'm', 'н': 'n', 'њ': 'nj', 'о': 'o', 'п': 'p', 'р': 'r', 'с': 's', 'т': 't', 'ћ': 'ć', 'у': 'u', 'ф': 'f', 'х': 'h', 'ц': 'c', 'ч': 'č', 'џ': 'dž', 'ш': 'š' };
+const T = {
+  latin(s) { if (!/[Ѐ-ӿ]/.test(s)) return s; return [...s].map(ch => { const l = ch.toLowerCase(); const t = CYR[l]; if (t == null) return ch; return ch !== l ? t[0].toUpperCase() + t.slice(1) : t; }).join(''); },
+  norm(s) { return T.latin(s).toLowerCase().replace(/[.,!?¿¡;:"'„“”‚‘’«»()…\-–—]/g, ' ').replace(/\s+/g, ' ').trim(); },
+  plain(s) { return s.replace(/đ/g, 'dj').replace(/Đ/g, 'Dj').normalize('NFD').replace(/\p{M}+/gu, ''); },
+  lev(a, b) {
+    if (a === b) return 0; if (!a.length) return b.length; if (!b.length) return a.length;
+    let p = Array.from({ length: b.length + 1 }, (_, i) => i), c = new Array(b.length + 1);
+    for (let i = 1; i <= a.length; i++) { c[0] = i; for (let j = 1; j <= b.length; j++) c[j] = Math.min(p[j] + 1, c[j - 1] + 1, p[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); [p, c] = [c, p]; }
+    return p[b.length];
+  },
+  check(input, acc) {
+    const a = T.norm(input || ''); if (!a) return 'WRONG';
+    const f = acc.map(T.norm);
+    if (f.includes(a)) return 'EXACT';
+    if (f.some(x => T.plain(x) === T.plain(a))) return 'ACCENT';
+    if (f.some(x => x.length >= 6 && T.lev(T.plain(x), T.plain(a)) <= 1 + Math.floor(x.length / 18))) return 'TYPO';
+    return 'WRONG';
+  },
+  sim(a, b) { const x = T.plain(T.norm(a)), y = T.plain(T.norm(b)); const m = Math.max(x.length, y.length); return m ? 1 - T.lev(x, y) / m : 0; },
+  tokens(s) { return s.replace(/[.,!?¿¡;:"„“”…]/g, ' ').split(/\s+/).filter(Boolean); },
+};
+
+/* ------------------------------------------------------------- state */
+const S = {
+  meta: [], courses: {}, progress: {}, lang: 'sl',
+  settings: Object.assign({ lang: 'sl', theme: 'system', sound: true, listen: true, speak: true, listenSnooze: 0, speakSnooze: 0 }, store.get('kj.settings', {})),
+  modal: null, sess: null, story: null,
+  get course() { return S.courses[S.lang]; },
+  get prog() { return S.progress[S.lang]; },
+};
+const saveSettings = () => store.set('kj.settings', S.settings);
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+const listenActive = () => S.settings.listen && S.settings.sound && Date.now() > S.settings.listenSnooze;
+const speakActive = () => !!SR && S.settings.speak && Date.now() > S.settings.speakSnooze;
+
+function prepCourse(o) {
+  let order = 0; const lessons = [];
+  o.units.forEach((u, ui) => {
+    u.idx = ui;
+    u.lessons.forEach(l => {
+      l.unitIdx = ui; l.order = order++;
+      l.words = (l.words || []).map(w => ({ ...w, key: w.sl.toLowerCase(), unitIdx: ui, lessonId: l.id, meaning: w.sr.join(', ') }));
+      l.sentences = (l.sentences || []).map(s => ({ ...s, text: s.sl[0], meaning: s.sr[0], lessonId: l.id }));
+      l.grammar = l.grammar || []; l.lines = l.lines || []; l.tip = l.tip || '';
+      lessons.push(l);
+    });
+  });
+  o.lessons = lessons;
+  o.byId = Object.fromEntries(lessons.map(l => [l.id, l]));
+  o.wordByKey = {};
+  for (const l of lessons) for (const w of l.words) if (!o.wordByKey[w.key]) o.wordByKey[w.key] = w;
+  o.words = Object.values(o.wordByKey);
+  o.sentences = lessons.flatMap(l => l.sentences);
+  o.wordsUpTo = n => uniq(lessons.filter(l => l.order <= n).flatMap(l => l.words), w => w.key);
+  o.sentencesUpTo = n => lessons.filter(l => l.order <= n).flatMap(l => l.sentences);
+  o.audio = o.audio || {};
+  return o;
+}
+
+class Progress {
+  constructor(c) {
+    this.c = c; this.key = 'kj.p.' + c.lang;
+    const d = store.get(this.key, {});
+    this.done = d.done || {}; this.xp = d.xp || {}; this.srs = d.srs || {}; this.goal = d.goal || 20; this.unlockAll = !!d.unlockAll;
+  }
+  save() { store.set(this.key, { done: this.done, xp: this.xp, srs: this.srs, goal: this.goal, unlockAll: this.unlockAll }); }
+  times(id) { return this.done[id] || 0; }
+  isDone(id) { return this.times(id) > 0; }
+  unlocked(l) { if (this.unlockAll || l.order === 0) return true; const p = this.c.lessons[l.order - 1]; return !p || this.isDone(p.id) || this.isDone(l.id); }
+  current() { return this.c.lessons.find(l => !this.isDone(l.id)); }
+  xpOn(d) { return this.xp[d] || 0; }
+  todayXp() { return this.xpOn(today()); }
+  totalXp() { return Object.values(this.xp).reduce((a, b) => a + b, 0); }
+  streak() { let d = today(); if (!this.xpOn(d)) d--; let n = 0; while (this.xpOn(d) > 0) { n++; d--; } return n; }
+  alive() { return this.todayXp() > 0; }
+  started() { return Object.keys(this.done).length > 0 || Object.keys(this.xp).length > 0; }
+  lessonsDone() { return this.c.lessons.filter(l => this.isDone(l.id)).length; }
+  finish(id, gained, results) {
+    const t = today(); this.xp[t] = this.xpOn(t) + gained;
+    if (id) this.done[id] = this.times(id) + 1;
+    for (const [k, ok] of Object.entries(results)) this.grade(k, ok, t);
+    this.save();
+  }
+  grade(k, ok, t) {
+    const IV = [0, 1, 2, 4, 8, 16, 35, 70]; const c = this.srs[k] || [0, t, 0, 0];
+    if (ok) { const b = Math.min(c[0] + 1, IV.length - 1); this.srs[k] = [b, t + IV[b], c[2] + 1, c[3]]; }
+    else this.srs[k] = [1, t, c[2] + 1, c[3] + 1];
+  }
+  learned() { return Object.keys(this.srs).length; }
+  isLearned(k) { return k in this.srs; }
+  due() { const t = today(); return Object.entries(this.srs).filter(([, v]) => v[1] <= t).sort((a, b) => a[1][1] - b[1][1] || a[1][0] - b[1][0]).map(([k]) => this.c.wordByKey[k]).filter(Boolean); }
+  weakest() { return Object.entries(this.srs).sort((a, b) => a[1][0] - b[1][0] || b[1][3] - a[1][3]).map(([k]) => this.c.wordByKey[k]).filter(Boolean); }
+  reset() { this.done = {}; this.xp = {}; this.srs = {}; this.save(); }
+}
+
+/* ------------------------------------------------------------- audio & speech */
+const Snd = {
+  cur: null,
+  play(text, slow) {
+    if (!S.settings.sound || !text) return;
+    Snd.stop();
+    const k = S.course.audio[text.trim()];
+    if (k) {
+      const a = new Audio(`audio/${S.lang}/${k}.ogg`);
+      a.playbackRate = slow ? 0.7 : 1; a.preservesPitch = true;
+      Snd.cur = a;
+      a.play().catch(err => { if (err && err.name !== 'AbortError') Snd.tts(text, slow); });
+      return;
+    }
+    Snd.tts(text, slow);
+  },
+  tts(text, slow) {
+    if (!('speechSynthesis' in window)) return;
+    const u = new SpeechSynthesisUtterance(text); u.lang = S.course.tts; u.rate = slow ? 0.6 : 0.95;
+    const pre = S.course.tts.slice(0, 2).toLowerCase();
+    const v = speechSynthesis.getVoices().find(v => v.lang.toLowerCase().replace('_', '-').startsWith(pre));
+    if (v) u.voice = v;
+    speechSynthesis.speak(u);
+  },
+  stop() { try { if (Snd.cur) Snd.cur.pause(); } catch (e) {} Snd.cur = null; try { speechSynthesis.cancel(); } catch (e) {} },
+  canPlay() { return Object.keys(S.course.audio).length > 0 || 'speechSynthesis' in window; },
+};
+
+/* ------------------------------------------------------------- session builder */
+function distract(w, pool, sl, n = 3) {
+  const wsr = new Set(w.sr.map(x => x.toLowerCase()));
+  const ok = pool.filter(p => p.key !== w.key && !p.sr.some(x => wsr.has(x.toLowerCase())));
+  const own = sl ? new Set([w.sl.toLowerCase()]) : wsr;
+  const val = p => sl ? p.sl : p.sr[0];
+  const same = shuffle(ok.filter(p => p.unitIdx === w.unitIdx).map(val)).filter(x => !own.has(x.toLowerCase()));
+  const all = shuffle(ok.map(val)).filter(x => !own.has(x.toLowerCase()));
+  return uniq([...same, ...all]).slice(0, n);
+}
+function extraTiles(target, others, n) {
+  const low = new Set(target.map(x => x.toLowerCase()));
+  return shuffle(uniq(others.flatMap(T.tokens).filter(x => !low.has(x.toLowerCase())), x => x.toLowerCase())).slice(0, n);
+}
+const B = {
+  pickSlSr: (w, pool) => ({ kind: 'pick', title: 'Šta znači ova reč?', prompt: w.sl, options: shuffle([...distract(w, pool, false), w.sr[0]]), answer: w.sr[0], promptIsSl: true, word: w, sl: w.sl }),
+  pickSrSl: (w, pool) => ({ kind: 'pick', title: `Kako se kaže na ${S.course.loc}?`, prompt: w.meaning, options: shuffle([...distract(w, pool, true), w.sl]), answer: w.sl, promptIsSl: false, word: w, sl: w.sl }),
+  listenPick: (w, pool) => ({ kind: 'pick', title: 'Šta čuješ?', prompt: w.sl, options: shuffle([...distract(w, pool, true), w.sl]), answer: w.sl, promptIsSl: true, listen: true, word: w, sl: w.sl }),
+  match: ws => ({ kind: 'match', pairs: ws.map(w => [w.sl, w.sr[0]]), words: ws }),
+  arrangeSl: (s, others) => { const t = T.tokens(s.text); return { kind: 'arrange', title: `Prevedi na ${S.course.acc}`, prompt: s.meaning, tiles: shuffle([...t, ...extraTiles(t, others.map(o => o.text), 3)]), accepted: s.sl, sl: s.text, meaning: s.meaning }; },
+  arrangeSr: (s, others) => { const t = T.tokens(s.meaning); return { kind: 'arrange', title: 'Prevedi na srpski', prompt: s.text, promptIsSl: true, tiles: shuffle([...t, ...extraTiles(t, others.map(o => o.meaning), 3)]), accepted: s.sr, sl: s.text, meaning: s.meaning }; },
+  listenArrange: (s, others) => { const t = T.tokens(s.text); return { kind: 'arrange', title: 'Složi ono što čuješ', prompt: s.text, promptIsSl: true, listen: true, tiles: shuffle([...t, ...extraTiles(t, others.map(o => o.text), 2)]), accepted: s.sl, sl: s.text, meaning: s.meaning }; },
+  typeSl: s => ({ kind: 'type', title: `Napiši na ${S.course.loc}`, prompt: s.meaning, accepted: s.sl, sl: s.text, meaning: s.meaning }),
+  typeWord: w => ({ kind: 'type', title: `Napiši na ${S.course.loc}`, prompt: w.meaning, accepted: [w.sl], word: w, sl: w.sl, meaning: w.meaning }),
+  dictation: w => ({ kind: 'type', title: 'Napiši šta čuješ', prompt: w.sl, listen: true, accepted: [w.sl], word: w, sl: w.sl, meaning: w.meaning }),
+  speak: s => ({ kind: 'speak', text: s.text, meaning: s.meaning, sl: s.text }),
+  fill: g => ({ kind: 'fill', g, options: shuffle([...g.wrong.slice(0, 3), g.answer]), sl: g.full }),
+};
+function buildLesson(l) {
+  const c = S.course, p = S.prog;
+  const canListen = listenActive() && Snd.canPlay(), canSpeak = speakActive();
+  const pool = c.wordsUpTo(l.order + 2);
+  const first = !p.isDone(l.id);
+  const ws = shuffle(l.words), ss = shuffle(l.sentences);
+  const out = [];
+  ws.slice(0, 7).forEach((w, i) => {
+    if (first && !p.isLearned(w.key)) out.push({ kind: 'intro', word: w, sl: w.sl });
+    out.push(i % 3 === 2 && canListen ? B.listenPick(w, pool) : i % 2 === 0 ? B.pickSlSr(w, pool) : B.pickSrSl(w, pool));
+  });
+  const matchable = ws.slice(0, 7).filter(w => w.sl.toLowerCase() !== w.sr[0].toLowerCase());
+  if (matchable.length >= 4) out.push(B.match(matchable.slice(0, 5)));
+  const mix = [], others = c.sentencesUpTo(l.order + 2);
+  ss.slice(0, 5).forEach((s, i) => {
+    mix.push([() => B.arrangeSl(s, others), () => B.arrangeSr(s, others), () => canListen ? B.listenArrange(s, others) : B.arrangeSl(s, others), () => B.typeSl(s), () => canSpeak ? B.speak(s) : B.arrangeSl(s, others)][i % 5]());
+  });
+  shuffle(l.grammar).slice(0, 2).forEach(g => mix.push(B.fill(g)));
+  shuffle(ws.slice(0, 7)).slice(0, 1).forEach(w => mix.push(B.typeWord(w)));
+  if (canListen && ws.length) mix.push(B.dictation(pick(ws.slice(0, 7))));
+  return [...out, ...shuffle(mix)];
+}
+function buildReview(max = 14) {
+  const c = S.course, p = S.prog, canListen = listenActive() && Snd.canPlay();
+  const words = uniq([...p.due(), ...p.weakest()], w => w.key).slice(0, max);
+  if (!words.length) return [];
+  const out = words.map((w, i) => {
+    switch ((i + Math.floor(Math.random() * 4)) % 4) {
+      case 0: return B.pickSlSr(w, c.words);
+      case 1: return canListen ? B.listenPick(w, c.words) : B.pickSrSl(w, c.words);
+      case 2: return B.typeWord(w);
+      default: return B.pickSrSl(w, c.words);
+    }
+  });
+  const doneIds = new Set(c.lessons.filter(l => p.isDone(l.id)).map(l => l.id));
+  shuffle(c.sentences.filter(s => doneIds.has(s.lessonId))).slice(0, 3).forEach((s, i) => out.push(i === 1 && canListen ? B.listenArrange(s, c.sentences) : B.arrangeSl(s, c.sentences)));
+  return shuffle(out);
+}
+const needsListening = e => !!e.listen;
+const again = e => ({ ...e, options: e.options ? shuffle(e.options) : undefined, tiles: e.tiles ? shuffle(e.tiles) : undefined });
+
+/* ------------------------------------------------------------- session */
+function startSession(lessonId) {
+  const l = lessonId ? S.course.byId[lessonId] : null;
+  if (lessonId && !l) return go('#/');
+  const queue = l ? buildLesson(l) : buildReview();
+  S.sess = { lesson: l, queue, idx: 0, pending: null, verdict: null, results: {}, retries: {}, mistakes: 0, graded: 0, start: Date.now(), summary: null, ui: {} , quit: false };
+  renderSession();
+  autoplay();
+}
+function autoplay() {
+  const s = S.sess; if (!s || s.summary) return;
+  const e = s.queue[s.idx]; if (!e) return;
+  if (e.kind === 'intro') Snd.play(e.word.sl);
+  else if (e.listen) Snd.play(e.prompt);
+  else if (e.kind === 'pick' && e.promptIsSl) Snd.play(e.prompt);
+  else if (e.kind === 'arrange' && e.promptIsSl) Snd.play(e.prompt);
+  else if (e.kind === 'speak') Snd.play(e.text);
+}
+function evaluate(e, pending) {
+  switch (e.kind) {
+    case 'pick': return pending === e.answer ? { ok: true, title: pick(PRAISE), meaning: e.word ? `${e.word.sl} = ${e.word.meaning}` : null } : { ok: false, title: 'Tačan odgovor:', answer: e.answer, meaning: e.word ? `${e.word.sl} = ${e.word.meaning}` : null };
+    case 'fill': return pending === e.g.answer ? { ok: true, title: pick(PRAISE), answer: e.g.full, meaning: e.g.sr } : { ok: false, title: 'Tačan odgovor:', answer: e.g.full, meaning: e.g.sr };
+    case 'arrange': { const m = T.check(pending, e.accepted); return (m === 'EXACT' || m === 'ACCENT') ? { ok: true, title: pick(PRAISE), meaning: e.listen ? e.meaning : null } : { ok: false, title: 'Tačan odgovor:', answer: e.accepted[0], meaning: (e.listen || !e.promptIsSl) ? e.meaning : null }; }
+    case 'type': {
+      const m = T.check(pending, e.accepted);
+      if (m === 'EXACT') return { ok: true, title: pick(PRAISE), meaning: e.listen ? e.meaning : null };
+      if (m === 'ACCENT') return { ok: true, title: 'Tačno, ali pazi na znakove:', answer: e.accepted[0], meaning: e.meaning };
+      if (m === 'TYPO') return { ok: true, title: 'Mala greška u kucanju:', answer: e.accepted[0], meaning: e.meaning };
+      return { ok: false, title: 'Tačan odgovor:', answer: e.accepted[0], meaning: e.meaning };
+    }
+    case 'speak': {
+      const heard = (pending || '').split('\n').filter(Boolean);
+      const best = Math.max(0, ...heard.map(h => T.sim(h, e.text)));
+      return best >= 0.72 ? { ok: true, title: 'Odlično izgovoreno!', meaning: e.meaning } : { ok: false, title: 'Nije baš jasno. Treba:', answer: e.text, meaning: heard[0] ? `Čuo sam: „${heard[0]}“` : null };
+    }
+    default: return { ok: true, title: pick(PRAISE) };
+  }
+}
+function grade(e, v) {
+  const s = S.sess;
+  s.verdict = v;
+  if (e.kind !== 'match') s.graded++;
+  if (e.word) s.results[e.word.key] = (s.results[e.word.key] ?? true) && v.ok;
+  if (e.kind === 'match') e.words.forEach(w => { if (!(w.key in s.results)) s.results[w.key] = true; });
+  if (!v.ok) {
+    s.mistakes++;
+    const k = `${e.kind}|${e.sl}|${e.word ? e.word.key : ''}`;
+    const n = s.retries[k] || 0;
+    if (n < 2) { s.retries[k] = n + 1; s.queue.push(again(e)); }
+  }
+  if (e.kind !== 'speak' && e.kind !== 'intro' && e.sl) Snd.play(e.sl);
+  stopMic();
+  renderSession();
+}
+function check() {
+  const s = S.sess; const e = s.queue[s.idx];
+  if (s.verdict) return next();
+  if (e.kind === 'intro') return next();
+  if (!TEST && (s.pending == null || s.pending === '')) return;
+  grade(e, TEST ? { ok: true, title: pick(PRAISE) } : evaluate(e, s.pending));
+}
+function next() {
+  const s = S.sess;
+  Snd.stop(); stopMic();
+  s.pending = null; s.verdict = null; s.ui = {};
+  if (s.idx + 1 >= s.queue.length) return finishSession();
+  s.idx++;
+  renderSession(); autoplay();
+}
+function finishSession() {
+  const s = S.sess, p = S.prog;
+  const acc = s.graded === 0 ? 100 : Math.floor(Math.max(0, s.graded - s.mistakes) * 100 / s.graded);
+  const xp = s.lesson ? 10 + (!p.isDone(s.lesson.id) ? 5 : 0) + (s.mistakes === 0 ? 5 : 0) : 5 + Math.floor(Object.keys(s.results).length / 2);
+  p.finish(s.lesson ? s.lesson.id : null, xp, s.results);
+  s.summary = { xp, acc, sec: Math.round((Date.now() - s.start) / 1000), lesson: !!s.lesson };
+  renderSession();
+}
+function snooze(listen) {
+  const s = S.sess, until = Date.now() + 3600e3;
+  if (listen) S.settings.listenSnooze = until; else S.settings.speakSnooze = until;
+  saveSettings();
+  const rest = s.queue.slice(s.idx + 1).filter(e => listen ? !needsListening(e) : e.kind !== 'speak');
+  s.queue = [...s.queue.slice(0, s.idx + 1), ...rest];
+  next();
+}
+function closeSession() { Snd.stop(); stopMic(); S.sess = null; document.getElementById('overlay').innerHTML = ''; document.body.style.overflow = ''; go(S.backTo || '#/'); }
+
+/* mic */
+let rec = null;
+function stopMic() { if (rec) { try { rec.abort(); } catch (e) {} rec = null; } if (S.sess) S.sess.ui.listening = false; }
+function startMic() {
+  const s = S.sess; const e = s.queue[s.idx];
+  if (!SR) { s.ui.msg = 'Ovaj browser ne podržava prepoznavanje govora (probaj Chrome).'; return renderSession(); }
+  Snd.stop();
+  rec = new SR(); rec.lang = S.course.tts; rec.interimResults = true; rec.maxAlternatives = 5;
+  s.ui.listening = true; s.ui.msg = null; renderSession();
+  rec.onresult = ev => {
+    const r = ev.results[ev.results.length - 1];
+    const alts = [...r].map(a => a.transcript);
+    s.ui.heard = alts[0];
+    if (r.isFinal) { s.pending = alts.join('\n'); s.ui.listening = false; rec = null; }
+    renderSession();
+  };
+  rec.onerror = ev => { s.ui.listening = false; s.ui.msg = ev.error === 'no-speech' ? 'Nisam ništa čuo — probaj ponovo' : ev.error === 'not-allowed' ? 'Dozvoli mikrofon u browseru' : `Greška mikrofona (${ev.error})`; rec = null; renderSession(); };
+  rec.onend = () => { if (s.ui.listening) { s.ui.listening = false; renderSession(); } };
+  try { rec.start(); } catch (err) { s.ui.listening = false; s.ui.msg = 'Ne mogu da pokrenem mikrofon'; renderSession(); }
+}
+
+/* ------------------------------------------------------------- session views */
+const spk = (text, cls = '', slow = false) => `<button class="spk ${cls}" data-act="say" data-t="${esc(text)}"${slow ? ' data-slow="1"' : ''} aria-label="Slušaj">${I.vol}</button>`;
+const listenBtns = t => `<div class="listen">${spk(t, 'big')}<button class="spk turtle" data-act="say" data-t="${esc(t)}" data-slow="1" aria-label="Sporo">🐢</button></div>`;
+const slPrompt = (t, size = 24) => `<div style="display:flex;align-items:center;gap:12px">${spk(t, 'sm')}<span class="bubble" style="font-size:${size}px">${esc(t)}</span></div>`;
+
+function viewExercise(e, s) {
+  const locked = !!s.verdict, p = s.pending;
+  const optState = (o, ans) => locked ? (o === ans ? 'right' : o === p ? 'wrong' : '') : (o === p ? 'sel' : '');
+  switch (e.kind) {
+    case 'intro': return `<div class="kick" style="color:var(--purple)">NOVA REČ</div><div class="newword">${spk(e.word.sl)}<div class="w">${esc(e.word.sl)}</div><div class="m">${esc(e.word.meaning)}</div>${e.word.note ? `<div class="tip" style="margin-top:24px;text-align:left"><span>💡</span><span>${esc(e.word.note)}</span></div>` : ''}</div>`;
+    case 'pick': return `<h1>${esc(e.title)}</h1>${e.listen ? listenBtns(e.prompt) : e.promptIsSl ? slPrompt(e.prompt, 28) : `<div style="font-size:28px;font-weight:900">${esc(e.prompt)}</div>`}
+      <div class="opts" style="margin-top:26px">${e.options.map((o, i) => `<button class="opt ${optState(o, e.answer)}" data-act="choose" data-v="${esc(o)}" ${locked ? 'disabled' : ''}><span class="kbd">${i + 1}</span>${esc(o)}</button>`).join('')}</div>`;
+    case 'fill': return `<h1>Popuni prazninu</h1><div style="font-size:24px;font-weight:800">${esc(e.g.prompt).replace('___', p ? `<u>${esc(p)}</u>` : '_____')}</div><div class="dim" style="margin-top:8px">${esc(e.g.sr)}</div>
+      <div class="opts two" style="margin-top:26px">${e.options.map((o, i) => `<button class="opt ${optState(o, e.g.answer)}" data-act="choose" data-v="${esc(o)}" ${locked ? 'disabled' : ''}><span class="kbd">${i + 1}</span>${esc(o)}</button>`).join('')}</div>`;
+    case 'arrange': {
+      const ch = s.ui.chosen || (s.ui.chosen = []);
+      return `<h1>${esc(e.title)}</h1>${e.listen ? listenBtns(e.prompt) : e.promptIsSl ? slPrompt(e.prompt, 20) : `<span class="bubble" style="font-size:20px">${esc(e.prompt)}</span>`}
+        <div class="lines"><div class="chosen">${ch.map(i => `<button class="tile" data-act="untile" data-i="${i}" ${locked ? 'disabled' : ''}>${esc(e.tiles[i])}</button>`).join('')}</div></div>
+        <div class="bank">${e.tiles.map((t, i) => `<button class="tile ${ch.includes(i) ? 'used' : ''}" data-act="tile" data-i="${i}" ${locked ? 'disabled' : ''}>${esc(t)}</button>`).join('')}</div>`;
+    }
+    case 'type': return `<h1>${esc(e.title)}</h1>${e.listen ? listenBtns(e.prompt) : `<span class="bubble">${esc(e.prompt)}</span>`}
+      <div style="margin-top:22px"><textarea class="type" id="typed" placeholder="Piši na ${esc(S.course.loc)}" autocomplete="off" autocapitalize="sentences" spellcheck="false" ${locked ? 'disabled' : ''}>${esc(p || '')}</textarea></div>
+      ${S.course.chars && S.course.chars.length ? `<div class="chars">${S.course.chars.map(c => `<button class="tile" data-act="char" data-v="${esc(c)}" ${locked ? 'disabled' : ''}>${esc(c)}</button>`).join('')}</div>` : ''}`;
+    case 'speak': return `<h1>Izgovori ovu rečenicu</h1>${slPrompt(e.text, 22)}<div class="dim" style="margin-top:10px">${esc(e.meaning)}</div>
+      <div style="margin-top:40px"><button class="mic ${s.ui.listening ? 'on' : ''}" data-act="mic" ${locked ? 'disabled' : ''}>${I.mic}${s.ui.listening ? 'SLUŠAM…' : 'PRITISNI I GOVORI'}</button></div>
+      ${s.ui.heard ? `<div style="font-size:19px;margin-top:16px">„${esc(s.ui.heard)}“</div>` : ''}${s.ui.msg ? `<div style="color:var(--red);margin-top:12px">${esc(s.ui.msg)}</div>` : ''}`;
+    case 'match': {
+      const u = s.ui; u.left = u.left || shuffle(e.pairs.map(x => x[0])); u.right = u.right || shuffle(e.pairs.map(x => x[1])); u.solved = u.solved || [];
+      const st = (side, v) => {
+        const doneL = side === 'l' ? u.solved.includes(v) : e.pairs.some(x => x[1] === v && u.solved.includes(x[0]));
+        if (doneL) return 'done';
+        if (u.bad && u.bad[side === 'l' ? 0 : 1] === v) return 'wrong';
+        if ((side === 'l' ? u.selL : u.selR) === v) return 'sel';
+        return '';
+      };
+      return `<h1>Spoji parove</h1><div class="pairs"><div class="c">${u.left.map(v => `<button class="opt ${st('l', v)}" data-act="pair" data-side="l" data-v="${esc(v)}">${esc(v)}</button>`).join('')}</div>
+        <div class="c">${u.right.map(v => `<button class="opt ${st('r', v)}" data-act="pair" data-side="r" data-v="${esc(v)}">${esc(v)}</button>`).join('')}</div></div>`;
+    }
+  }
+  return '';
+}
+function viewFoot(e, s) {
+  const v = s.verdict;
+  if (v) return `<div class="foot ${v.ok ? 'ok' : 'bad'}"><div class="in"><div class="verdict"><div class="ic">${v.ok ? '✓' : '✕'}</div><div><h3>${esc(v.title)}</h3>${v.answer ? `<div class="ans">${esc(v.answer)}</div>` : ''}${v.meaning ? `<div class="mean">${esc(v.meaning)}</div>` : ''}</div></div>
+    <button class="btn ${v.ok ? '' : 'red'}" id="main-btn" data-act="next">${v.ok ? 'Dalje' : 'U redu'}</button></div></div>`;
+  const skip = needsListening(e) ? `<button class="skip" data-act="snooze" data-l="1">Ne mogu sada da slušam</button>` : e.kind === 'speak' ? `<button class="skip" data-act="snooze" data-l="0">Ne mogu sada da govorim</button>` : '';
+  if (e.kind === 'intro') return `<div class="foot"><div class="in">${skip}<button class="btn" id="main-btn" data-act="next">Dalje</button></div></div>`;
+  if (e.kind === 'match' && !TEST) return `<div class="foot"><div class="in"><span class="dim">Dodirni reč pa njen prevod</span></div></div>`;
+  const can = TEST || (s.pending != null && s.pending !== '');
+  return `<div class="foot"><div class="in">${skip}<button class="btn" id="main-btn" data-act="check" ${can ? '' : 'disabled'}>Proveri</button></div></div>`;
+}
+function renderSession() {
+  const s = S.sess; const o = document.getElementById('overlay');
+  if (!s) { o.innerHTML = ''; return; }
+  document.body.style.overflow = 'hidden';
+  if (s.summary) {
+    const m = s.summary, p = S.prog;
+    o.innerHTML = `<div class="sess"><div class="body"><div class="done">
+      <div class="big">${m.acc === 100 ? '🏆' : '🎉'}</div><h1 style="color:var(--gold)">${m.lesson ? 'Lekcija završena!' : 'Ponavljanje završeno!'}</h1>
+      ${m.acc === 100 ? '<div class="dim">Bez ijedne greške!</div>' : ''}
+      <div class="statboxes"><div class="sbox" style="--c:var(--gold)"><small>UKUPNO XP</small><b>+${m.xp}</b></div><div class="sbox" style="--c:var(--green)"><small>TAČNOST</small><b>${m.acc}%</b></div><div class="sbox" style="--c:var(--blue)"><small>VREME</small><b>${Math.floor(m.sec / 60)}:${String(m.sec % 60).padStart(2, '0')}</b></div></div>
+      <div style="color:var(--orange);font-weight:900;font-size:19px">🔥 ${p.streak()} ${daysWord(p.streak())} zaredom</div>
+      <div class="dim" style="margin-top:10px">Dnevni cilj: ${Math.min(p.todayXp(), p.goal)} / ${p.goal} XP</div>
+      <div class="pill" style="width:100%;flex:none"><i style="width:${Math.min(100, p.todayXp() * 100 / p.goal)}%;background:var(--orange)"></i></div>
+    </div></div><div class="foot"><div class="in"><button class="btn" id="main-btn" data-act="closesess">Nastavi</button></div></div></div>`;
+    return;
+  }
+  if (!s.queue.length) {
+    o.innerHTML = `<div class="sess"><div class="body"><div class="done"><div class="big">✨</div><h1>Nema ničega za ponavljanje</h1><div class="dim">Završi neku lekciju pa se vrati — ovde stižu reči kad dođe vreme da ih obnoviš.</div></div></div><div class="foot"><div class="in"><button class="btn" id="main-btn" data-act="closesess">Nazad</button></div></div></div>`;
+    return;
+  }
+  const e = s.queue[s.idx];
+  const keep = document.getElementById('typed'); const sel = keep && document.activeElement === keep ? [keep.selectionStart, keep.selectionEnd] : null;
+  o.innerHTML = `<div class="sess"><div class="top"><button class="x" data-act="quit" aria-label="Prekini">${I.close}</button><div class="pill"><i style="width:${s.idx * 100 / s.queue.length}%"></i></div></div>
+    <div class="body"><div class="inner">${viewExercise(e, s)}</div></div>${viewFoot(e, s)}</div>`;
+  const ta = document.getElementById('typed');
+  if (ta && !s.verdict) { ta.focus(); if (sel) ta.setSelectionRange(sel[0], sel[1]); else ta.setSelectionRange(ta.value.length, ta.value.length); }
+}
+
+/* ------------------------------------------------------------- story */
+function startStory(id) {
+  const l = S.course.byId[id]; if (!l) return go('#/');
+  const opts = l.lines.map(x => x.q ? shuffle([...x.wrong, x.answer]) : null);
+  S.story = { l, shown: 1, open: {}, answers: {}, opts, mistakes: 0, start: Date.now(), done: null };
+  renderStory();
+  const f = l.lines[0]; if (f && f.sl) Snd.play(f.sl);
+}
+function storyBlocked(st) { const last = st.l.lines[st.shown - 1]; return !!(last && last.q && st.answers[st.shown - 1] !== last.answer && !TEST); }
+function renderStory() {
+  const st = S.story, o = document.getElementById('overlay');
+  if (!st) { o.innerHTML = ''; return; }
+  document.body.style.overflow = 'hidden';
+  if (st.done) {
+    const p = S.prog;
+    o.innerHTML = `<div class="sess"><div class="body"><div class="done"><div class="big">📚</div><h1 style="color:var(--purple)">Priča završena!</h1><div class="dim">${esc(st.l.title)}</div>
+      <div style="color:var(--gold);font-weight:900;font-size:19px;margin-top:14px">+${st.done.xp} XP · tačnost ${st.done.acc}%</div>
+      <div style="color:var(--orange);font-weight:900;font-size:19px">🔥 ${p.streak()} ${daysWord(p.streak())} zaredom</div></div></div>
+      <div class="foot"><div class="in"><button class="btn purple" id="main-btn" data-act="closesess">Nastavi</button></div></div></div>`;
+    return;
+  }
+  const who = uniq(st.l.lines.filter(x => x.who).map(x => x.who));
+  const cols = ['var(--purple)', 'var(--blue)', 'var(--orange)', '#00CD9C', '#FF86D0'];
+  const rows = st.l.lines.slice(0, st.shown).map((x, i) => {
+    if (x.who) {
+      const c = cols[who.indexOf(x.who) % cols.length];
+      return `<div class="line"><div class="avatar" style="background:${c}">${esc(x.who[0])}</div><button class="say" data-act="line" data-i="${i}"><div class="who" style="color:${c}">${esc(x.who)}</div><div class="sl">${esc(x.sl)}</div>${st.open[i] ? `<div class="sr">${esc(x.sr)}</div>` : ''}</button>${spk(x.sl, 'xs')}</div>`;
+    }
+    const got = st.answers[i], solved = got === x.answer;
+    return `<div class="q"><h3>❓ ${esc(x.q)}</h3><div class="opts">${st.opts[i].map(op => `<button class="opt ${solved ? (op === x.answer ? 'right' : 'done') : (op === got ? 'wrong' : '')}" data-act="sq" data-i="${i}" data-v="${esc(op)}" ${solved ? 'disabled' : ''}>${esc(op)}</button>`).join('')}</div></div>`;
+  }).join('');
+  const finished = st.shown >= st.l.lines.length && !storyBlocked(st);
+  o.innerHTML = `<div class="sess"><div class="top"><button class="x" data-act="closesess" aria-label="Zatvori">${I.close}</button><div class="pill"><i style="width:${st.shown * 100 / st.l.lines.length}%;background:var(--purple)"></i></div></div>
+    <div class="body" id="storybody"><div class="inner"><div style="text-align:center;margin-bottom:10px"><div style="font-size:46px">📖</div><h1 style="margin:0">${esc(st.l.title)}</h1><div class="dim">Dodirni rečenicu za prevod</div></div>${rows}</div></div>
+    <div class="foot"><div class="in">${finished ? `<button class="btn" id="main-btn" data-act="storyend">Završi priču</button>` : `<button class="btn purple" id="main-btn" data-act="storynext" ${storyBlocked(st) ? 'disabled' : ''}>Dalje</button>`}</div></div></div>`;
+  const b = document.getElementById('storybody'); if (b) b.scrollTop = b.scrollHeight;
+}
+
+/* ------------------------------------------------------------- pages */
+function wordOfDay() {
+  const c = S.course, p = S.prog, day = today();
+  const learned = c.words.filter(w => p.isLearned(w.key));
+  const pool = learned.length ? learned : (c.units[0].lessons.flatMap(l => l.words).length ? c.units[0].lessons.flatMap(l => l.words) : c.words);
+  const w = pool[(day * 2654435761) % pool.length];
+  const ex = c.sentences.find(s => s.text.toLowerCase().split(/[^\p{L}]+/u).includes(w.sl.toLowerCase()));
+  return { w, ex };
+}
+function statsHTML() {
+  const p = S.prog, g = p.goal, t = p.todayXp();
+  return `<div class="stats"><span class="st" title="Niz dana" style="color:${p.alive() ? 'var(--orange)' : 'var(--dim)'}">🔥 ${p.streak()}</span><span class="st" title="Danas / dnevni cilj" style="color:${t >= g ? 'var(--gold)' : 'var(--dim)'}">⚡ ${t}/${g}</span></div>`;
+}
+const langBtn = () => `<button class="langbtn" data-act="langs"><span class="flag">${S.course.flag}</span><span>${esc(S.course.name)}</span>${S.meta.length > 1 ? '<span class="car">▼</span>' : ''}</button>`;
+
+function pagePath() {
+  const c = S.course, p = S.prog, cur = p.current();
+  return `<div class="col">${c.units.map(u => {
+    const col = UNIT_COLORS[u.idx % UNIT_COLORS.length];
+    return `<div class="unit" style="background:${col}"><div><div class="k">JEDINICA ${u.idx + 1}</div><h2>${esc(u.title)}</h2><p>${esc(u.desc)}</p></div>
+      <a class="guideb" href="#/vodic/${u.idx}" style="background:${col}">${I.book}VODIČ</a></div>
+      <div class="nodes">${u.lessons.map((l, i) => {
+        const done = p.isDone(l.id), un = p.unlocked(l), isCur = cur && cur.id === l.id, story = l.type === 'story';
+        const face = !un ? null : (done && !story) ? '#FFC800' : story ? '#CE82FF' : col;
+        const x = Math.round(Math.sin(i * 1.15) * 72);
+        return `<div class="nodew ${un ? '' : 'locked'}" style="transform:translateX(${x}px)">${isCur ? `<div class="start" style="color:${col}">POČNI</div>` : ''}
+          <button class="node ${un ? '' : 'locked'} ${isCur ? 'cur' : ''}" ${face ? `style="--c:${face};--d:${darker(face, 0.75)}"` : ''} data-act="lesson" data-id="${esc(l.id)}" aria-label="${esc(l.title)}">${!un ? I.lock : story ? I.book : done ? I.check : I.star}</button>
+          <div class="t">${esc(l.title)}</div></div>`;
+      }).join('')}</div>`;
+  }).join('')}<div class="foot-note">Kraj kursa za sada — novi nivoi stižu uskoro.</div></div>`;
+}
+function lessonModal(id) {
+  const l = S.course.byId[id], p = S.prog; if (!l) return '';
+  const story = l.type === 'story', un = p.unlocked(l), n = p.times(l.id);
+  const label = story ? (n ? 'Pročitaj ponovo' : 'Počni priču +15 XP') : (n ? 'Vežbaj ponovo +10 XP' : 'Počni +15 XP');
+  return `<div class="kick" style="color:${story ? 'var(--purple)' : 'var(--green)'}">${story ? 'PRIČA' : 'LEKCIJA'}</div><h2>${esc(l.title)}</h2>${n ? `<div class="dim">Završeno ${n}×</div>` : ''}
+    ${l.tip ? `<div class="tip" style="margin-top:12px"><span>💡</span><span>${esc(l.tip)}</span></div>` : ''}
+    ${!story && l.words.length ? `<div class="dim" style="margin-top:12px">Reči: ${esc(l.words.slice(0, 8).map(w => w.sl).join(', '))}${l.words.length > 8 ? '…' : ''}</div>` : ''}
+    <div style="margin-top:20px">${un ? `<button class="btn ${story ? 'purple' : ''}" data-act="start" data-id="${esc(l.id)}">${label}</button>` : `<div class="dim">🔒 Završi prethodnu lekciju da otključaš ovu.</div><button class="btn blue" style="margin-top:12px" data-act="start" data-id="${esc(l.id)}">Ipak počni</button>`}</div>`;
+}
+function langModal() {
+  return `<h2 style="margin-bottom:14px">Koji jezik učiš?</h2><div style="display:grid;gap:10px">${langRows()}</div>`;
+}
+function langRows() {
+  return S.meta.map(m => {
+    const c = S.courses[m.lang], p = S.progress[m.lang], sel = m.lang === S.lang;
+    const sub = !p || !p.started() ? `${m.native} · ${m.units} jedinica · još nisi počeo` : `🔥 ${p.streak()} · ⚡ ${p.totalXp()} XP · ${p.lessonsDone()}/${c.lessons.length} lekcija`;
+    return `<button class="langrow ${sel ? 'sel' : ''}" data-act="setlang" data-l="${m.lang}"><span class="flag">${m.flag}</span><span style="flex:1"><b>${esc(m.name)}</b><small>${esc(sub)}</small></span>${sel ? `<span style="color:var(--blue);width:24px">${I.check}</span>` : ''}</button>`;
+  }).join('');
+}
+function pageReview() {
+  const p = S.prog, c = S.course, due = p.due(), learned = p.learned();
+  return `<div class="col"><h1 class="ptitle">Ponavljanje</h1>
+    <div class="hero" style="background:var(--blue);--c:var(--blue)"><div style="font-size:40px">🧠</div><h2>${due.length ? `${due.length} ${due.length % 10 === 1 && due.length % 100 !== 11 ? 'reč čeka' : 'reči čeka'} ponavljanje` : 'Danas nema reči za ponavljanje'}</h2>
+      <p>Reči se vraćaju posle 1, 2, 4, 8… dana. Ako pogrešiš, kreću ispočetka.</p><button class="btn" data-act="review">${!due.length && learned ? 'Vežbaj slabe reči' : 'Počni ponavljanje'}</button></div>
+    <h3 style="margin:18px 0 6px">Vodiči i podsetnici</h3>
+    <a class="toolrow" href="#/lazni"><span class="ic">⚠️</span><span style="flex:1">Lažni prijatelji<small>Reči koje zvuče poznato, a znače nešto drugo</small></span>›</a>
+    ${c.units.map(u => `<a class="toolrow" href="#/vodic/${u.idx}"><span class="ic">📘</span><span style="flex:1">Jedinica ${u.idx + 1}: ${esc(u.title)}<small>${esc(u.desc)}</small></span>›</a>`).join('')}
+    <div class="foot-note">Naučeno reči: ${learned} od ${c.words.length}</div></div>`;
+}
+function wordRow(w) {
+  const sr = S.prog.srs[w.key], b = sr ? Math.min(sr[0], 5) : 0;
+  return `<div class="wrow" data-act="say" data-t="${esc(w.sl)}"><div style="flex:1"><div class="w">${esc(w.sl)}</div><div class="dim">${esc(w.meaning)}</div>${w.note ? `<div class="note">💡 ${esc(w.note)}</div>` : ''}</div>
+    <div class="bars">${[1, 2, 3, 4, 5].map(i => `<i class="${i <= b ? 'on' : ''}" style="height:${6 + i * 3}px"></i>`).join('')}</div></div>`;
+}
+function wordList(q, only) {
+  const n = T.plain(T.norm(q || '')), p = S.prog;
+  const list = S.course.words.filter(w => (!only || p.isLearned(w.key)) && (!n || T.plain(T.norm(w.sl)).includes(n) || w.sr.some(x => T.plain(T.norm(x)).includes(n))));
+  return list.length ? list.map(wordRow).join('') : `<div class="dim" style="padding:20px 4px">${only ? 'Još nema naučenih reči — završi prvu lekciju.' : 'Ništa nije pronađeno.'}</div>`;
+}
+function pageWords() {
+  const only = !!S.wordsOnly;
+  return `<div class="col"><h1 class="ptitle">Rečnik</h1><input class="search" id="wq" placeholder="Traži na ${esc(S.course.loc)} ili srpskom" value="${esc(S.wordsQ || '')}" autocomplete="off">
+    <div class="chips"><button class="opt ${only ? '' : 'sel'}" data-act="wonly" data-v="0">Sve (${S.course.words.length})</button><button class="opt ${only ? 'sel' : ''}" data-act="wonly" data-v="1">Naučene (${S.prog.learned()})</button></div>
+    <div id="wlist">${wordList(S.wordsQ, only)}</div></div>`;
+}
+function pageFalse() {
+  const ff = S.course.words.filter(w => /lažni/i.test(w.note || ''));
+  return `<div class="col"><h1 class="ptitle">Lažni prijatelji</h1><p class="dim">Ove reči zvuče kao srpske, ali znače nešto drugo. Klikni red da čuješ izgovor.</p>${ff.map(wordRow).join('')}</div>`;
+}
+function pageGuide(i) {
+  const u = S.course.units[i]; if (!u) return pagePath();
+  const col = UNIT_COLORS[u.idx % UNIT_COLORS.length];
+  return `<div class="col"><div class="guidehead" style="background:${col}"><a href="#/" style="font-weight:800">← Nazad</a><div class="k" style="margin-top:10px;font-size:12px;letter-spacing:.1em;opacity:.85">VODIČ · JEDINICA ${u.idx + 1}</div><h1>${esc(u.title)}</h1></div>
+    ${u.guide.map(g => `<p class="gp">${esc(g)}</p>`).join('')}
+    ${u.lessons.filter(l => l.type === 'lesson').map(l => `<div class="card" style="margin:12px 0"><h3>${esc(l.title)}</h3>${l.tip ? `<div class="dim" style="margin-bottom:8px">${esc(l.tip)}</div>` : ''}
+      ${l.sentences.slice(0, 4).map(s => `<div class="ex" data-act="say" data-t="${esc(s.text)}"><span>🔊</span><span><b style="color:${col}">${esc(s.text)}</b><small>${esc(s.meaning)}</small></span></div>`).join('')}</div>`).join('')}</div>`;
+}
+function weekHTML() {
+  const p = S.prog, t = today(), days = [6, 5, 4, 3, 2, 1, 0].map(i => t - i), vals = days.map(d => p.xpOn(d)), max = Math.max(p.goal, ...vals);
+  const names = ['N', 'P', 'U', 'S', 'Č', 'P', 'S'];
+  return `<div class="week">${days.map((d, i) => `<div class="d ${d === t ? 'today' : ''}">${vals[i] ? `<span>${vals[i]}</span>` : ''}<i style="height:${Math.max(4, 90 * vals[i] / max)}px;background:${vals[i] >= p.goal ? 'var(--gold)' : vals[i] ? 'var(--orange)' : 'var(--border)'}"></i><span>${names[new Date(d * 86400000).getUTCDay()]}</span></div>`).join('')}</div>`;
+}
+function wodHTML() {
+  const { w, ex } = wordOfDay();
+  return `<div class="card wod"><div class="kick" style="color:var(--green)">${S.course.flag} REČ DANA</div><div style="display:flex;align-items:center;gap:10px;margin-top:6px"><div style="flex:1"><div class="w">${esc(w.sl)}</div><div class="dim">${esc(w.meaning)}</div></div>${spk(w.sl, 'sm')}</div>
+    ${w.note ? `<div class="dim" style="font-size:14px;margin-top:8px">💡 ${esc(w.note)}</div>` : ''}${ex ? `<div style="font-size:14px;margin-top:8px">${esc(ex.text)} <span class="dim">— ${esc(ex.meaning)}</span></div>` : ''}</div>`;
+}
+function pageProfile() {
+  const p = S.prog, c = S.course;
+  return `<div class="col"><h1 class="ptitle">Profil</h1>
+    <div class="hero" style="background:var(--orange);display:flex;align-items:center"><div style="flex:1"><div style="font-size:46px;font-weight:900;line-height:1">${p.streak()}</div><div style="font-weight:800">${daysWord(p.streak())} zaredom · ${esc(c.name)}</div>
+      <p style="margin:4px 0 0">${p.alive() ? 'Danas si već vežbao — bravo!' : 'Uradi jednu lekciju danas da sačuvaš niz.'}</p></div><div style="font-size:64px">🔥</div></div>
+    <div class="card"><h3>Ova nedelja</h3>${weekHTML()}</div>
+    <div class="grid2"><div class="stat"><span class="ic">⚡</span><span><b>${p.totalXp()}</b><small>ukupno XP</small></span></div><div class="stat"><span class="ic">📖</span><span><b>${p.learned()}</b><small>naučenih reči</small></span></div>
+      <div class="stat"><span class="ic">⭐</span><span><b>${c.lessons.filter(l => l.type === 'lesson' && p.isDone(l.id)).length}</b><small>lekcija</small></span></div><div class="stat"><span class="ic">📚</span><span><b>${c.lessons.filter(l => l.type === 'story' && p.isDone(l.id)).length}</b><small>priča</small></span></div></div>
+    <div class="card"><h3>Dnevni cilj</h3><div class="opts">${[[10, 'Opušteno'], [20, 'Redovno'], [30, 'Ozbiljno'], [50, 'Intenzivno']].map(([g, l]) => `<button class="opt ${p.goal === g ? 'sel' : ''}" data-act="goal" data-v="${g}">${l} · ${g} XP dnevno</button>`).join('')}</div></div>
+    <div style="margin:14px 0">${wodHTML()}</div>
+    <a class="btn ghost" href="#/podesavanja" style="margin:16px 0">⚙️ Podešavanja</a></div>`;
+}
+const toggle = (key, title, sub, on) => `<div class="toggle" data-act="tog" data-k="${key}"><span class="t">${title}${sub ? `<small>${sub}</small>` : ''}</span><span class="sw ${on ? 'on' : ''}"></span></div>`;
+function pageSettings() {
+  const st = S.settings, p = S.prog, c = S.course, nClips = Object.keys(c.audio).length;
+  return `<div class="col"><h1 class="ptitle">Podešavanja</h1>
+    <div class="card"><h3>Jezik koji učiš</h3><div style="display:grid;gap:10px">${langRows()}</div></div>
+    <div class="card" style="margin-top:12px"><h3>Vežbe</h3>${toggle('sound', 'Zvuk', 'Izgovor reči i rečenica', st.sound)}${toggle('listen', 'Vežbe slušanja', 'Prepoznaj i napiši ono što čuješ', st.listen)}
+      ${toggle('speak', 'Vežbe govora', SR ? 'Izgovori rečenicu u mikrofon' : 'Ovaj browser nema prepoznavanje govora (radi u Chrome-u)', st.speak && !!SR)}${toggle('unlock', 'Otključaj sve lekcije', `Slobodno skakanje po kursu (${esc(c.name.toLowerCase())})`, p.unlockAll)}</div>
+    <div class="card" style="margin-top:12px"><h3>Tema</h3><div class="chips">${[['dark', 'Tamna'], ['light', 'Svetla'], ['system', 'Sistem']].map(([k, l]) => `<button class="opt ${st.theme === k ? 'sel' : ''}" data-act="theme" data-v="${k}">${l}</button>`).join('')}</div></div>
+    <div class="card" style="margin-top:12px"><h3>Glas</h3><div class="dim">Ugrađeni snimci: ${nClips} (${esc(c.voice)})${nClips ? '' : ' — koristi se glas browsera'}</div>
+      <button class="btn ghost inline" style="margin-top:12px" data-act="say" data-t="${esc(c.words[0].sl)}">Probaj zvuk</button></div>
+    <div class="card" style="margin-top:12px"><h3>O kursu</h3><div class="dim">${c.flag} ${esc(c.name)} za govornike srpskog: ${c.units.length} jedinica, ${c.lessons.length} lekcija i priča, ${c.words.length} reči. Isti kurs kao u Android aplikaciji.</div>
+      <div class="dim" style="margin-top:8px">Napredak se čuva u ovom browseru i nije povezan sa telefonom.</div>
+      <button class="btn red inline" style="margin-top:14px" data-act="reset">Resetuj napredak (${esc(c.name.toLowerCase())})</button></div></div>`;
+}
+function aside() {
+  const p = S.prog;
+  return `<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">${langBtn()}${statsHTML()}</div>
+    <div class="card"><h3>Dnevni cilj</h3><div style="display:flex;align-items:center;gap:12px"><span style="font-size:30px">⚡</span><div style="flex:1"><div class="pill" style="display:block"><i style="width:${Math.min(100, p.todayXp() * 100 / p.goal)}%;background:var(--gold)"></i></div><div class="dim" style="margin-top:6px">${p.todayXp()} / ${p.goal} XP</div></div></div></div>
+    ${wodHTML()}
+    <div class="card"><h3>Ponavljanje</h3><div class="dim" style="margin-bottom:12px">${p.due().length ? `${p.due().length} reči čeka da ih obnoviš.` : 'Danas nema reči za ponavljanje.'}</div><button class="btn blue" data-act="review">${p.due().length ? 'Ponovi sada' : 'Vežbaj slabe reči'}</button></div>
+    <div class="foot-note">Prečice u lekciji: Enter = proveri / dalje, 1–4 = izbor odgovora</div>`;
+}
+
+/* ------------------------------------------------------------- router & render */
+const NAV = [['#/', 'Učenje', I.home], ['#/ponavljanje', 'Ponavljanje', I.review], ['#/recnik', 'Rečnik', I.book], ['#/profil', 'Profil', I.user], ['#/podesavanja', 'Podešavanja', I.gear]];
+function go(h) { if (location.hash === h) render(); else location.hash = h; }
+function render() {
+  if (!S.course) return;
+  const h = location.hash || '#/';
+  let m;
+  if ((m = h.match(/^#\/lekcija\/(.+)$/))) { S.backTo = '#/'; startSession(decodeURIComponent(m[1])); history.replaceState(null, '', '#/'); }
+  else if (h === '#/review') { S.backTo = '#/ponavljanje'; startSession(null); history.replaceState(null, '', '#/ponavljanje'); }
+  else if ((m = h.match(/^#\/prica\/(.+)$/))) { S.backTo = '#/'; startStory(decodeURIComponent(m[1])); history.replaceState(null, '', '#/'); }
+  const page = location.hash || '#/';
+  let body, act = '#/';
+  if ((m = page.match(/^#\/vodic\/(\d+)$/))) body = pageGuide(+m[1]);
+  else if (page === '#/ponavljanje') { body = pageReview(); act = page; }
+  else if (page === '#/recnik') { body = pageWords(); act = page; }
+  else if (page === '#/profil') { body = pageProfile(); act = page; }
+  else if (page === '#/podesavanja') { body = pageSettings(); act = page; }
+  else if (page === '#/lazni') { body = pageFalse(); act = '#/ponavljanje'; }
+  else body = pagePath();
+  document.getElementById('app').innerHTML = `<div class="shell">
+    <nav class="rail"><div class="logo">${I.logo}<span>Kravos Jezik</span></div>${NAV.map(([href, l, ic]) => `<a href="${href}" class="${act === href ? 'on' : ''}">${ic}<span class="lbl">${l}</span></a>`).join('')}</nav>
+    <main class="main"><div class="topbar">${langBtn()}<span style="flex:1"></span>${statsHTML()}</div>${body}</main>
+    <aside class="aside">${aside()}</aside></div>
+    <nav class="bnav">${NAV.slice(0, 4).map(([href, l, ic]) => `<a href="${href}" class="${act === href ? 'on' : ''}">${ic}<span>${l}</span></a>`).join('')}</nav>`;
+  renderModal();
+  if (!S.sess && !S.story) { document.getElementById('overlay').innerHTML = ''; document.body.style.overflow = ''; }
+}
+function renderModal() {
+  const el = document.getElementById('modal');
+  if (!S.modal) { el.innerHTML = ''; return; }
+  let html = '';
+  if (S.modal.type === 'lesson') html = lessonModal(S.modal.id);
+  else if (S.modal.type === 'langs') html = langModal();
+  else if (S.modal.type === 'quit') html = `<h2>Prekini lekciju?</h2><p class="dim">Napredak iz ove lekcije neće biti sačuvan.</p><div style="display:grid;gap:12px;margin-top:18px"><button class="btn" data-act="closemodal">Nastavi učenje</button><button class="btn ghost" style="color:var(--red)" data-act="quitnow">Prekini</button></div>`;
+  else if (S.modal.type === 'reset') html = `<h2>Resetuj napredak za ${esc(S.course.name.toLowerCase())}?</h2><p class="dim">Brišu se završene lekcije, XP, niz dana i ponavljanje reči za ovaj jezik. Ovo ne može da se vrati.</p><div style="display:grid;gap:12px;margin-top:18px"><button class="btn" data-act="closemodal">Odustani</button><button class="btn red" data-act="resetnow">Resetuj</button></div>`;
+  el.innerHTML = `<div class="scrim" data-act="scrim"><div class="modal" role="dialog" aria-modal="true">${html}</div></div>`;
+}
+function applyTheme() { const t = S.settings.theme; if (t === 'system') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t); }
+async function setLang(l) {
+  if (!S.courses[l]) await loadCourse(l);
+  Snd.stop(); S.lang = l; S.settings.lang = l; saveSettings(); S.modal = null; go('#/'); render(); window.scrollTo(0, 0);
+}
+async function loadCourse(l) {
+  const r = await fetch(`courses/${l}.json`, { cache: 'no-cache' });
+  const c = prepCourse(await r.json());
+  S.courses[l] = c; S.progress[l] = new Progress(c);
+}
+
+/* ------------------------------------------------------------- events */
+document.addEventListener('click', ev => {
+  const t = ev.target.closest('[data-act]'); if (!t) return;
+  const a = t.dataset.act, s = S.sess;
+  switch (a) {
+    case 'say': ev.preventDefault(); Snd.play(t.dataset.t, !!t.dataset.slow); break;
+    case 'lesson': S.modal = { type: 'lesson', id: t.dataset.id }; renderModal(); break;
+    case 'start': { const l = S.course.byId[t.dataset.id]; S.modal = null; renderModal(); go(l.type === 'story' ? `#/prica/${encodeURIComponent(l.id)}` : `#/lekcija/${encodeURIComponent(l.id)}`); break; }
+    case 'langs': S.modal = { type: 'langs' }; renderModal(); break;
+    case 'setlang': setLang(t.dataset.l); break;
+    case 'scrim': if (ev.target === t) { S.modal = null; renderModal(); } break;
+    case 'closemodal': S.modal = null; renderModal(); break;
+    case 'review': go('#/review'); break;
+    case 'quit': S.modal = { type: 'quit' }; renderModal(); break;
+    case 'quitnow': S.modal = null; renderModal(); closeSession(); break;
+    case 'closesess': S.story = null; closeSession(); break;
+    case 'choose': if (s && !s.verdict) { s.pending = t.dataset.v; renderSession(); } break;
+    case 'check': check(); break;
+    case 'next': next(); break;
+    case 'snooze': snooze(t.dataset.l === '1'); break;
+    case 'tile': if (s && !s.verdict) { s.ui.chosen.push(+t.dataset.i); s.pending = s.ui.chosen.map(i => s.queue[s.idx].tiles[i]).join(' '); renderSession(); } break;
+    case 'untile': if (s && !s.verdict) { s.ui.chosen = s.ui.chosen.filter(i => i !== +t.dataset.i); s.pending = s.ui.chosen.map(i => s.queue[s.idx].tiles[i]).join(' ') || null; renderSession(); } break;
+    case 'char': { const ta = document.getElementById('typed'); if (ta && s && !s.verdict) { const a0 = ta.selectionStart, b0 = ta.selectionEnd; ta.value = ta.value.slice(0, a0) + t.dataset.v + ta.value.slice(b0); s.pending = ta.value; ta.focus(); ta.setSelectionRange(a0 + t.dataset.v.length, a0 + t.dataset.v.length); const btn = document.getElementById('main-btn'); if (btn) btn.disabled = !ta.value.trim() && !TEST; } break; }
+    case 'mic': if (s.ui.listening) stopMic(), renderSession(); else startMic(); break;
+    case 'pair': {
+      const e = s.queue[s.idx], u = s.ui, v = t.dataset.v;
+      if (t.dataset.side === 'l') { u.selL = v; Snd.play(v); } else u.selR = v;
+      if (u.selL != null && u.selR != null) {
+        if (e.pairs.some(x => x[0] === u.selL && x[1] === u.selR)) { u.solved.push(u.selL); u.bad = null; }
+        else { u.bad = [u.selL, u.selR]; e.words.filter(w => w.sl === u.selL || w.sr[0] === u.selR).forEach(w => s.results[w.key] = false); setTimeout(() => { if (S.sess === s && u.bad) { u.bad = null; renderSession(); } }, 700); }
+        u.selL = null; u.selR = null;
+        if (u.solved.length === e.pairs.length) return grade(e, { ok: true, title: pick(PRAISE) });
+      }
+      renderSession(); break;
+    }
+    case 'line': { const st = S.story, i = +t.dataset.i; st.open[i] = !st.open[i]; Snd.play(st.l.lines[i].sl); renderStory(); break; }
+    case 'sq': { const st = S.story, i = +t.dataset.i, x = st.l.lines[i]; st.answers[i] = t.dataset.v; if (t.dataset.v !== x.answer) st.mistakes++; renderStory(); break; }
+    case 'storynext': { const st = S.story; if (storyBlocked(st)) break; st.shown++; renderStory(); const x = st.l.lines[st.shown - 1]; if (x && x.sl) Snd.play(x.sl); break; }
+    case 'storyend': {
+      const st = S.story, q = st.l.lines.filter(x => x.q).length;
+      const xp = 15 + (st.mistakes === 0 ? 5 : 0);
+      S.prog.finish(st.l.id, xp, {});
+      st.done = { xp, acc: q ? Math.floor(Math.max(0, q - st.mistakes) * 100 / q) : 100 };
+      renderStory(); break;
+    }
+    case 'wonly': S.wordsOnly = t.dataset.v === '1'; render(); break;
+    case 'goal': S.prog.goal = +t.dataset.v; S.prog.save(); render(); break;
+    case 'tog': {
+      const k = t.dataset.k;
+      if (k === 'unlock') { S.prog.unlockAll = !S.prog.unlockAll; S.prog.save(); }
+      else { S.settings[k] = !S.settings[k]; saveSettings(); }
+      render(); break;
+    }
+    case 'theme': S.settings.theme = t.dataset.v; saveSettings(); applyTheme(); render(); break;
+    case 'reset': S.modal = { type: 'reset' }; renderModal(); break;
+    case 'resetnow': S.prog.reset(); S.modal = null; render(); break;
+  }
+});
+document.addEventListener('input', ev => {
+  if (ev.target.id === 'typed' && S.sess) { S.sess.pending = ev.target.value; const b = document.getElementById('main-btn'); if (b) b.disabled = !ev.target.value.trim() && !TEST; }
+  if (ev.target.id === 'wq') { S.wordsQ = ev.target.value; document.getElementById('wlist').innerHTML = wordList(S.wordsQ, !!S.wordsOnly); }
+});
+document.addEventListener('keydown', ev => {
+  if (S.modal && ev.key === 'Escape') { S.modal = null; renderModal(); return; }
+  const s = S.sess;
+  if (s && !s.summary && s.queue.length) {
+    const e = s.queue[s.idx];
+    if (ev.key === 'Enter' && !ev.shiftKey) { ev.preventDefault(); if (s.verdict || e.kind === 'intro') next(); else check(); return; }
+    if (!s.verdict && /^[1-9]$/.test(ev.key) && (e.kind === 'pick' || e.kind === 'fill') && document.activeElement?.id !== 'typed') {
+      const o = e.options[+ev.key - 1]; if (o != null) { s.pending = o; renderSession(); }
+    }
+    if (ev.key === 'Escape') { S.modal = { type: 'quit' }; renderModal(); }
+    return;
+  }
+  if (s && s.summary && ev.key === 'Enter') { closeSession(); return; }
+  const st = S.story;
+  if (st && ev.key === 'Enter') { ev.preventDefault(); document.getElementById('main-btn')?.click(); }
+});
+window.addEventListener('hashchange', () => { if (S.sess && !/^#\/(lekcija|prica|review)/.test(location.hash)) { /* navigating away ends the session */ } render(); });
+
+/* ------------------------------------------------------------- boot */
+(async function boot() {
+  applyTheme();
+  try {
+    S.meta = await (await fetch('courses/index.json', { cache: 'no-cache' })).json();
+    const want = S.meta.some(m => m.lang === S.settings.lang) ? S.settings.lang : S.meta[0].lang;
+    await Promise.all(S.meta.map(m => loadCourse(m.lang)));
+    S.lang = want;
+    render();
+    if ('speechSynthesis' in window) speechSynthesis.getVoices();
+  } catch (e) {
+    document.getElementById('app').innerHTML = `<div class="col" style="padding:40px 16px"><h1>Ne mogu da učitam kurs</h1><p class="dim">${esc(e.message)}</p></div>`;
+  }
+})();
+</script>
+</body>
+</html>

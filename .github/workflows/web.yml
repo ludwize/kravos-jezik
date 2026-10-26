@@ -1,0 +1,65 @@
+name: web
+
+# Web edition of Kravos Jezik: same courses and Piper recordings as the app, published to GitHub Pages.
+on:
+  push:
+    branches: [main]
+    paths: ['web/**', 'course/**', 'tools/**', '.github/workflows/web.yml', '.github/scripts/audio.sh']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      url: ${{ steps.deploy.outputs.page_url }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Restore audio cache
+        uses: actions/cache@v4
+        with:
+          path: app/src/main/assets/audio
+          key: audio-v2-${{ hashFiles('course/*.txt', 'tools/gen_audio.py') }}
+          restore-keys: |
+            audio-v2-
+            audio-v1-
+      - name: Courses and audio
+        run: bash .github/scripts/audio.sh
+      - name: Assemble site
+        run: python3 web/build.py site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+  check:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Walk through the live site
+        run: |
+          pip install --quiet playwright && python3 -m playwright install --with-deps chromium > /dev/null
+          mkdir -p webcheck && sleep 20
+          python3 web/check/shots.py "${{ needs.publish.outputs.url }}" webcheck || echo "check failed" >> webcheck/stats.txt
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/publish-log.sh web webcheck

@@ -9,3 +9,4 @@ local.properties
 *.keystore
 out/
 app/src/main/assets/audio/
+site/
